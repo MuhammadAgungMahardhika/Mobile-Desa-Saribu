@@ -66,12 +66,34 @@ if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.homeu
 Debug.ShouldStop(524288);
  BA.debugLineNum = 53;BA.debugLine="Log(\"HomeUser loaded\")";
 Debug.ShouldStop(1048576);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64259841",RemoteObject.createImmutable("HomeUser loaded"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84521985",RemoteObject.createImmutable("HomeUser loaded"),0);
  BA.debugLineNum = 54;BA.debugLine="Core.ExecuteUrl(Main.API&\"profile\", \"id=\"&Main.ma";
 Debug.ShouldStop(2097152);
 homeuser.mostCurrent._core.runVoidMethod ("_executeurl" /*RemoteObject*/ ,homeuser.mostCurrent.activityBA,(Object)(RemoteObject.concat(homeuser.mostCurrent._main._api /*RemoteObject*/ ,RemoteObject.createImmutable("profile"))),(Object)(RemoteObject.concat(RemoteObject.createImmutable("id="),homeuser.mostCurrent._main._manager /*RemoteObject*/ .runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("user_id"))))),(Object)(BA.ObjectToString("Profile")),(Object)(homeuser.getObject()));
  BA.debugLineNum = 55;BA.debugLine="End Sub";
 Debug.ShouldStop(4194304);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
+public static RemoteObject  _btncart_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnCart_Click (homeuser) ","homeuser",6,homeuser.mostCurrent.activityBA,homeuser.mostCurrent,157);
+if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.homeuser.remoteMe.runUserSub(false, "homeuser","btncart_click");}
+ BA.debugLineNum = 157;BA.debugLine="Private Sub btnCart_Click";
+Debug.ShouldStop(268435456);
+ BA.debugLineNum = 158;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+Debug.ShouldStop(536870912);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","841353217",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+ BA.debugLineNum = 159;BA.debugLine="StartActivity(Cart)";
+Debug.ShouldStop(1073741824);
+homeuser.mostCurrent.__c.runVoidMethod ("StartActivity",homeuser.processBA,(Object)((homeuser.mostCurrent._cart.getObject())));
+ BA.debugLineNum = 160;BA.debugLine="End Sub";
+Debug.ShouldStop(-2147483648);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -88,7 +110,7 @@ if (RapidSub.canDelegate("btngemma_click")) { return b4a.DesaWisataSaribu.homeus
 Debug.ShouldStop(8388608);
  BA.debugLineNum = 153;BA.debugLine="Log(\"Redirect to Gemma Activity\")";
 Debug.ShouldStop(16777216);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64653057",RemoteObject.createImmutable("Redirect to Gemma Activity"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84915201",RemoteObject.createImmutable("Redirect to Gemma Activity"),0);
  BA.debugLineNum = 154;BA.debugLine="StartActivity(Gemma)";
 Debug.ShouldStop(33554432);
 homeuser.mostCurrent.__c.runVoidMethod ("StartActivity",homeuser.processBA,(Object)((homeuser.mostCurrent._gemma.getObject())));
@@ -110,7 +132,7 @@ if (RapidSub.canDelegate("btnlogout_click")) { return b4a.DesaWisataSaribu.homeu
 Debug.ShouldStop(4096);
  BA.debugLineNum = 142;BA.debugLine="Log(\"Redirect to Main Activity\")";
 Debug.ShouldStop(8192);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64521985",RemoteObject.createImmutable("Redirect to Main Activity"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84784129",RemoteObject.createImmutable("Redirect to Main Activity"),0);
  BA.debugLineNum = 143;BA.debugLine="Core.ExecuteUrlGet(Main.API&\"logout\", \"Logout\", M";
 Debug.ShouldStop(16384);
 homeuser.mostCurrent._core.runVoidMethod ("_executeurlget" /*RemoteObject*/ ,homeuser.mostCurrent.activityBA,(Object)(RemoteObject.concat(homeuser.mostCurrent._main._api /*RemoteObject*/ ,RemoteObject.createImmutable("logout"))),(Object)(BA.ObjectToString("Logout")),(Object)(homeuser.getObject()));
@@ -132,7 +154,7 @@ if (RapidSub.canDelegate("btnpackage_click")) { return b4a.DesaWisataSaribu.home
 Debug.ShouldStop(262144);
  BA.debugLineNum = 148;BA.debugLine="Log(\"Redirect to List Package\")";
 Debug.ShouldStop(524288);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64587521",RemoteObject.createImmutable("Redirect to List Package"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84849665",RemoteObject.createImmutable("Redirect to List Package"),0);
  BA.debugLineNum = 149;BA.debugLine="StartActivity(ListPackage)";
 Debug.ShouldStop(1048576);
 homeuser.mostCurrent.__c.runVoidMethod ("StartActivity",homeuser.processBA,(Object)((homeuser.mostCurrent._listpackage.getObject())));
@@ -154,7 +176,7 @@ if (RapidSub.canDelegate("btnrg_click")) { return b4a.DesaWisataSaribu.homeuser.
 Debug.ShouldStop(128);
  BA.debugLineNum = 137;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
 Debug.ShouldStop(256);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64456449",RemoteObject.createImmutable("Redirect to MapsRG Activity"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84718593",RemoteObject.createImmutable("Redirect to MapsRG Activity"),0);
  BA.debugLineNum = 138;BA.debugLine="StartActivity(MapsRG)";
 Debug.ShouldStop(512);
 homeuser.mostCurrent.__c.runVoidMethod ("StartActivity",homeuser.processBA,(Object)((homeuser.mostCurrent._mapsrg.getObject())));
@@ -231,7 +253,7 @@ Debug.locals.put("Job", _job);
 Debug.ShouldStop(268435456);
  BA.debugLineNum = 62;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
 Debug.ShouldStop(536870912);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390913",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653057",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
  BA.debugLineNum = 63;BA.debugLine="If Job.Success Then";
 Debug.ShouldStop(1073741824);
 if (_job.getField(true,"_success" /*RemoteObject*/ ).<Boolean>get().booleanValue()) { 
@@ -249,7 +271,7 @@ Debug.ShouldStop(4);
 _parser.runVoidMethod ("Initialize",(Object)(_res));
  BA.debugLineNum = 68;BA.debugLine="Log(\"Response from server :\"&res)";
 Debug.ShouldStop(8);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390919",RemoteObject.concat(RemoteObject.createImmutable("Response from server :"),_res),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653063",RemoteObject.concat(RemoteObject.createImmutable("Response from server :"),_res),0);
  BA.debugLineNum = 69;BA.debugLine="Select Job.JobName";
 Debug.ShouldStop(16);
 switch (BA.switchObjectToInt(_job.getField(true,"_jobname" /*RemoteObject*/ ),BA.ObjectToString("Profile"),BA.ObjectToString("Logout"))) {
@@ -329,7 +351,7 @@ homeuser.mostCurrent.__c.runVoidMethod ("CallSubDelayed2",homeuser.processBA,(Ob
        catch (Exception e34) {
 			BA.rdebugUtils.runVoidMethod("setLastException",homeuser.processBA, e34.toString()); BA.debugLineNum = 99;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(4);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390950",BA.ObjectToString(homeuser.mostCurrent.__c.runMethod(false,"LastException",homeuser.mostCurrent.activityBA)),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653094",BA.ObjectToString(homeuser.mostCurrent.__c.runMethod(false,"LastException",homeuser.mostCurrent.activityBA)),0);
  };
  break; }
 case 1: {
@@ -361,7 +383,7 @@ Debug.ShouldStop(16384);
 homeuser.mostCurrent._main._manager /*RemoteObject*/ .runVoidMethod ("SetBoolean",(Object)(BA.ObjectToString("user")),(Object)(homeuser.mostCurrent.__c.getField(true,"False")));
  BA.debugLineNum = 112;BA.debugLine="Log(\"Successfully logged out\")";
 Debug.ShouldStop(32768);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390963",RemoteObject.createImmutable("Successfully logged out"),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653107",RemoteObject.createImmutable("Successfully logged out"),0);
  BA.debugLineNum = 113;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(65536);
 homeuser.mostCurrent._activity.runVoidMethod ("Finish");
@@ -374,7 +396,7 @@ homeuser.mostCurrent.__c.runVoidMethod ("StartActivity",homeuser.processBA,(Obje
        catch (Exception e51) {
 			BA.rdebugUtils.runVoidMethod("setLastException",homeuser.processBA, e51.toString()); BA.debugLineNum = 117;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(1048576);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390968",BA.ObjectToString(homeuser.mostCurrent.__c.runMethod(false,"LastException",homeuser.mostCurrent.activityBA)),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653112",BA.ObjectToString(homeuser.mostCurrent.__c.runMethod(false,"LastException",homeuser.mostCurrent.activityBA)),0);
  };
  break; }
 }
@@ -394,7 +416,7 @@ Debug.ShouldStop(536870912);
 _errormap = _errorparser.runMethod(false,"NextObject");Debug.locals.put("errorMap", _errormap);
  BA.debugLineNum = 127;BA.debugLine="Log(\"Error: \" & Job.ErrorMessage)";
 Debug.ShouldStop(1073741824);
-homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","64390978",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_job.getField(true,"_errormessage" /*RemoteObject*/ )),0);
+homeuser.mostCurrent.__c.runVoidMethod ("LogImpl","84653122",RemoteObject.concat(RemoteObject.createImmutable("Error: "),_job.getField(true,"_errormessage" /*RemoteObject*/ )),0);
  BA.debugLineNum = 129;BA.debugLine="Dim error As String";
 Debug.ShouldStop(1);
 _error = RemoteObject.createImmutable("");Debug.locals.put("error", _error);

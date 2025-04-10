@@ -64,21 +64,22 @@ Library7=runtimepermissions
 Library8=simplemediamanager
 Library9=webviewextras
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="34"/>~\n~<uses-permission android:name="android.permission.INTERNET" />~\n~<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.LightTheme)~\n~'End of default text.~\n~SetApplicationAttribute(android:usesCleartextTraffic, "true")
-Module1=Core
-Module10=MapsEV
-Module11=MapsRG
-Module12=Starter
-Module2=DetailEV
-Module3=DetailRG
-Module4=Gemma
-Module5=HomeUser
-Module6=HomeVisitor
-Module7=ListEv
-Module8=ListPackage
-Module9=ListRG
+Module1=Cart
+Module10=ListRG
+Module11=MapsEV
+Module12=MapsRG
+Module13=Starter
+Module2=Core
+Module3=DetailEV
+Module4=DetailRG
+Module5=Gemma
+Module6=HomeUser
+Module7=HomeVisitor
+Module8=ListEv
+Module9=ListPackage
 NumberOfFiles=25
 NumberOfLibraries=13
-NumberOfModules=12
+NumberOfModules=13
 Version=13.1
 @EndOfDesignText@
 #Region  Project Attributes 

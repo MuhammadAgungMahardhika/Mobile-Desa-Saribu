@@ -8,7 +8,7 @@ public class smmviews_subs_0 {
 
 public static void  _addmedia(RemoteObject __ref,RemoteObject _requestset,RemoteObject _media,RemoteObject _request) throws Exception{
 try {
-		Debug.PushSubsStack("AddMedia (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,48);
+		Debug.PushSubsStack("AddMedia (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,48);
 if (RapidSub.canDelegate("addmedia")) { __ref.runUserSub(false, "smmviews","addmedia", __ref, _requestset, _media, _request); return;}
 ResumableSub_AddMedia rsub = new ResumableSub_AddMedia(null,__ref,_requestset,_media,_request);
 rsub.resume(null, null);
@@ -45,7 +45,7 @@ RemoteObject _params = null;
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("AddMedia (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,48);
+		Debug.PushSubsStack("AddMedia (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,48);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -313,7 +313,7 @@ finally {
 }
 public static RemoteObject  _cancelrequest(RemoteObject __ref,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("CancelRequest (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,41);
+		Debug.PushSubsStack("CancelRequest (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,41);
 if (RapidSub.canDelegate("cancelrequest")) { return __ref.runUserSub(false, "smmviews","cancelrequest", __ref, _target);}
 Debug.locals.put("Target", _target);
  BA.debugLineNum = 41;BA.debugLine="Public Sub CancelRequest (Target As B4XView)";
@@ -377,7 +377,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _createsmmview(RemoteObject __ref,RemoteObject _customview,RemoteObject _mbase,RemoteObject _viewtype,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMView (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,350);
+		Debug.PushSubsStack("CreateSMMView (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,350);
 if (RapidSub.canDelegate("createsmmview")) { return __ref.runUserSub(false, "smmviews","createsmmview", __ref, _customview, _mbase, _viewtype, _key);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.smmviews._smmview");
 Debug.locals.put("CustomView", _customview);
@@ -419,7 +419,7 @@ finally {
 		}}
 public static RemoteObject  _getview(RemoteObject __ref,RemoteObject _viewtype,RemoteObject _key) throws Exception{
 try {
-		Debug.PushSubsStack("GetView (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,230);
+		Debug.PushSubsStack("GetView (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,230);
 if (RapidSub.canDelegate("getview")) { return __ref.runUserSub(false, "smmviews","getview", __ref, _viewtype, _key);}
 RemoteObject _sview = RemoteObject.declareNull("b4a.DesaWisataSaribu.smmviews._smmview");
 RemoteObject _mbase = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
@@ -560,7 +560,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba,RemoteObject _manager) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,33);
+		Debug.PushSubsStack("Initialize (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,33);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "smmviews","initialize", __ref, _ba, _manager);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -594,7 +594,7 @@ finally {
 		}}
 public static RemoteObject  _mediatobitmap(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("MediaToBitmap (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,138);
+		Debug.PushSubsStack("MediaToBitmap (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,138);
 if (RapidSub.canDelegate("mediatobitmap")) { return __ref.runUserSub(false, "smmviews","mediatobitmap", __ref, _media);}
 RemoteObject _decoder = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 Debug.locals.put("MEDIA", _media);
@@ -625,7 +625,7 @@ finally {
 		}}
 public static RemoteObject  _mediatypetoviewtype(RemoteObject __ref,RemoteObject _mediatype,RemoteObject _request) throws Exception{
 try {
-		Debug.PushSubsStack("MediaTypeToViewType (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,167);
+		Debug.PushSubsStack("MediaTypeToViewType (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,167);
 if (RapidSub.canDelegate("mediatypetoviewtype")) { return __ref.runUserSub(false, "smmviews","mediatypetoviewtype", __ref, _mediatype, _request);}
 Debug.locals.put("MediaType", _mediatype);
 Debug.locals.put("Request", _request);
@@ -663,7 +663,7 @@ if (true) return __ref.getField(true,"_view_type_webview" /*RemoteObject*/ );
 default: {
  BA.debugLineNum = 185;BA.debugLine="Log(\"Unexpected media type: \" & MediaType)";
 Debug.JustUpdateDeviceLine();
-smmviews.__c.runVoidMethod ("LogImpl","912255250",RemoteObject.concat(RemoteObject.createImmutable("Unexpected media type: "),_mediatype),0);
+smmviews.__c.runVoidMethod ("LogImpl","914024722",RemoteObject.concat(RemoteObject.createImmutable("Unexpected media type: "),_mediatype),0);
  BA.debugLineNum = 186;BA.debugLine="Return VIEW_TYPE_NONE";
 Debug.JustUpdateDeviceLine();
 if (true) return __ref.getField(true,"_view_type_none" /*RemoteObject*/ );
@@ -682,7 +682,7 @@ finally {
 		}}
 public static RemoteObject  _mimetomediatype(RemoteObject __ref,RemoteObject _mime) throws Exception{
 try {
-		Debug.PushSubsStack("MimeToMediaType (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,148);
+		Debug.PushSubsStack("MimeToMediaType (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,148);
 if (RapidSub.canDelegate("mimetomediatype")) { return __ref.runUserSub(false, "smmviews","mimetomediatype", __ref, _mime);}
 Debug.locals.put("Mime", _mime);
  BA.debugLineNum = 148;BA.debugLine="Public Sub MimeToMediaType (Mime As String) As Int";
@@ -693,7 +693,7 @@ if (_mime.runMethod(true,"startsWith",(Object)(RemoteObject.createImmutable("ima
  BA.debugLineNum = 150;BA.debugLine="If GIF_SUPPORTED = False Then Log(\"*** Add a ref";
 Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_gif_supported" /*RemoteObject*/ ),smmviews.__c.getField(true,"False"))) { 
-smmviews.__c.runVoidMethod ("LogImpl","912189698",RemoteObject.createImmutable("*** Add a reference to B4XGIfView and add SMM_GIF to the build configuration ***"),0);};
+smmviews.__c.runVoidMethod ("LogImpl","913959170",RemoteObject.createImmutable("*** Add a reference to B4XGIfView and add SMM_GIF to the build configuration ***"),0);};
  BA.debugLineNum = 151;BA.debugLine="Return IIf(GIF_SUPPORTED, MEDIA_TYPE_GIF, MEDIA_";
 Debug.JustUpdateDeviceLine();
 if (true) return BA.numberCast(int.class, ((__ref.getField(true,"_gif_supported" /*RemoteObject*/ ).<Boolean>get().booleanValue()) ? ((__ref.getField(true,"_media_type_gif" /*RemoteObject*/ ))) : ((__ref.getField(true,"_media_type_none" /*RemoteObject*/ )))));
@@ -704,7 +704,7 @@ if (_mime.runMethod(true,"startsWith",(Object)(RemoteObject.createImmutable("ima
  BA.debugLineNum = 153;BA.debugLine="If WEBP_SUPPORTED = False Then Log(\"*** Add a re";
 Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_webp_supported" /*RemoteObject*/ ),smmviews.__c.getField(true,"False"))) { 
-smmviews.__c.runVoidMethod ("LogImpl","912189701",RemoteObject.createImmutable("*** Add a reference to WebP library and add SMM_WEBP to the build configuration ***"),0);};
+smmviews.__c.runVoidMethod ("LogImpl","913959173",RemoteObject.createImmutable("*** Add a reference to WebP library and add SMM_WEBP to the build configuration ***"),0);};
  BA.debugLineNum = 154;BA.debugLine="Return IIf(WEBP_SUPPORTED, MEDIA_TYPE_WEBP, MEDI";
 Debug.JustUpdateDeviceLine();
 if (true) return BA.numberCast(int.class, ((__ref.getField(true,"_webp_supported" /*RemoteObject*/ ).<Boolean>get().booleanValue()) ? ((__ref.getField(true,"_media_type_webp" /*RemoteObject*/ ))) : ((__ref.getField(true,"_media_type_none" /*RemoteObject*/ )))));
@@ -722,7 +722,7 @@ if (RemoteObject.solveBoolean(".",_mime.runMethod(true,"startsWith",(Object)(Rem
  BA.debugLineNum = 158;BA.debugLine="If VIDEO_SUPPORTED = False Then Log(\"*** Add a r";
 Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",__ref.getField(true,"_video_supported" /*RemoteObject*/ ),smmviews.__c.getField(true,"False"))) { 
-smmviews.__c.runVoidMethod ("LogImpl","912189706",RemoteObject.createImmutable("*** Add a reference to the video library and add SMM_VIDEO to the build configuration ***"),0);};
+smmviews.__c.runVoidMethod ("LogImpl","913959178",RemoteObject.createImmutable("*** Add a reference to the video library and add SMM_VIDEO to the build configuration ***"),0);};
  BA.debugLineNum = 159;BA.debugLine="Return IIf(VIDEO_SUPPORTED, MEDIA_TYPE_VIDEO, ME";
 Debug.JustUpdateDeviceLine();
 if (true) return BA.numberCast(int.class, ((__ref.getField(true,"_video_supported" /*RemoteObject*/ ).<Boolean>get().booleanValue()) ? ((__ref.getField(true,"_media_type_video" /*RemoteObject*/ ))) : ((__ref.getField(true,"_media_type_none" /*RemoteObject*/ )))));
@@ -751,7 +751,7 @@ finally {
 		}}
 public static RemoteObject  _parentresized(RemoteObject __ref,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("ParentResized (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,316);
+		Debug.PushSubsStack("ParentResized (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,316);
 if (RapidSub.canDelegate("parentresized")) { return __ref.runUserSub(false, "smmviews","parentresized", __ref, _target);}
 RemoteObject _sm = RemoteObject.declareNull("b4a.DesaWisataSaribu.smmviews._smmview");
 RemoteObject _x = RemoteObject.declareNull("b4a.DesaWisataSaribu.b4ximageview");
@@ -802,7 +802,7 @@ finally {
 		}}
 public static RemoteObject  _returnviewtocache(RemoteObject __ref,RemoteObject _sm) throws Exception{
 try {
-		Debug.PushSubsStack("ReturnViewToCache (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,190);
+		Debug.PushSubsStack("ReturnViewToCache (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,190);
 if (RapidSub.canDelegate("returnviewtocache")) { return __ref.runUserSub(false, "smmviews","returnviewtocache", __ref, _sm);}
 Debug.locals.put("sm", _sm);
  BA.debugLineNum = 190;BA.debugLine="Private Sub ReturnViewToCache (sm As SMMView)";
@@ -852,7 +852,7 @@ finally {
 		}}
 public static RemoteObject  _typetostring(RemoteObject __ref,RemoteObject _viewtype) throws Exception{
 try {
-		Debug.PushSubsStack("TypeToString (smmviews) ","smmviews",16,__ref.getField(false, "ba"),__ref,299);
+		Debug.PushSubsStack("TypeToString (smmviews) ","smmviews",17,__ref.getField(false, "ba"),__ref,299);
 if (RapidSub.canDelegate("typetostring")) { return __ref.runUserSub(false, "smmviews","typetostring", __ref, _viewtype);}
 Debug.locals.put("ViewType", _viewtype);
  BA.debugLineNum = 299;BA.debugLine="Private Sub TypeToString (ViewType As Int) As Stri";

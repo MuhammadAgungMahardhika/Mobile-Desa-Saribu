@@ -159,3 +159,8 @@ Private Sub BtnGemma_Click
 	Log("Redirect to Gemma Activity")
 	StartActivity(Gemma)
 End Sub
+
+Private Sub btnCart_Click
+	Log("Redirect to Cart Activity")
+	StartActivity(Cart)
+End Sub

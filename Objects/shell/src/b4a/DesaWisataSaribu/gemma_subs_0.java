@@ -78,7 +78,7 @@ if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.gemma
 Debug.ShouldStop(512);
  BA.debugLineNum = 75;BA.debugLine="Log(\"Gemma Loaded\")";
 Debug.ShouldStop(1024);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","65111809",RemoteObject.createImmutable("Gemma Loaded"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85373953",RemoteObject.createImmutable("Gemma Loaded"),0);
  BA.debugLineNum = 76;BA.debugLine="End Sub";
 Debug.ShouldStop(2048);
 return RemoteObject.createImmutable("");
@@ -97,12 +97,34 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.gemma.r
 Debug.ShouldStop(16);
  BA.debugLineNum = 70;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(32);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","65046273",RemoteObject.createImmutable("Going back to previous activity"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85308417",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 71;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(64);
 gemma.mostCurrent._activity.runVoidMethod ("Finish");
  BA.debugLineNum = 72;BA.debugLine="End Sub";
 Debug.ShouldStop(128);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
+public static RemoteObject  _btncart_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnCart_Click (gemma) ","gemma",7,gemma.mostCurrent.activityBA,gemma.mostCurrent,88);
+if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.gemma.remoteMe.runUserSub(false, "gemma","btncart_click");}
+ BA.debugLineNum = 88;BA.debugLine="Private Sub btnCart_Click";
+Debug.ShouldStop(8388608);
+ BA.debugLineNum = 89;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+Debug.ShouldStop(16777216);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","841549825",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+ BA.debugLineNum = 90;BA.debugLine="StartActivity(Cart)";
+Debug.ShouldStop(33554432);
+gemma.mostCurrent.__c.runVoidMethod ("StartActivity",gemma.processBA,(Object)((gemma.mostCurrent._cart.getObject())));
+ BA.debugLineNum = 91;BA.debugLine="End Sub";
+Debug.ShouldStop(67108864);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -147,7 +169,7 @@ RemoteObject _exectfunction = RemoteObject.createImmutable("");
 Debug.ShouldStop(2048);
  BA.debugLineNum = 45;BA.debugLine="Log(\"Set User Id\")";
 Debug.ShouldStop(4096);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","64915201",RemoteObject.createImmutable("Set User Id"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85177345",RemoteObject.createImmutable("Set User Id"),0);
  BA.debugLineNum = 46;BA.debugLine="Dim userId As String";
 Debug.ShouldStop(8192);
 _userid = RemoteObject.createImmutable("");Debug.locals.put("userId", _userid);
@@ -159,7 +181,7 @@ Debug.ShouldStop(65536);
 _userid = gemma.mostCurrent._manager.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("user_id")));Debug.locals.put("userId", _userid);
  BA.debugLineNum = 50;BA.debugLine="Log(\"User ID: \" & userId)";
 Debug.ShouldStop(131072);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","64915206",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85177350",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
  BA.debugLineNum = 52;BA.debugLine="If userId <> \"\" And userId <> Null Then";
 Debug.ShouldStop(524288);
 if (RemoteObject.solveBoolean("!",_userid,BA.ObjectToString("")) && RemoteObject.solveBoolean("N",_userid)) { 
@@ -172,7 +194,7 @@ gemma.mostCurrent._mywebviewextras.runVoidMethod ("executeJavascript",(Object)((
  }else {
  BA.debugLineNum = 56;BA.debugLine="Log(\"User ID is empty or null\")";
 Debug.ShouldStop(8388608);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","64915212",RemoteObject.createImmutable("User ID is empty or null"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85177356",RemoteObject.createImmutable("User ID is empty or null"),0);
  };
  BA.debugLineNum = 58;BA.debugLine="End Sub";
 Debug.ShouldStop(33554432);
@@ -193,7 +215,7 @@ Debug.locals.put("Url", _url);
 Debug.ShouldStop(262144);
  BA.debugLineNum = 84;BA.debugLine="Log(\"page finished\")";
 Debug.ShouldStop(524288);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","65242881",RemoteObject.createImmutable("page finished"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85505025",RemoteObject.createImmutable("page finished"),0);
  BA.debugLineNum = 85;BA.debugLine="SetUserId";
 Debug.ShouldStop(1048576);
 _setuserid();
@@ -219,14 +241,14 @@ Debug.ShouldStop(536870912);
 if (RemoteObject.solveBoolean("=",_loading,BA.numberCast(double.class, 100))) { 
  BA.debugLineNum = 63;BA.debugLine="Log(\"Webview loaded\")";
 Debug.ShouldStop(1073741824);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","64980738",RemoteObject.createImmutable("Webview loaded"),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85242882",RemoteObject.createImmutable("Webview loaded"),0);
  BA.debugLineNum = 64;BA.debugLine="Starter.webviewLoading = loading";
 Debug.ShouldStop(-2147483648);
 gemma.mostCurrent._starter._webviewloading /*RemoteObject*/  = _loading;
  }else {
  BA.debugLineNum = 66;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
 Debug.ShouldStop(2);
-gemma.mostCurrent.__c.runVoidMethod ("LogImpl","64980741",RemoteObject.concat(RemoteObject.createImmutable("Webview loading at "),_loading,RemoteObject.createImmutable("% ....")),0);
+gemma.mostCurrent.__c.runVoidMethod ("LogImpl","85242885",RemoteObject.concat(RemoteObject.createImmutable("Webview loading at "),_loading,RemoteObject.createImmutable("% ....")),0);
  };
  BA.debugLineNum = 68;BA.debugLine="End Sub";
 Debug.ShouldStop(8);

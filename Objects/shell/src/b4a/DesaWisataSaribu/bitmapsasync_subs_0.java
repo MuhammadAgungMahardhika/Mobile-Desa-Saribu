@@ -19,7 +19,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (bitmapsasync) ","bitmapsasync",18,__ref.getField(false, "ba"),__ref,12);
+		Debug.PushSubsStack("Initialize (bitmapsasync) ","bitmapsasync",19,__ref.getField(false, "ba"),__ref,12);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "bitmapsasync","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);
@@ -40,7 +40,7 @@ finally {
 		}}
 public static RemoteObject  _loadfromfile(RemoteObject __ref,RemoteObject _dir,RemoteObject _filename,RemoteObject _maxwidth,RemoteObject _maxheight) throws Exception{
 try {
-		Debug.PushSubsStack("LoadFromFile (bitmapsasync) ","bitmapsasync",18,__ref.getField(false, "ba"),__ref,48);
+		Debug.PushSubsStack("LoadFromFile (bitmapsasync) ","bitmapsasync",19,__ref.getField(false, "ba"),__ref,48);
 if (RapidSub.canDelegate("loadfromfile")) { return __ref.runUserSub(false, "bitmapsasync","loadfromfile", __ref, _dir, _filename, _maxwidth, _maxheight);}
 ResumableSub_LoadFromFile rsub = new ResumableSub_LoadFromFile(null,__ref,_dir,_filename,_maxwidth,_maxheight);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -77,7 +77,7 @@ RemoteObject _bmp = RemoteObject.declareNull("Object");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("LoadFromFile (bitmapsasync) ","bitmapsasync",18,__ref.getField(false, "ba"),__ref,48);
+		Debug.PushSubsStack("LoadFromFile (bitmapsasync) ","bitmapsasync",19,__ref.getField(false, "ba"),__ref,48);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -126,7 +126,7 @@ case 6:
 this.state = 7;
  BA.debugLineNum = 52;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{File.Si";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","913041668",(RemoteObject.concat(RemoteObject.createImmutable("File larger than MaxFileSize "),parent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("1.0")),(Object)((parent.__c.getField(false,"File").runMethod(true,"Size",(Object)(_dir),(Object)(_filename))))),RemoteObject.createImmutable(""))),0);
+parent.__c.runVoidMethod ("LogImpl","914811140",(RemoteObject.concat(RemoteObject.createImmutable("File larger than MaxFileSize "),parent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("1.0")),(Object)((parent.__c.getField(false,"File").runMethod(true,"Size",(Object)(_dir),(Object)(_filename))))),RemoteObject.createImmutable(""))),0);
  BA.debugLineNum = 53;BA.debugLine="Return res";
 Debug.JustUpdateDeviceLine();
 if (true) {
@@ -202,7 +202,7 @@ public static void  _bitmap_loaded(RemoteObject __ref,RemoteObject _success,Remo
 }
 public static RemoteObject  _loadfromhttpjob(RemoteObject __ref,RemoteObject _job,RemoteObject _maxwidth,RemoteObject _maxheight) throws Exception{
 try {
-		Debug.PushSubsStack("LoadFromHttpJob (bitmapsasync) ","bitmapsasync",18,__ref.getField(false, "ba"),__ref,20);
+		Debug.PushSubsStack("LoadFromHttpJob (bitmapsasync) ","bitmapsasync",19,__ref.getField(false, "ba"),__ref,20);
 if (RapidSub.canDelegate("loadfromhttpjob")) { return __ref.runUserSub(false, "bitmapsasync","loadfromhttpjob", __ref, _job, _maxwidth, _maxheight);}
 ResumableSub_LoadFromHttpJob rsub = new ResumableSub_LoadFromHttpJob(null,__ref,_job,_maxwidth,_maxheight);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -237,7 +237,7 @@ RemoteObject _bmp = RemoteObject.declareNull("Object");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("LoadFromHttpJob (bitmapsasync) ","bitmapsasync",18,__ref.getField(false, "ba"),__ref,20);
+		Debug.PushSubsStack("LoadFromHttpJob (bitmapsasync) ","bitmapsasync",19,__ref.getField(false, "ba"),__ref,20);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -293,7 +293,7 @@ case 9:
 this.state = 10;
  BA.debugLineNum = 24;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{Job.Resp";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","912976132",(RemoteObject.concat(RemoteObject.createImmutable("File larger than MaxFileSize "),parent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("1.0")),(Object)((_job.getField(false,"_response" /*RemoteObject*/ ).runMethod(true,"getContentLength")))),RemoteObject.createImmutable(""))),0);
+parent.__c.runVoidMethod ("LogImpl","914745604",(RemoteObject.concat(RemoteObject.createImmutable("File larger than MaxFileSize "),parent.__c.runMethod(true,"SmartStringFormatter",(Object)(BA.ObjectToString("1.0")),(Object)((_job.getField(false,"_response" /*RemoteObject*/ ).runMethod(true,"getContentLength")))),RemoteObject.createImmutable(""))),0);
  BA.debugLineNum = 25;BA.debugLine="Return res";
 Debug.JustUpdateDeviceLine();
 if (true) {

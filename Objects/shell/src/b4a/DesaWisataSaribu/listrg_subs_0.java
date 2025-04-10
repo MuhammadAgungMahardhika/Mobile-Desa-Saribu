@@ -85,7 +85,7 @@ RemoteObject _extra = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 54;BA.debugLine="Log(\"ListRG loaded\")";
 Debug.ShouldStop(2097152);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","61835009",RemoteObject.createImmutable("ListRG loaded"),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82097153",RemoteObject.createImmutable("ListRG loaded"),0);
  BA.debugLineNum = 55;BA.debugLine="Dim extra As Map = CreateMap(MediaManager.REQUEST";
 Debug.ShouldStop(4194304);
 _extra = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");
@@ -111,12 +111,34 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.listrg.
 Debug.ShouldStop(1073741824);
  BA.debugLineNum = 64;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(-2147483648);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","61966081",RemoteObject.createImmutable("Going back to previous activity"),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82228225",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 65;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(1);
 listrg.mostCurrent._activity.runVoidMethod ("Finish");
  BA.debugLineNum = 66;BA.debugLine="End Sub";
 Debug.ShouldStop(2);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
+public static RemoteObject  _btncart_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnCart_Click (listrg) ","listrg",3,listrg.mostCurrent.activityBA,listrg.mostCurrent,158);
+if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.listrg.remoteMe.runUserSub(false, "listrg","btncart_click");}
+ BA.debugLineNum = 158;BA.debugLine="Private Sub btnCart_Click";
+Debug.ShouldStop(536870912);
+ BA.debugLineNum = 159;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+Debug.ShouldStop(1073741824);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","841484289",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+ BA.debugLineNum = 160;BA.debugLine="StartActivity(Cart)";
+Debug.ShouldStop(-2147483648);
+listrg.mostCurrent.__c.runVoidMethod ("StartActivity",listrg.processBA,(Object)((listrg.mostCurrent._cart.getObject())));
+ BA.debugLineNum = 161;BA.debugLine="End Sub";
+Debug.ShouldStop(1);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -133,7 +155,7 @@ if (RapidSub.canDelegate("btnrefresh_click")) { return b4a.DesaWisataSaribu.list
 Debug.ShouldStop(536870912);
  BA.debugLineNum = 127;BA.debugLine="Log(\"Refreshing ListRG...\")";
 Debug.ShouldStop(1073741824);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","62228225",RemoteObject.createImmutable("Refreshing ListRG..."),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82490369",RemoteObject.createImmutable("Refreshing ListRG..."),0);
  BA.debugLineNum = 128;BA.debugLine="btnRefresh.Visible = False";
 Debug.ShouldStop(-2147483648);
 listrg.mostCurrent._btnrefresh.runMethod(true,"setVisible",listrg.mostCurrent.__c.getField(true,"False"));
@@ -243,7 +265,7 @@ for (;(step3 > 0 && _i <= limit3) || (step3 < 0 && _i >= limit3) ;_i = ((int)(0 
 Debug.locals.put("i", _i);
  BA.debugLineNum = 137;BA.debugLine="Log(\"Getting \"&ImageMap.GetValueAt(i)&\"@\"&Imag";
 Debug.ShouldStop(256);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","62293764",RemoteObject.concat(RemoteObject.createImmutable("Getting "),_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))),RemoteObject.createImmutable("@"),_imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82555908",RemoteObject.concat(RemoteObject.createImmutable("Getting "),_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))),RemoteObject.createImmutable("@"),_imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),0);
  BA.debugLineNum = 138;BA.debugLine="MediaManager.SetMediaWithExtra(ImageMap.GetKey";
 Debug.ShouldStop(512);
 listrg.mostCurrent._mediamanager.runClassMethod (b4a.DesaWisataSaribu.simplemediamanager.class, "_setmediawithextra" /*RemoteObject*/ ,RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.B4XViewWrapper"), _imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),(Object)(BA.ObjectToString(_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))))),(Object)(BA.ObjectToString("")),(Object)(_extra));
@@ -311,7 +333,7 @@ Debug.locals.put("Job", _job);
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 86;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
 Debug.ShouldStop(2097152);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","62162689",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82424833",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
  BA.debugLineNum = 87;BA.debugLine="If Job.Success Then";
 Debug.ShouldStop(4194304);
 if (_job.getField(true,"_success" /*RemoteObject*/ ).<Boolean>get().booleanValue()) { 
@@ -408,7 +430,7 @@ listrg.mostCurrent._loadrefresh.runMethod(true,"setVisible",listrg.mostCurrent._
        catch (Exception e33) {
 			BA.rdebugUtils.runVoidMethod("setLastException",listrg.processBA, e33.toString()); BA.debugLineNum = 120;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(8388608);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","62162723",BA.ObjectToString(listrg.mostCurrent.__c.runMethod(false,"LastException",listrg.mostCurrent.activityBA)),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82424867",BA.ObjectToString(listrg.mostCurrent.__c.runMethod(false,"LastException",listrg.mostCurrent.activityBA)),0);
  };
  break; }
 }
@@ -459,7 +481,7 @@ Debug.ShouldStop(16777216);
 listrg.mostCurrent._starter._selectedobj /*RemoteObject*/ .runVoidMethod ("Put",(Object)(RemoteObject.createImmutable(("name"))),(Object)((_a.runMethod(false,"GetView",(Object)(BA.numberCast(int.class, 0))).runMethod(false,"GetView",(Object)(BA.numberCast(int.class, 3))).runMethod(true,"getText"))));
  BA.debugLineNum = 155;BA.debugLine="Log(\"Redirect to DetailRG Activity\")";
 Debug.ShouldStop(67108864);
-listrg.mostCurrent.__c.runVoidMethod ("LogImpl","62359307",RemoteObject.createImmutable("Redirect to DetailRG Activity"),0);
+listrg.mostCurrent.__c.runVoidMethod ("LogImpl","82621451",RemoteObject.createImmutable("Redirect to DetailRG Activity"),0);
  BA.debugLineNum = 156;BA.debugLine="StartActivity(DetailRG)";
 Debug.ShouldStop(134217728);
 listrg.mostCurrent.__c.runVoidMethod ("StartActivity",listrg.processBA,(Object)((listrg.mostCurrent._detailrg.getObject())));

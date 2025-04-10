@@ -43,8 +43,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.listpackage _listpackage = null;
 public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
 public b4a.DesaWisataSaribu.xuiviewsutils _xuiviewsutils = null;
@@ -53,13 +54,13 @@ __ref = this;
 RDebugUtils.currentModule="requestsmanager";
 if (Debug.shouldDelegate(ba, "cancelrequest", true))
 	 {return ((String) Debug.delegate(ba, "cancelrequest", new Object[] {_url,_job}));}
-RDebugUtils.currentLine=12779520;
- //BA.debugLineNum = 12779520;BA.debugLine="Public Sub CancelRequest (URL As String, Job As Ht";
-RDebugUtils.currentLine=12779554;
- //BA.debugLineNum = 12779554;BA.debugLine="Log(\"HU2_PUBLIC is missing from the build configu";
-__c.LogImpl("912779554","HU2_PUBLIC is missing from the build configuration. Can't cancel request.",0);
-RDebugUtils.currentLine=12779557;
- //BA.debugLineNum = 12779557;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14548992;
+ //BA.debugLineNum = 14548992;BA.debugLine="Public Sub CancelRequest (URL As String, Job As Ht";
+RDebugUtils.currentLine=14549026;
+ //BA.debugLineNum = 14549026;BA.debugLine="Log(\"HU2_PUBLIC is missing from the build configu";
+__c.LogImpl("914549026","HU2_PUBLIC is missing from the build configuration. Can't cancel request.",0);
+RDebugUtils.currentLine=14549029;
+ //BA.debugLineNum = 14549029;BA.debugLine="End Sub";
 return "";
 }
 public String  _initialize(b4a.DesaWisataSaribu.requestsmanager __ref,anywheresoftware.b4a.BA _ba) throws Exception{
@@ -68,19 +69,19 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="requestsmanager";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=12713984;
- //BA.debugLineNum = 12713984;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=12713986;
- //BA.debugLineNum = 12713986;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14483456;
+ //BA.debugLineNum = 14483456;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=14483458;
+ //BA.debugLineNum = 14483458;BA.debugLine="End Sub";
 return "";
 }
 public String  _class_globals(b4a.DesaWisataSaribu.requestsmanager __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="requestsmanager";
-RDebugUtils.currentLine=12648448;
- //BA.debugLineNum = 12648448;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=12648450;
- //BA.debugLineNum = 12648450;BA.debugLine="End Sub";
+RDebugUtils.currentLine=14417920;
+ //BA.debugLineNum = 14417920;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=14417922;
+ //BA.debugLineNum = 14417922;BA.debugLine="End Sub";
 return "";
 }
 }

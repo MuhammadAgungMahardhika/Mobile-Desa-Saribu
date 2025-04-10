@@ -161,3 +161,7 @@ Private Sub PanelListItem_Click
 	Log("Redirect to DetailRG Activity")
 	StartActivity(DetailRG)
 End Sub
+Private Sub btnCart_Click
+	Log("Redirect to Cart Activity")
+	StartActivity(Cart)
+End Sub

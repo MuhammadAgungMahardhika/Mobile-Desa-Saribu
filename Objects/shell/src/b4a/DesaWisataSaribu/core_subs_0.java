@@ -8,7 +8,7 @@ public class core_subs_0 {
 
 public static RemoteObject  _executeurl(RemoteObject _ba,RemoteObject _url,RemoteObject _parameters,RemoteObject _jobname,RemoteObject _obj) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteUrl (core) ","core",12,_ba,core.mostCurrent,9);
+		Debug.PushSubsStack("ExecuteUrl (core) ","core",11,_ba,core.mostCurrent,9);
 if (RapidSub.canDelegate("executeurl")) { return b4a.DesaWisataSaribu.core.remoteMe.runUserSub(false, "core","executeurl", _ba, _url, _parameters, _jobname, _obj);}
 RemoteObject _job = RemoteObject.declareNull("b4a.DesaWisataSaribu.httpjob");
 ;
@@ -39,7 +39,7 @@ finally {
 		}}
 public static RemoteObject  _executeurlget(RemoteObject _ba,RemoteObject _url,RemoteObject _jobname,RemoteObject _obj) throws Exception{
 try {
-		Debug.PushSubsStack("ExecuteUrlGet (core) ","core",12,_ba,core.mostCurrent,15);
+		Debug.PushSubsStack("ExecuteUrlGet (core) ","core",11,_ba,core.mostCurrent,15);
 if (RapidSub.canDelegate("executeurlget")) { return b4a.DesaWisataSaribu.core.remoteMe.runUserSub(false, "core","executeurlget", _ba, _url, _jobname, _obj);}
 RemoteObject _job = RemoteObject.declareNull("b4a.DesaWisataSaribu.httpjob");
 ;

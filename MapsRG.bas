@@ -279,3 +279,8 @@ Private Sub spinCategory_ItemClick (Position As Int, Value As Object)
 		MyWebViewExtras.executeJavascript(WebViewRG, findByCategoryRG)
 	End If
 End Sub
+
+Private Sub btnCart_Click
+	Log("Redirect to Cart Activity")
+	StartActivity(Cart)
+End Sub

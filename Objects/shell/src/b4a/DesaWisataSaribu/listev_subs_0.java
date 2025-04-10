@@ -85,7 +85,7 @@ RemoteObject _extra = RemoteObject.declareNull("anywheresoftware.b4a.objects.col
 Debug.ShouldStop(4194304);
  BA.debugLineNum = 56;BA.debugLine="Log(\"ListEV loaded\")";
 Debug.ShouldStop(8388608);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639518209",RemoteObject.createImmutable("ListEV loaded"),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87471105",RemoteObject.createImmutable("ListEV loaded"),0);
  BA.debugLineNum = 57;BA.debugLine="Dim extra As Map = CreateMap(MediaManager.REQUEST";
 Debug.ShouldStop(16777216);
 _extra = RemoteObject.createNew ("anywheresoftware.b4a.objects.collections.Map");
@@ -111,7 +111,7 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.listev.
 Debug.ShouldStop(1);
  BA.debugLineNum = 66;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(2);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639649281",RemoteObject.createImmutable("Going back to previous activity"),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87602177",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 67;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(4);
 listev.mostCurrent._activity.runVoidMethod ("Finish");
@@ -133,7 +133,7 @@ if (RapidSub.canDelegate("btnrefresh_click")) { return b4a.DesaWisataSaribu.list
 Debug.ShouldStop(32768);
  BA.debugLineNum = 145;BA.debugLine="Log(\"Refreshing ListEV...\")";
 Debug.ShouldStop(65536);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639976961",RemoteObject.createImmutable("Refreshing ListEV..."),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87929857",RemoteObject.createImmutable("Refreshing ListEV..."),0);
  BA.debugLineNum = 146;BA.debugLine="btnRefresh.Visible = False";
 Debug.ShouldStop(131072);
 listev.mostCurrent._btnrefresh.runMethod(true,"setVisible",listev.mostCurrent.__c.getField(true,"False"));
@@ -251,7 +251,7 @@ for (;(step3 > 0 && _i <= limit3) || (step3 < 0 && _i >= limit3) ;_i = ((int)(0 
 Debug.locals.put("i", _i);
  BA.debugLineNum = 155;BA.debugLine="Log(\"Getting \"&ImageMap.GetValueAt(i)&\"@\"&Imag";
 Debug.ShouldStop(67108864);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","640042500",RemoteObject.concat(RemoteObject.createImmutable("Getting "),_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))),RemoteObject.createImmutable("@"),_imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87995396",RemoteObject.concat(RemoteObject.createImmutable("Getting "),_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))),RemoteObject.createImmutable("@"),_imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),0);
  BA.debugLineNum = 156;BA.debugLine="MediaManager.SetMediaWithExtra(ImageMap.GetKey";
 Debug.ShouldStop(134217728);
 listev.mostCurrent._mediamanager.runClassMethod (b4a.DesaWisataSaribu.simplemediamanager.class, "_setmediawithextra" /*RemoteObject*/ ,RemoteObject.declareNull("anywheresoftware.b4a.AbsObjectWrapper").runMethod(false, "ConvertToWrapper", RemoteObject.createNew("anywheresoftware.b4a.objects.B4XViewWrapper"), _imagemap.runMethod(false,"GetKeyAt",(Object)(BA.numberCast(int.class, _i)))),(Object)(BA.ObjectToString(_imagemap.runMethod(false,"GetValueAt",(Object)(BA.numberCast(int.class, _i))))),(Object)(BA.ObjectToString("")),(Object)(_extra));
@@ -323,7 +323,7 @@ Debug.locals.put("Job", _job);
 Debug.ShouldStop(128);
  BA.debugLineNum = 105;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
 Debug.ShouldStop(256);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639911425",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87864321",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
  BA.debugLineNum = 106;BA.debugLine="If Job.Success Then";
 Debug.ShouldStop(512);
 if (_job.getField(true,"_success" /*RemoteObject*/ ).<Boolean>get().booleanValue()) { 
@@ -420,7 +420,7 @@ listev.mostCurrent._loadrefresh.runMethod(true,"setVisible",listev.mostCurrent._
        catch (Exception e33) {
 			BA.rdebugUtils.runVoidMethod("setLastException",listev.processBA, e33.toString()); BA.debugLineNum = 138;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(512);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639911458",BA.ObjectToString(listev.mostCurrent.__c.runMethod(false,"LastException",listev.mostCurrent.activityBA)),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87864354",BA.ObjectToString(listev.mostCurrent.__c.runMethod(false,"LastException",listev.mostCurrent.activityBA)),0);
  };
  break; }
 }
@@ -471,7 +471,7 @@ Debug.ShouldStop(262144);
 listev.mostCurrent._starter._selectedobj /*RemoteObject*/ .runVoidMethod ("Put",(Object)(RemoteObject.createImmutable(("name"))),(Object)((_a.runMethod(false,"GetView",(Object)(BA.numberCast(int.class, 0))).runMethod(false,"GetView",(Object)(BA.numberCast(int.class, 4))).runMethod(true,"getText"))));
  BA.debugLineNum = 85;BA.debugLine="Log(\"Redirect to DetailEV Activity\")";
 Debug.ShouldStop(1048576);
-listev.mostCurrent.__c.runVoidMethod ("LogImpl","639780363",RemoteObject.createImmutable("Redirect to DetailEV Activity"),0);
+listev.mostCurrent.__c.runVoidMethod ("LogImpl","87733259",RemoteObject.createImmutable("Redirect to DetailEV Activity"),0);
  BA.debugLineNum = 86;BA.debugLine="StartActivity(DetailEV)";
 Debug.ShouldStop(2097152);
 listev.mostCurrent.__c.runVoidMethod ("StartActivity",listev.processBA,(Object)((listev.mostCurrent._detailev.getObject())));

@@ -77,3 +77,8 @@ Private Sub wvDetail_PageFinished (Url As String)
 	Log("page finished")
 	SetUserId
 End Sub
+
+Private Sub btnCart_Click
+	Log("Redirect to Cart Activity")
+	StartActivity(Cart)
+End Sub

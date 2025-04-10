@@ -72,7 +72,7 @@ if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.detai
 Debug.ShouldStop(32);
  BA.debugLineNum = 39;BA.debugLine="Log(\"DetailEV loaded\")";
 Debug.ShouldStop(64);
-detailev.mostCurrent.__c.runVoidMethod ("LogImpl","62621441",RemoteObject.createImmutable("DetailEV loaded"),0);
+detailev.mostCurrent.__c.runVoidMethod ("LogImpl","82883585",RemoteObject.createImmutable("DetailEV loaded"),0);
  BA.debugLineNum = 40;BA.debugLine="End Sub";
 Debug.ShouldStop(128);
 return RemoteObject.createImmutable("");
@@ -91,7 +91,7 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.detaile
 Debug.ShouldStop(16384);
  BA.debugLineNum = 48;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(32768);
-detailev.mostCurrent.__c.runVoidMethod ("LogImpl","62752513",RemoteObject.createImmutable("Going back to previous activity"),0);
+detailev.mostCurrent.__c.runVoidMethod ("LogImpl","83014657",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 49;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(65536);
 detailev.mostCurrent._activity.runVoidMethod ("Finish");

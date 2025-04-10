@@ -66,7 +66,7 @@ if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.homev
 Debug.ShouldStop(8192);
  BA.debugLineNum = 47;BA.debugLine="Log(\"HomeVisitor loaded\")";
 Debug.ShouldStop(16384);
-homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","61376257",RemoteObject.createImmutable("HomeVisitor loaded"),0);
+homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","81638401",RemoteObject.createImmutable("HomeVisitor loaded"),0);
  BA.debugLineNum = 48;BA.debugLine="LabelName.Text = \"Hello, Visitor\"";
 Debug.ShouldStop(32768);
 homevisitor.mostCurrent._labelname.runMethod(true,"setText",BA.ObjectToCharSequence("Hello, Visitor"));
@@ -91,7 +91,7 @@ if (RapidSub.canDelegate("btnlogin_click")) { return b4a.DesaWisataSaribu.homevi
 Debug.ShouldStop(1073741824);
  BA.debugLineNum = 64;BA.debugLine="Log(\"Redirect to Main Activity\")";
 Debug.ShouldStop(-2147483648);
-homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","61572865",RemoteObject.createImmutable("Redirect to Main Activity"),0);
+homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","81835009",RemoteObject.createImmutable("Redirect to Main Activity"),0);
  BA.debugLineNum = 66;BA.debugLine="Main.manager.SetBoolean(\"is_login\", False)";
 Debug.ShouldStop(2);
 homevisitor.mostCurrent._main._manager /*RemoteObject*/ .runVoidMethod ("SetBoolean",(Object)(BA.ObjectToString("is_login")),(Object)(homevisitor.mostCurrent.__c.getField(true,"False")));
@@ -125,7 +125,7 @@ if (RapidSub.canDelegate("btnrg_click")) { return b4a.DesaWisataSaribu.homevisit
 Debug.ShouldStop(33554432);
  BA.debugLineNum = 59;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
 Debug.ShouldStop(67108864);
-homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","61507329",RemoteObject.createImmutable("Redirect to MapsRG Activity"),0);
+homevisitor.mostCurrent.__c.runVoidMethod ("LogImpl","81769473",RemoteObject.createImmutable("Redirect to MapsRG Activity"),0);
  BA.debugLineNum = 60;BA.debugLine="StartActivity(MapsRG)";
 Debug.ShouldStop(134217728);
 homevisitor.mostCurrent.__c.runVoidMethod ("StartActivity",homevisitor.processBA,(Object)((homevisitor.mostCurrent._mapsrg.getObject())));

@@ -8,7 +8,7 @@ public class simplemediamanager_subs_0 {
 
 public static RemoteObject  _addheaderstojob(RemoteObject __ref,RemoteObject _j,RemoteObject _request) throws Exception{
 try {
-		Debug.PushSubsStack("AddHeadersToJob (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,214);
+		Debug.PushSubsStack("AddHeadersToJob (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,214);
 if (RapidSub.canDelegate("addheaderstojob")) { return __ref.runUserSub(false, "simplemediamanager","addheaderstojob", __ref, _j, _request);}
 RemoteObject _headers = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
 RemoteObject _key = RemoteObject.createImmutable("");
@@ -52,7 +52,7 @@ finally {
 		}}
 public static RemoteObject  _addlocalmedia(RemoteObject __ref,RemoteObject _key,RemoteObject _media,RemoteObject _mime) throws Exception{
 try {
-		Debug.PushSubsStack("AddLocalMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,81);
+		Debug.PushSubsStack("AddLocalMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,81);
 if (RapidSub.canDelegate("addlocalmedia")) { return __ref.runUserSub(false, "simplemediamanager","addlocalmedia", __ref, _key, _media, _mime);}
 RemoteObject _meta = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediameta");
 RemoteObject _smedia = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmedia");
@@ -88,7 +88,7 @@ finally {
 		}}
 public static RemoteObject  _canceldisconnectedtargets(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("CancelDisconnectedTargets (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,487);
+		Debug.PushSubsStack("CancelDisconnectedTargets (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,487);
 if (RapidSub.canDelegate("canceldisconnectedtargets")) { return __ref.runUserSub(false, "simplemediamanager","canceldisconnectedtargets", __ref, _media);}
 RemoteObject _set = RemoteObject.declareNull("b4a.DesaWisataSaribu.b4xset");
 int _i = 0;
@@ -145,7 +145,7 @@ finally {
 		}}
 public static RemoteObject  _cancelrequest(RemoteObject __ref,RemoteObject _requestset) throws Exception{
 try {
-		Debug.PushSubsStack("CancelRequest (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,413);
+		Debug.PushSubsStack("CancelRequest (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,413);
 if (RapidSub.canDelegate("cancelrequest")) { return __ref.runUserSub(false, "simplemediamanager","cancelrequest", __ref, _requestset);}
 RemoteObject _meta = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediameta");
 RemoteObject _media = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmedia");
@@ -275,7 +275,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _clearmedia(RemoteObject __ref,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("ClearMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,406);
+		Debug.PushSubsStack("ClearMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,406);
 if (RapidSub.canDelegate("clearmedia")) { return __ref.runUserSub(false, "simplemediamanager","clearmedia", __ref, _target);}
 Debug.locals.put("Target", _target);
  BA.debugLineNum = 406;BA.debugLine="Public Sub ClearMedia(Target As B4XView)";
@@ -299,7 +299,7 @@ finally {
 		}}
 public static RemoteObject  _clonerequest(RemoteObject __ref,RemoteObject _request) throws Exception{
 try {
-		Debug.PushSubsStack("CloneRequest (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,544);
+		Debug.PushSubsStack("CloneRequest (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,544);
 if (RapidSub.canDelegate("clonerequest")) { return __ref.runUserSub(false, "simplemediamanager","clonerequest", __ref, _request);}
 RemoteObject _req = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequest");
 RemoteObject _k = RemoteObject.createImmutable("");
@@ -340,7 +340,7 @@ finally {
 		}}
 public static RemoteObject  _countancestors(RemoteObject __ref,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("CountAncestors (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,590);
+		Debug.PushSubsStack("CountAncestors (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,590);
 if (RapidSub.canDelegate("countancestors")) { return __ref.runUserSub(false, "simplemediamanager","countancestors", __ref, _target);}
 RemoteObject _p = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 RemoteObject _count = RemoteObject.createImmutable(0);
@@ -380,7 +380,7 @@ finally {
 		}}
 public static RemoteObject  _createrequest(RemoteObject __ref,RemoteObject _url,RemoteObject _extra) throws Exception{
 try {
-		Debug.PushSubsStack("CreateRequest (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,520);
+		Debug.PushSubsStack("CreateRequest (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,520);
 if (RapidSub.canDelegate("createrequest")) { return __ref.runUserSub(false, "simplemediamanager","createrequest", __ref, _url, _extra);}
 Debug.locals.put("Url", _url);
 Debug.locals.put("Extra", _extra);
@@ -401,7 +401,7 @@ finally {
 		}}
 public static RemoteObject  _createsmmedia(RemoteObject __ref,RemoteObject _media,RemoteObject _meta,RemoteObject _mediastate) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,564);
+		Debug.PushSubsStack("CreateSMMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,564);
 if (RapidSub.canDelegate("createsmmedia")) { return __ref.runUserSub(false, "simplemediamanager","createsmmedia", __ref, _media, _meta, _mediastate);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmedia");
 Debug.locals.put("Media", _media);
@@ -445,7 +445,7 @@ finally {
 		}}
 public static RemoteObject  _createsmmediameta(RemoteObject __ref,RemoteObject _mime,RemoteObject _key,RemoteObject _metastate,RemoteObject _permanent) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMediaMeta (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,552);
+		Debug.PushSubsStack("CreateSMMediaMeta (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,552);
 if (RapidSub.canDelegate("createsmmediameta")) { return __ref.runUserSub(false, "simplemediamanager","createsmmediameta", __ref, _mime, _key, _metastate, _permanent);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediameta");
 Debug.locals.put("Mime", _mime);
@@ -493,7 +493,7 @@ finally {
 		}}
 public static RemoteObject  _createsmmediarequestset(RemoteObject __ref,RemoteObject _loading,RemoteObject _mainmedia,RemoteObject _error,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMediaRequestSet (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,575);
+		Debug.PushSubsStack("CreateSMMediaRequestSet (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,575);
 if (RapidSub.canDelegate("createsmmediarequestset")) { return __ref.runUserSub(false, "simplemediamanager","createsmmediarequestset", __ref, _loading, _mainmedia, _error, _target);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequestset");
 Debug.locals.put("Loading", _loading);
@@ -531,7 +531,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",_t1.getField(true,"NumberOfAncestors" /*RemoteObject*/ ),BA.numberCast(double.class, 0))) { 
  BA.debugLineNum = 585;BA.debugLine="Log(\"Target is not in the views tree!\")";
 Debug.JustUpdateDeviceLine();
-simplemediamanager.__c.runVoidMethod ("LogImpl","911599882",RemoteObject.createImmutable("Target is not in the views tree!"),0);
+simplemediamanager.__c.runVoidMethod ("LogImpl","913369354",RemoteObject.createImmutable("Target is not in the views tree!"),0);
  };
  BA.debugLineNum = 587;BA.debugLine="Return t1";
 Debug.JustUpdateDeviceLine();
@@ -548,7 +548,7 @@ finally {
 		}}
 public static RemoteObject  _createsmmrequest(RemoteObject __ref,RemoteObject _key,RemoteObject _url,RemoteObject _mime) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMRequest (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,524);
+		Debug.PushSubsStack("CreateSMMRequest (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,524);
 if (RapidSub.canDelegate("createsmmrequest")) { return __ref.runUserSub(false, "simplemediamanager","createsmmrequest", __ref, _key, _url, _mime);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequest");
 Debug.locals.put("Key", _key);
@@ -589,7 +589,7 @@ finally {
 		}}
 public static RemoteObject  _createsmmrequest2(RemoteObject __ref,RemoteObject _key,RemoteObject _url,RemoteObject _mime,RemoteObject _extra) throws Exception{
 try {
-		Debug.PushSubsStack("CreateSMMRequest2 (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,534);
+		Debug.PushSubsStack("CreateSMMRequest2 (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,534);
 if (RapidSub.canDelegate("createsmmrequest2")) { return __ref.runUserSub(false, "simplemediamanager","createsmmrequest2", __ref, _key, _url, _mime, _extra);}
 RemoteObject _t1 = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequest");
 Debug.locals.put("Key", _key);
@@ -631,7 +631,7 @@ finally {
 		}}
 public static RemoteObject  _deletemedia(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("DeleteMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,457);
+		Debug.PushSubsStack("DeleteMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,457);
 if (RapidSub.canDelegate("deletemedia")) { return __ref.runUserSub(false, "simplemediamanager","deletemedia", __ref, _media);}
 RemoteObject _jo = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 Debug.locals.put("Media", _media);
@@ -687,7 +687,7 @@ finally {
 		}}
 public static RemoteObject  _designersetmedia(RemoteObject __ref,RemoteObject _designerargs) throws Exception{
 try {
-		Debug.PushSubsStack("DesignerSetMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,90);
+		Debug.PushSubsStack("DesignerSetMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,90);
 if (RapidSub.canDelegate("designersetmedia")) { return __ref.runUserSub(false, "simplemediamanager","designersetmedia", __ref, _designerargs);}
 RemoteObject _target = RemoteObject.declareNull("anywheresoftware.b4a.objects.B4XViewWrapper");
 RemoteObject _url = RemoteObject.createImmutable("");
@@ -724,7 +724,7 @@ finally {
 		}}
 public static void  _downloadimagemedia(RemoteObject __ref,RemoteObject _media,RemoteObject _request) throws Exception{
 try {
-		Debug.PushSubsStack("DownloadImageMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,270);
+		Debug.PushSubsStack("DownloadImageMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,270);
 if (RapidSub.canDelegate("downloadimagemedia")) { __ref.runUserSub(false, "simplemediamanager","downloadimagemedia", __ref, _media, _request); return;}
 ResumableSub_DownloadImageMedia rsub = new ResumableSub_DownloadImageMedia(null,__ref,_media,_request);
 rsub.resume(null, null);
@@ -753,7 +753,7 @@ RemoteObject _unused = RemoteObject.createImmutable(false);
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("DownloadImageMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,270);
+		Debug.PushSubsStack("DownloadImageMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,270);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -990,7 +990,7 @@ public static void  _complete(RemoteObject __ref,RemoteObject _unused) throws Ex
 }
 public static RemoteObject  _getmaximagefilesize(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getMaxImageFileSize (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,71);
+		Debug.PushSubsStack("getMaxImageFileSize (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,71);
 if (RapidSub.canDelegate("getmaximagefilesize")) { return __ref.runUserSub(false, "simplemediamanager","getmaximagefilesize", __ref);}
  BA.debugLineNum = 71;BA.debugLine="Public Sub getMaxImageFileSize As Long";
 Debug.JustUpdateDeviceLine();
@@ -1009,7 +1009,7 @@ finally {
 		}}
 public static RemoteObject  _getmediacachesize(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("getMediaCacheSize (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,504);
+		Debug.PushSubsStack("getMediaCacheSize (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,504);
 if (RapidSub.canDelegate("getmediacachesize")) { return __ref.runUserSub(false, "simplemediamanager","getmediacachesize", __ref);}
  BA.debugLineNum = 504;BA.debugLine="Public Sub getMediaCacheSize As Int";
 Debug.JustUpdateDeviceLine();
@@ -1028,7 +1028,7 @@ finally {
 		}}
 public static RemoteObject  _getrequestfromrequestset(RemoteObject __ref,RemoteObject _rs) throws Exception{
 try {
-		Debug.PushSubsStack("GetRequestFromRequestSet (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,510);
+		Debug.PushSubsStack("GetRequestFromRequestSet (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,510);
 if (RapidSub.canDelegate("getrequestfromrequestset")) { return __ref.runUserSub(false, "simplemediamanager","getrequestfromrequestset", __ref, _rs);}
 Debug.locals.put("rs", _rs);
  BA.debugLineNum = 510;BA.debugLine="Private Sub GetRequestFromRequestSet(rs As SMMedia";
@@ -1064,7 +1064,7 @@ finally {
 		}}
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,42);
+		Debug.PushSubsStack("Initialize (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,42);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "simplemediamanager","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 RemoteObject _build = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
@@ -1131,7 +1131,7 @@ finally {
 		}}
 public static RemoteObject  _ismediastillrelevant(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("IsMediaStillRelevant (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,483);
+		Debug.PushSubsStack("IsMediaStillRelevant (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,483);
 if (RapidSub.canDelegate("ismediastillrelevant")) { return __ref.runUserSub(false, "simplemediamanager","ismediastillrelevant", __ref, _media);}
 Debug.locals.put("Media", _media);
  BA.debugLineNum = 483;BA.debugLine="Private Sub IsMediaStillRelevant (Media As SMMedia";
@@ -1151,7 +1151,7 @@ finally {
 		}}
 public static RemoteObject  _iswebpanimated(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("IsWebPAnimated (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,367);
+		Debug.PushSubsStack("IsWebPAnimated (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,367);
 if (RapidSub.canDelegate("iswebpanimated")) { return __ref.runUserSub(false, "simplemediamanager","iswebpanimated", __ref, _media);}
 Debug.locals.put("Media", _media);
  BA.debugLineNum = 367;BA.debugLine="Public Sub IsWebPAnimated(Media As SMMedia) As Boo";
@@ -1171,7 +1171,7 @@ finally {
 		}}
 public static RemoteObject  _mediaisready(RemoteObject __ref,RemoteObject _media) throws Exception{
 try {
-		Debug.PushSubsStack("MediaIsReady (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,375);
+		Debug.PushSubsStack("MediaIsReady (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,375);
 if (RapidSub.canDelegate("mediaisready")) { return __ref.runUserSub(false, "simplemediamanager","mediaisready", __ref, _media);}
 RemoteObject _req = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequestset");
 Debug.locals.put("Media", _media);
@@ -1212,7 +1212,7 @@ __ref.getField(false,"_viewsmanager" /*RemoteObject*/ ).runClassMethod (b4a.Desa
  }else {
  BA.debugLineNum = 385;BA.debugLine="Log(\"MediaIsReady Unexpected state!\")";
 Debug.JustUpdateDeviceLine();
-simplemediamanager.__c.runVoidMethod ("LogImpl","910485770",RemoteObject.createImmutable("MediaIsReady Unexpected state!"),0);
+simplemediamanager.__c.runVoidMethod ("LogImpl","912255242",RemoteObject.createImmutable("MediaIsReady Unexpected state!"),0);
  }}
 ;
  }
@@ -1240,7 +1240,7 @@ finally {
 		}}
 public static RemoteObject  _metaisready(RemoteObject __ref,RemoteObject _meta) throws Exception{
 try {
-		Debug.PushSubsStack("MetaIsReady (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,223);
+		Debug.PushSubsStack("MetaIsReady (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,223);
 if (RapidSub.canDelegate("metaisready")) { return __ref.runUserSub(false, "simplemediamanager","metaisready", __ref, _meta);}
 RemoteObject _requestset = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequestset");
 RemoteObject _media = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmedia");
@@ -1328,7 +1328,7 @@ __ref.runClassMethod (b4a.DesaWisataSaribu.simplemediamanager.class, "_mediaisre
 case 5: {
  BA.debugLineNum = 254;BA.debugLine="Log(\"Unexpected mime: \" & Media.Meta.Mime)";
 Debug.JustUpdateDeviceLine();
-simplemediamanager.__c.runVoidMethod ("LogImpl","910223647",RemoteObject.concat(RemoteObject.createImmutable("Unexpected mime: "),_media.getField(false,"Meta" /*RemoteObject*/ ).getField(true,"Mime" /*RemoteObject*/ )),0);
+simplemediamanager.__c.runVoidMethod ("LogImpl","911993119",RemoteObject.concat(RemoteObject.createImmutable("Unexpected mime: "),_media.getField(false,"Meta" /*RemoteObject*/ ).getField(true,"Mime" /*RemoteObject*/ )),0);
  BA.debugLineNum = 255;BA.debugLine="Media.MediaState = STATE_ERROR";
 Debug.JustUpdateDeviceLine();
 _media.setField ("MediaState" /*RemoteObject*/ ,__ref.getField(true,"_state_error" /*RemoteObject*/ ));
@@ -1365,7 +1365,7 @@ finally {
 		}}
 public static RemoteObject  _panelresized(RemoteObject __ref,RemoteObject _target) throws Exception{
 try {
-		Debug.PushSubsStack("PanelResized (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,398);
+		Debug.PushSubsStack("PanelResized (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,398);
 if (RapidSub.canDelegate("panelresized")) { return __ref.runUserSub(false, "simplemediamanager","panelresized", __ref, _target);}
 RemoteObject _set = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequestset");
 Debug.locals.put("Target", _target);
@@ -1393,7 +1393,7 @@ finally {
 		}}
 public static RemoteObject  _preparemedia(RemoteObject __ref,RemoteObject _media,RemoteObject _job,RemoteObject _dir,RemoteObject _filename,RemoteObject _fromfile) throws Exception{
 try {
-		Debug.PushSubsStack("PrepareMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,320);
+		Debug.PushSubsStack("PrepareMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,320);
 if (RapidSub.canDelegate("preparemedia")) { return __ref.runUserSub(false, "simplemediamanager","preparemedia", __ref, _media, _job, _dir, _filename, _fromfile);}
 ResumableSub_PrepareMedia rsub = new ResumableSub_PrepareMedia(null,__ref,_media,_job,_dir,_filename,_fromfile);
 rsub.remoteResumableSub = anywheresoftware.b4a.pc.PCResumableSub.createDebugResumeSubForFilter();
@@ -1432,7 +1432,7 @@ RemoteObject _in = RemoteObject.declareNull("anywheresoftware.b4a.objects.stream
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("PrepareMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,320);
+		Debug.PushSubsStack("PrepareMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,320);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1630,7 +1630,7 @@ finally {
 }
 public static RemoteObject  _preprocessexif(RemoteObject __ref,RemoteObject _media,RemoteObject _in) throws Exception{
 try {
-		Debug.PushSubsStack("PreprocessExif (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,605);
+		Debug.PushSubsStack("PreprocessExif (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,605);
 if (RapidSub.canDelegate("preprocessexif")) { return __ref.runUserSub(false, "simplemediamanager","preprocessexif", __ref, _media, _in);}
 RemoteObject _exifinterface = RemoteObject.declareNull("anywheresoftware.b4j.object.JavaObject");
 RemoteObject _orientation = RemoteObject.createImmutable(0);
@@ -1643,7 +1643,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("!",_media.getField(false,"Meta" /*RemoteObject*/ ).getField(true,"Mime" /*RemoteObject*/ ),BA.ObjectToString("image/jpeg"))) { 
  BA.debugLineNum = 610;BA.debugLine="Log(\"image/jpeg mime expected!\")";
 Debug.JustUpdateDeviceLine();
-simplemediamanager.__c.runVoidMethod ("LogImpl","911730949",RemoteObject.createImmutable("image/jpeg mime expected!"),0);
+simplemediamanager.__c.runVoidMethod ("LogImpl","913500421",RemoteObject.createImmutable("image/jpeg mime expected!"),0);
  BA.debugLineNum = 611;BA.debugLine="In.Close";
 Debug.JustUpdateDeviceLine();
 _in.runVoidMethod ("Close");
@@ -1682,7 +1682,7 @@ finally {
 		}}
 public static void  _registerformeta(RemoteObject __ref,RemoteObject _requestset) throws Exception{
 try {
-		Debug.PushSubsStack("RegisterForMeta (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,155);
+		Debug.PushSubsStack("RegisterForMeta (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,155);
 if (RapidSub.canDelegate("registerformeta")) { __ref.runUserSub(false, "simplemediamanager","registerformeta", __ref, _requestset); return;}
 ResumableSub_RegisterForMeta rsub = new ResumableSub_RegisterForMeta(null,__ref,_requestset);
 rsub.resume(null, null);
@@ -1711,7 +1711,7 @@ RemoteObject _o = RemoteObject.declareNull("Object");
 @Override
 public void resume(BA ba, RemoteObject result) throws Exception{
 try {
-		Debug.PushSubsStack("RegisterForMeta (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,155);
+		Debug.PushSubsStack("RegisterForMeta (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,155);
 Debug.locals = rsLocals;Debug.currentSubFrame.locals = rsLocals;
 
     while (true) {
@@ -1776,7 +1776,7 @@ case 8:
 this.state = 9;
  BA.debugLineNum = 169;BA.debugLine="Log(\"Unexpected state:  media.MediaState = STAT";
 Debug.JustUpdateDeviceLine();
-parent.__c.runVoidMethod ("LogImpl","910092558",RemoteObject.createImmutable("Unexpected state:  media.MediaState = STATE_ERROR"),0);
+parent.__c.runVoidMethod ("LogImpl","911862030",RemoteObject.createImmutable("Unexpected state:  media.MediaState = STATE_ERROR"),0);
  if (true) break;
 
 case 9:
@@ -1984,7 +1984,7 @@ finally {
 }
 public static RemoteObject  _rotatebitmapbasedonorientation(RemoteObject __ref,RemoteObject _bmp,RemoteObject _orientation) throws Exception{
 try {
-		Debug.PushSubsStack("RotateBitmapBasedOnOrientation (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,643);
+		Debug.PushSubsStack("RotateBitmapBasedOnOrientation (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,643);
 if (RapidSub.canDelegate("rotatebitmapbasedonorientation")) { return __ref.runUserSub(false, "simplemediamanager","rotatebitmapbasedonorientation", __ref, _bmp, _orientation);}
 Debug.locals.put("bmp", _bmp);
 Debug.locals.put("orientation", _orientation);
@@ -2025,7 +2025,7 @@ finally {
 		}}
 public static RemoteObject  _setmaximagefilesize(RemoteObject __ref,RemoteObject _s) throws Exception{
 try {
-		Debug.PushSubsStack("setMaxImageFileSize (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,67);
+		Debug.PushSubsStack("setMaxImageFileSize (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,67);
 if (RapidSub.canDelegate("setmaximagefilesize")) { return __ref.runUserSub(false, "simplemediamanager","setmaximagefilesize", __ref, _s);}
 Debug.locals.put("s", _s);
  BA.debugLineNum = 67;BA.debugLine="Public Sub setMaxImageFileSize (s As Long)";
@@ -2045,7 +2045,7 @@ finally {
 		}}
 public static RemoteObject  _setmedia(RemoteObject __ref,RemoteObject _target,RemoteObject _url) throws Exception{
 try {
-		Debug.PushSubsStack("SetMedia (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,101);
+		Debug.PushSubsStack("SetMedia (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,101);
 if (RapidSub.canDelegate("setmedia")) { return __ref.runUserSub(false, "simplemediamanager","setmedia", __ref, _target, _url);}
 Debug.locals.put("Target", _target);
 Debug.locals.put("Url", _url);
@@ -2066,7 +2066,7 @@ finally {
 		}}
 public static RemoteObject  _setmediafromfile(RemoteObject __ref,RemoteObject _target,RemoteObject _dir,RemoteObject _filename,RemoteObject _mime,RemoteObject _extra) throws Exception{
 try {
-		Debug.PushSubsStack("SetMediaFromFile (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,134);
+		Debug.PushSubsStack("SetMediaFromFile (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,134);
 if (RapidSub.canDelegate("setmediafromfile")) { return __ref.runUserSub(false, "simplemediamanager","setmediafromfile", __ref, _target, _dir, _filename, _mime, _extra);}
 Debug.locals.put("Target", _target);
 Debug.locals.put("Dir", _dir);
@@ -2095,7 +2095,7 @@ Debug.JustUpdateDeviceLine();
 if (RemoteObject.solveBoolean("=",__ref.getField(false,"_viewsmanager" /*RemoteObject*/ ).runClassMethod (b4a.DesaWisataSaribu.smmviews.class, "_mimetomediatype" /*RemoteObject*/ ,(Object)(_mime)),BA.numberCast(double.class, __ref.getField(false,"_viewsmanager" /*RemoteObject*/ ).getField(true,"_media_type_none" /*RemoteObject*/ )))) { 
  BA.debugLineNum = 142;BA.debugLine="Log(\"Invalid mime!\")";
 Debug.JustUpdateDeviceLine();
-simplemediamanager.__c.runVoidMethod ("LogImpl","99961480",RemoteObject.createImmutable("Invalid mime!"),0);
+simplemediamanager.__c.runVoidMethod ("LogImpl","911730952",RemoteObject.createImmutable("Invalid mime!"),0);
  BA.debugLineNum = 143;BA.debugLine="Return";
 Debug.JustUpdateDeviceLine();
 if (true) return RemoteObject.createImmutable("");
@@ -2115,7 +2115,7 @@ finally {
 		}}
 public static RemoteObject  _setmediawithextra(RemoteObject __ref,RemoteObject _target,RemoteObject _url,RemoteObject _mime,RemoteObject _extra) throws Exception{
 try {
-		Debug.PushSubsStack("SetMediaWithExtra (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,117);
+		Debug.PushSubsStack("SetMediaWithExtra (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,117);
 if (RapidSub.canDelegate("setmediawithextra")) { return __ref.runUserSub(false, "simplemediamanager","setmediawithextra", __ref, _target, _url, _mime, _extra);}
 RemoteObject _request = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequest");
 RemoteObject _rs = RemoteObject.declareNull("b4a.DesaWisataSaribu.simplemediamanager._smmediarequestset");
@@ -2163,7 +2163,7 @@ finally {
 		}}
 public static RemoteObject  _setmediawithrequestset(RemoteObject __ref,RemoteObject _requestset) throws Exception{
 try {
-		Debug.PushSubsStack("SetMediaWithRequestSet (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,151);
+		Debug.PushSubsStack("SetMediaWithRequestSet (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,151);
 if (RapidSub.canDelegate("setmediawithrequestset")) { return __ref.runUserSub(false, "simplemediamanager","setmediawithrequestset", __ref, _requestset);}
 Debug.locals.put("RequestSet", _requestset);
  BA.debugLineNum = 151;BA.debugLine="Public Sub SetMediaWithRequestSet (RequestSet As S";
@@ -2183,7 +2183,7 @@ finally {
 		}}
 public static RemoteObject  _trimmediacache(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("TrimMediaCache (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,432);
+		Debug.PushSubsStack("TrimMediaCache (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,432);
 if (RapidSub.canDelegate("trimmediacache")) { return __ref.runUserSub(false, "simplemediamanager","trimmediacache", __ref);}
  BA.debugLineNum = 432;BA.debugLine="Public Sub TrimMediaCache";
 Debug.JustUpdateDeviceLine();
@@ -2205,7 +2205,7 @@ finally {
 		}}
 public static RemoteObject  _trimmediacacheimpl(RemoteObject __ref) throws Exception{
 try {
-		Debug.PushSubsStack("TrimMediaCacheImpl (simplemediamanager) ","simplemediamanager",15,__ref.getField(false, "ba"),__ref,437);
+		Debug.PushSubsStack("TrimMediaCacheImpl (simplemediamanager) ","simplemediamanager",16,__ref.getField(false, "ba"),__ref,437);
 if (RapidSub.canDelegate("trimmediacacheimpl")) { return __ref.runUserSub(false, "simplemediamanager","trimmediacacheimpl", __ref);}
 RemoteObject _onlylookfordisconnectedtargets = RemoteObject.createImmutable(false);
 RemoteObject _i = RemoteObject.createImmutable(0);

@@ -377,8 +377,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.listpackage _listpackage = null;
 public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
 public b4a.DesaWisataSaribu.xuiviewsutils _xuiviewsutils = null;
@@ -387,97 +388,97 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "updatelocation", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "updatelocation", null));}
 String _userposition = "";
-RDebugUtils.currentLine=3276800;
- //BA.debugLineNum = 3276800;BA.debugLine="Public Sub UpdateLocation";
-RDebugUtils.currentLine=3276801;
- //BA.debugLineNum = 3276801;BA.debugLine="Log(\"Update user position on Maps Rumah Gadang\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63276801","Update user position on Maps Rumah Gadang",0);
-RDebugUtils.currentLine=3276802;
- //BA.debugLineNum = 3276802;BA.debugLine="Log(\"Lat: \"&Starter.lat&\"; Long: \"&Starter.lng)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63276802","Lat: "+mostCurrent._starter._lat /*String*/ +"; Long: "+mostCurrent._starter._lng /*String*/ ,0);
-RDebugUtils.currentLine=3276803;
- //BA.debugLineNum = 3276803;BA.debugLine="Dim userPosition As String";
+RDebugUtils.currentLine=3538944;
+ //BA.debugLineNum = 3538944;BA.debugLine="Public Sub UpdateLocation";
+RDebugUtils.currentLine=3538945;
+ //BA.debugLineNum = 3538945;BA.debugLine="Log(\"Update user position on Maps Rumah Gadang\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83538945","Update user position on Maps Rumah Gadang",0);
+RDebugUtils.currentLine=3538946;
+ //BA.debugLineNum = 3538946;BA.debugLine="Log(\"Lat: \"&Starter.lat&\"; Long: \"&Starter.lng)";
+anywheresoftware.b4a.keywords.Common.LogImpl("83538946","Lat: "+mostCurrent._starter._lat /*String*/ +"; Long: "+mostCurrent._starter._lng /*String*/ ,0);
+RDebugUtils.currentLine=3538947;
+ //BA.debugLineNum = 3538947;BA.debugLine="Dim userPosition As String";
 _userposition = "";
-RDebugUtils.currentLine=3276804;
- //BA.debugLineNum = 3276804;BA.debugLine="userPosition = \"userPositionAPI(\"&Starter.lat&\",";
+RDebugUtils.currentLine=3538948;
+ //BA.debugLineNum = 3538948;BA.debugLine="userPosition = \"userPositionAPI(\"&Starter.lat&\",";
 _userposition = "userPositionAPI("+mostCurrent._starter._lat /*String*/ +", "+mostCurrent._starter._lng /*String*/ +")";
-RDebugUtils.currentLine=3276805;
- //BA.debugLineNum = 3276805;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, user";
+RDebugUtils.currentLine=3538949;
+ //BA.debugLineNum = 3538949;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, user";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_userposition);
-RDebugUtils.currentLine=3276806;
- //BA.debugLineNum = 3276806;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3538950;
+ //BA.debugLineNum = 3538950;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=2949120;
- //BA.debugLineNum = 2949120;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=2949124;
- //BA.debugLineNum = 2949124;BA.debugLine="Starter.mapStatus = \"RG\"";
+RDebugUtils.currentLine=3211264;
+ //BA.debugLineNum = 3211264;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=3211268;
+ //BA.debugLineNum = 3211268;BA.debugLine="Starter.mapStatus = \"RG\"";
 mostCurrent._starter._mapstatus /*String*/  = "RG";
-RDebugUtils.currentLine=2949125;
- //BA.debugLineNum = 2949125;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentLine=3211269;
+ //BA.debugLineNum = 3211269;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
-RDebugUtils.currentLine=2949126;
- //BA.debugLineNum = 2949126;BA.debugLine="MainScroll.Panel.LoadLayout(\"MapsRG\")";
+RDebugUtils.currentLine=3211270;
+ //BA.debugLineNum = 3211270;BA.debugLine="MainScroll.Panel.LoadLayout(\"MapsRG\")";
 mostCurrent._mainscroll.getPanel().LoadLayout("MapsRG",mostCurrent.activityBA);
-RDebugUtils.currentLine=2949128;
- //BA.debugLineNum = 2949128;BA.debugLine="WebViewRG.Height = MainScroll.Height";
+RDebugUtils.currentLine=3211272;
+ //BA.debugLineNum = 3211272;BA.debugLine="WebViewRG.Height = MainScroll.Height";
 mostCurrent._webviewrg.setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=2949129;
- //BA.debugLineNum = 2949129;BA.debugLine="PanelRG.Height = MainScroll.Height";
+RDebugUtils.currentLine=3211273;
+ //BA.debugLineNum = 3211273;BA.debugLine="PanelRG.Height = MainScroll.Height";
 mostCurrent._panelrg.setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=2949130;
- //BA.debugLineNum = 2949130;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=3211274;
+ //BA.debugLineNum = 3211274;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=2949131;
- //BA.debugLineNum = 2949131;BA.debugLine="TitleNavbar.Text = \"Rumah Gadang / Homestay \"";
+RDebugUtils.currentLine=3211275;
+ //BA.debugLineNum = 3211275;BA.debugLine="TitleNavbar.Text = \"Rumah Gadang / Homestay \"";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence("Rumah Gadang / Homestay "));
-RDebugUtils.currentLine=2949133;
- //BA.debugLineNum = 2949133;BA.debugLine="MyWebViewExtras.addWebChromeClient(WebViewRG, \"We";
+RDebugUtils.currentLine=3211277;
+ //BA.debugLineNum = 3211277;BA.debugLine="MyWebViewExtras.addWebChromeClient(WebViewRG, \"We";
 mostCurrent._mywebviewextras.addWebChromeClient(mostCurrent.activityBA,(android.webkit.WebView)(mostCurrent._webviewrg.getObject()),"WebViewRG");
-RDebugUtils.currentLine=2949134;
- //BA.debugLineNum = 2949134;BA.debugLine="WebViewRG.JavaScriptEnabled = True";
+RDebugUtils.currentLine=3211278;
+ //BA.debugLineNum = 3211278;BA.debugLine="WebViewRG.JavaScriptEnabled = True";
 mostCurrent._webviewrg.setJavaScriptEnabled(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2949135;
- //BA.debugLineNum = 2949135;BA.debugLine="WebViewRG.LoadUrl(Main.MobileUri&\"rumahGadang/map";
+RDebugUtils.currentLine=3211279;
+ //BA.debugLineNum = 3211279;BA.debugLine="WebViewRG.LoadUrl(Main.MobileUri&\"rumahGadang/map";
 mostCurrent._webviewrg.LoadUrl(mostCurrent._main._mobileuri /*String*/ +"rumahGadang/maps");
-RDebugUtils.currentLine=2949137;
- //BA.debugLineNum = 2949137;BA.debugLine="PanelSearch.Visible = False";
+RDebugUtils.currentLine=3211281;
+ //BA.debugLineNum = 3211281;BA.debugLine="PanelSearch.Visible = False";
 mostCurrent._panelsearch.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949138;
- //BA.debugLineNum = 2949138;BA.debugLine="btnObj.Visible = False";
+RDebugUtils.currentLine=3211282;
+ //BA.debugLineNum = 3211282;BA.debugLine="btnObj.Visible = False";
 mostCurrent._btnobj.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949139;
- //BA.debugLineNum = 2949139;BA.debugLine="btnUserLoc.Visible = False";
+RDebugUtils.currentLine=3211283;
+ //BA.debugLineNum = 3211283;BA.debugLine="btnUserLoc.Visible = False";
 mostCurrent._btnuserloc.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949140;
- //BA.debugLineNum = 2949140;BA.debugLine="btnList.Visible = False";
+RDebugUtils.currentLine=3211284;
+ //BA.debugLineNum = 3211284;BA.debugLine="btnList.Visible = False";
 mostCurrent._btnlist.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949141;
- //BA.debugLineNum = 2949141;BA.debugLine="PanelRating.Visible = False";
+RDebugUtils.currentLine=3211285;
+ //BA.debugLineNum = 3211285;BA.debugLine="PanelRating.Visible = False";
 mostCurrent._panelrating.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949142;
- //BA.debugLineNum = 2949142;BA.debugLine="PanelFacility.Visible = False";
+RDebugUtils.currentLine=3211286;
+ //BA.debugLineNum = 3211286;BA.debugLine="PanelFacility.Visible = False";
 mostCurrent._panelfacility.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949143;
- //BA.debugLineNum = 2949143;BA.debugLine="PanelCategory.Visible = False";
+RDebugUtils.currentLine=3211287;
+ //BA.debugLineNum = 3211287;BA.debugLine="PanelCategory.Visible = False";
 mostCurrent._panelcategory.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=2949152;
- //BA.debugLineNum = 2949152;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3211296;
+ //BA.debugLineNum = 3211296;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="mapsrg";
-RDebugUtils.currentLine=3145728;
- //BA.debugLineNum = 3145728;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=3145729;
- //BA.debugLineNum = 3145729;BA.debugLine="CallSubDelayed(Starter, \"StopGPS\")";
+RDebugUtils.currentLine=3407872;
+ //BA.debugLineNum = 3407872;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=3407873;
+ //BA.debugLineNum = 3407873;BA.debugLine="CallSubDelayed(Starter, \"StopGPS\")";
 anywheresoftware.b4a.keywords.Common.CallSubDelayed(processBA,(Object)(mostCurrent._starter.getObject()),"StopGPS");
-RDebugUtils.currentLine=3145730;
- //BA.debugLineNum = 3145730;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3407874;
+ //BA.debugLineNum = 3407874;BA.debugLine="End Sub";
 return "";
 }
 public static void  _activity_resume() throws Exception{
@@ -507,11 +508,11 @@ return;
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=3080193;
- //BA.debugLineNum = 3080193;BA.debugLine="Log(\"MapsRG Loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63080193","MapsRG Loaded",0);
-RDebugUtils.currentLine=3080194;
- //BA.debugLineNum = 3080194;BA.debugLine="If Starter.GPS1.GPSEnabled = False Then";
+RDebugUtils.currentLine=3342337;
+ //BA.debugLineNum = 3342337;BA.debugLine="Log(\"MapsRG Loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83342337","MapsRG Loaded",0);
+RDebugUtils.currentLine=3342338;
+ //BA.debugLineNum = 3342338;BA.debugLine="If Starter.GPS1.GPSEnabled = False Then";
 if (true) break;
 
 case 1:
@@ -526,22 +527,22 @@ this.state = 5;
 case 3:
 //C
 this.state = 12;
-RDebugUtils.currentLine=3080195;
- //BA.debugLineNum = 3080195;BA.debugLine="ToastMessageShow(\"Please enable the GPS device.\"";
+RDebugUtils.currentLine=3342339;
+ //BA.debugLineNum = 3342339;BA.debugLine="ToastMessageShow(\"Please enable the GPS device.\"";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Please enable the GPS device."),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3080196;
- //BA.debugLineNum = 3080196;BA.debugLine="StartActivity(Starter.GPS1.LocationSettingsInten";
+RDebugUtils.currentLine=3342340;
+ //BA.debugLineNum = 3342340;BA.debugLine="StartActivity(Starter.GPS1.LocationSettingsInten";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(parent.mostCurrent._starter._gps1 /*anywheresoftware.b4a.gps.GPS*/ .getLocationSettingsIntent()));
  if (true) break;
 
 case 5:
 //C
 this.state = 6;
-RDebugUtils.currentLine=3080198;
- //BA.debugLineNum = 3080198;BA.debugLine="Starter.rp.CheckAndRequest(Starter.rp.PERMISSION";
+RDebugUtils.currentLine=3342342;
+ //BA.debugLineNum = 3342342;BA.debugLine="Starter.rp.CheckAndRequest(Starter.rp.PERMISSION";
 parent.mostCurrent._starter._rp /*anywheresoftware.b4a.objects.RuntimePermissions*/ .CheckAndRequest(processBA,parent.mostCurrent._starter._rp /*anywheresoftware.b4a.objects.RuntimePermissions*/ .PERMISSION_ACCESS_FINE_LOCATION);
-RDebugUtils.currentLine=3080199;
- //BA.debugLineNum = 3080199;BA.debugLine="Wait For Activity_PermissionResult (Permission A";
+RDebugUtils.currentLine=3342343;
+ //BA.debugLineNum = 3342343;BA.debugLine="Wait For Activity_PermissionResult (Permission A";
 anywheresoftware.b4a.keywords.Common.WaitFor("activity_permissionresult", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "mapsrg", "activity_resume"), null);
 this.state = 13;
 return;
@@ -551,8 +552,8 @@ this.state = 6;
 _permission = (String) result[0];
 _result = (Boolean) result[1];
 ;
-RDebugUtils.currentLine=3080200;
- //BA.debugLineNum = 3080200;BA.debugLine="If Result Then";
+RDebugUtils.currentLine=3342344;
+ //BA.debugLineNum = 3342344;BA.debugLine="If Result Then";
 if (true) break;
 
 case 6:
@@ -567,19 +568,19 @@ this.state = 10;
 case 8:
 //C
 this.state = 11;
-RDebugUtils.currentLine=3080201;
- //BA.debugLineNum = 3080201;BA.debugLine="CallSubDelayed(Starter, \"StartGPS\")";
+RDebugUtils.currentLine=3342345;
+ //BA.debugLineNum = 3342345;BA.debugLine="CallSubDelayed(Starter, \"StartGPS\")";
 anywheresoftware.b4a.keywords.Common.CallSubDelayed(processBA,(Object)(parent.mostCurrent._starter.getObject()),"StartGPS");
  if (true) break;
 
 case 10:
 //C
 this.state = 11;
-RDebugUtils.currentLine=3080203;
- //BA.debugLineNum = 3080203;BA.debugLine="ToastMessageShow(\"Please allow GPS to run this";
+RDebugUtils.currentLine=3342347;
+ //BA.debugLineNum = 3342347;BA.debugLine="ToastMessageShow(\"Please allow GPS to run this";
 anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Please allow GPS to run this appliation"),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3080204;
- //BA.debugLineNum = 3080204;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=3342348;
+ //BA.debugLineNum = 3342348;BA.debugLine="Activity.Finish";
 parent.mostCurrent._activity.Finish();
  if (true) break;
 
@@ -593,8 +594,8 @@ case 12:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=3080207;
- //BA.debugLineNum = 3080207;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3342351;
+ //BA.debugLineNum = 3342351;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -605,35 +606,51 @@ public static String  _btnback_click() throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
-RDebugUtils.currentLine=3211264;
- //BA.debugLineNum = 3211264;BA.debugLine="Private Sub BtnBack_Click";
-RDebugUtils.currentLine=3211265;
- //BA.debugLineNum = 3211265;BA.debugLine="Log(\"Going back to previous activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63211265","Going back to previous activity",0);
-RDebugUtils.currentLine=3211266;
- //BA.debugLineNum = 3211266;BA.debugLine="Starter.mapStatus = \"\"";
+RDebugUtils.currentLine=3473408;
+ //BA.debugLineNum = 3473408;BA.debugLine="Private Sub BtnBack_Click";
+RDebugUtils.currentLine=3473409;
+ //BA.debugLineNum = 3473409;BA.debugLine="Log(\"Going back to previous activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83473409","Going back to previous activity",0);
+RDebugUtils.currentLine=3473410;
+ //BA.debugLineNum = 3473410;BA.debugLine="Starter.mapStatus = \"\"";
 mostCurrent._starter._mapstatus /*String*/  = "";
-RDebugUtils.currentLine=3211267;
- //BA.debugLineNum = 3211267;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=3473411;
+ //BA.debugLineNum = 3473411;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=3211268;
- //BA.debugLineNum = 3211268;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3473412;
+ //BA.debugLineNum = 3473412;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btncart_click() throws Exception{
+RDebugUtils.currentModule="mapsrg";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btncart_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btncart_click", null));}
+RDebugUtils.currentLine=41418752;
+ //BA.debugLineNum = 41418752;BA.debugLine="Private Sub btnCart_Click";
+RDebugUtils.currentLine=41418753;
+ //BA.debugLineNum = 41418753;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("841418753","Redirect to Cart Activity",0);
+RDebugUtils.currentLine=41418754;
+ //BA.debugLineNum = 41418754;BA.debugLine="StartActivity(Cart)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._cart.getObject()));
+RDebugUtils.currentLine=41418755;
+ //BA.debugLineNum = 41418755;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnlist_click() throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnlist_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnlist_click", null));}
-RDebugUtils.currentLine=3801088;
- //BA.debugLineNum = 3801088;BA.debugLine="Private Sub btnList_Click";
-RDebugUtils.currentLine=3801089;
- //BA.debugLineNum = 3801089;BA.debugLine="Log(\"Redirect to ListRG activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63801089","Redirect to ListRG activity",0);
-RDebugUtils.currentLine=3801090;
- //BA.debugLineNum = 3801090;BA.debugLine="StartActivity(ListRG)";
+RDebugUtils.currentLine=4063232;
+ //BA.debugLineNum = 4063232;BA.debugLine="Private Sub btnList_Click";
+RDebugUtils.currentLine=4063233;
+ //BA.debugLineNum = 4063233;BA.debugLine="Log(\"Redirect to ListRG activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("84063233","Redirect to ListRG activity",0);
+RDebugUtils.currentLine=4063234;
+ //BA.debugLineNum = 4063234;BA.debugLine="StartActivity(ListRG)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._listrg.getObject()));
-RDebugUtils.currentLine=3801091;
- //BA.debugLineNum = 3801091;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4063235;
+ //BA.debugLineNum = 4063235;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnobj_click() throws Exception{
@@ -641,45 +658,45 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnobj_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnobj_click", null));}
 String _boundtoobject = "";
-RDebugUtils.currentLine=3473408;
- //BA.debugLineNum = 3473408;BA.debugLine="Private Sub btnObj_Click";
-RDebugUtils.currentLine=3473409;
- //BA.debugLineNum = 3473409;BA.debugLine="Log(\"Pan to Rumah Gadang\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63473409","Pan to Rumah Gadang",0);
-RDebugUtils.currentLine=3473410;
- //BA.debugLineNum = 3473410;BA.debugLine="Dim boundToObject As String";
+RDebugUtils.currentLine=3735552;
+ //BA.debugLineNum = 3735552;BA.debugLine="Private Sub btnObj_Click";
+RDebugUtils.currentLine=3735553;
+ //BA.debugLineNum = 3735553;BA.debugLine="Log(\"Pan to Rumah Gadang\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83735553","Pan to Rumah Gadang",0);
+RDebugUtils.currentLine=3735554;
+ //BA.debugLineNum = 3735554;BA.debugLine="Dim boundToObject As String";
 _boundtoobject = "";
-RDebugUtils.currentLine=3473411;
- //BA.debugLineNum = 3473411;BA.debugLine="If isFiltered Then";
+RDebugUtils.currentLine=3735555;
+ //BA.debugLineNum = 3735555;BA.debugLine="If isFiltered Then";
 if (_isfiltered) { 
-RDebugUtils.currentLine=3473412;
- //BA.debugLineNum = 3473412;BA.debugLine="boundToObject = \"findRG('')\"";
+RDebugUtils.currentLine=3735556;
+ //BA.debugLineNum = 3735556;BA.debugLine="boundToObject = \"findRG('')\"";
 _boundtoobject = "findRG('')";
-RDebugUtils.currentLine=3473413;
- //BA.debugLineNum = 3473413;BA.debugLine="isFiltered = False";
+RDebugUtils.currentLine=3735557;
+ //BA.debugLineNum = 3735557;BA.debugLine="isFiltered = False";
 _isfiltered = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=3473414;
- //BA.debugLineNum = 3473414;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=3735558;
+ //BA.debugLineNum = 3735558;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3473415;
- //BA.debugLineNum = 3473415;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=3735559;
+ //BA.debugLineNum = 3735559;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3473416;
- //BA.debugLineNum = 3473416;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=3735560;
+ //BA.debugLineNum = 3735560;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3473417;
- //BA.debugLineNum = 3473417;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=3735561;
+ //BA.debugLineNum = 3735561;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
  }else {
-RDebugUtils.currentLine=3473419;
- //BA.debugLineNum = 3473419;BA.debugLine="boundToObject = \"boundToObject(false)\"";
+RDebugUtils.currentLine=3735563;
+ //BA.debugLineNum = 3735563;BA.debugLine="boundToObject = \"boundToObject(false)\"";
 _boundtoobject = "boundToObject(false)";
  };
-RDebugUtils.currentLine=3473421;
- //BA.debugLineNum = 3473421;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, boun";
+RDebugUtils.currentLine=3735565;
+ //BA.debugLineNum = 3735565;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, boun";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_boundtoobject);
-RDebugUtils.currentLine=3473422;
- //BA.debugLineNum = 3473422;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3735566;
+ //BA.debugLineNum = 3735566;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnuserloc_click() throws Exception{
@@ -687,38 +704,38 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnuserloc_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnuserloc_click", null));}
 String _pantouser = "";
-RDebugUtils.currentLine=3407872;
- //BA.debugLineNum = 3407872;BA.debugLine="Private Sub btnUserLoc_Click";
-RDebugUtils.currentLine=3407873;
- //BA.debugLineNum = 3407873;BA.debugLine="Log(\"Panning to user location\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63407873","Panning to user location",0);
-RDebugUtils.currentLine=3407874;
- //BA.debugLineNum = 3407874;BA.debugLine="UpdateLocation";
+RDebugUtils.currentLine=3670016;
+ //BA.debugLineNum = 3670016;BA.debugLine="Private Sub btnUserLoc_Click";
+RDebugUtils.currentLine=3670017;
+ //BA.debugLineNum = 3670017;BA.debugLine="Log(\"Panning to user location\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83670017","Panning to user location",0);
+RDebugUtils.currentLine=3670018;
+ //BA.debugLineNum = 3670018;BA.debugLine="UpdateLocation";
 _updatelocation();
-RDebugUtils.currentLine=3407875;
- //BA.debugLineNum = 3407875;BA.debugLine="Dim panToUser As String = \"panToUser()\"";
+RDebugUtils.currentLine=3670019;
+ //BA.debugLineNum = 3670019;BA.debugLine="Dim panToUser As String = \"panToUser()\"";
 _pantouser = "panToUser()";
-RDebugUtils.currentLine=3407876;
- //BA.debugLineNum = 3407876;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, panT";
+RDebugUtils.currentLine=3670020;
+ //BA.debugLineNum = 3670020;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, panT";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_pantouser);
-RDebugUtils.currentLine=3407877;
- //BA.debugLineNum = 3407877;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3670021;
+ //BA.debugLineNum = 3670021;BA.debugLine="End Sub";
 return "";
 }
 public static String  _edtsearchrg_enterpressed() throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "edtsearchrg_enterpressed", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "edtsearchrg_enterpressed", null));}
-RDebugUtils.currentLine=3538944;
- //BA.debugLineNum = 3538944;BA.debugLine="Private Sub edtSearchRG_EnterPressed";
-RDebugUtils.currentLine=3538945;
- //BA.debugLineNum = 3538945;BA.debugLine="nameRG = edtSearchRG.Text";
+RDebugUtils.currentLine=3801088;
+ //BA.debugLineNum = 3801088;BA.debugLine="Private Sub edtSearchRG_EnterPressed";
+RDebugUtils.currentLine=3801089;
+ //BA.debugLineNum = 3801089;BA.debugLine="nameRG = edtSearchRG.Text";
 _namerg = mostCurrent._edtsearchrg.getText();
-RDebugUtils.currentLine=3538946;
- //BA.debugLineNum = 3538946;BA.debugLine="FindRG";
+RDebugUtils.currentLine=3801090;
+ //BA.debugLineNum = 3801090;BA.debugLine="FindRG";
 _findrg();
-RDebugUtils.currentLine=3538947;
- //BA.debugLineNum = 3538947;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3801091;
+ //BA.debugLineNum = 3801091;BA.debugLine="End Sub";
 return "";
 }
 public static String  _findrg() throws Exception{
@@ -726,34 +743,34 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "findrg", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "findrg", null));}
 String _searchrg = "";
-RDebugUtils.currentLine=3604480;
- //BA.debugLineNum = 3604480;BA.debugLine="Sub FindRG";
-RDebugUtils.currentLine=3604481;
- //BA.debugLineNum = 3604481;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=3866624;
+ //BA.debugLineNum = 3866624;BA.debugLine="Sub FindRG";
+RDebugUtils.currentLine=3866625;
+ //BA.debugLineNum = 3866625;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3604482;
- //BA.debugLineNum = 3604482;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=3866626;
+ //BA.debugLineNum = 3866626;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3604483;
- //BA.debugLineNum = 3604483;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=3866627;
+ //BA.debugLineNum = 3866627;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3604484;
- //BA.debugLineNum = 3604484;BA.debugLine="isFiltered = True";
+RDebugUtils.currentLine=3866628;
+ //BA.debugLineNum = 3866628;BA.debugLine="isFiltered = True";
 _isfiltered = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=3604486;
- //BA.debugLineNum = 3604486;BA.debugLine="Log(\"Searching '\"&nameRG&\"' on maps\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63604486","Searching '"+_namerg+"' on maps",0);
-RDebugUtils.currentLine=3604487;
- //BA.debugLineNum = 3604487;BA.debugLine="Dim searchRG As String";
+RDebugUtils.currentLine=3866630;
+ //BA.debugLineNum = 3866630;BA.debugLine="Log(\"Searching '\"&nameRG&\"' on maps\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83866630","Searching '"+_namerg+"' on maps",0);
+RDebugUtils.currentLine=3866631;
+ //BA.debugLineNum = 3866631;BA.debugLine="Dim searchRG As String";
 _searchrg = "";
-RDebugUtils.currentLine=3604488;
- //BA.debugLineNum = 3604488;BA.debugLine="searchRG = \"findRG('\"&nameRG&\"')\"";
+RDebugUtils.currentLine=3866632;
+ //BA.debugLineNum = 3866632;BA.debugLine="searchRG = \"findRG('\"&nameRG&\"')\"";
 _searchrg = "findRG('"+_namerg+"')";
-RDebugUtils.currentLine=3604489;
- //BA.debugLineNum = 3604489;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, sear";
+RDebugUtils.currentLine=3866633;
+ //BA.debugLineNum = 3866633;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, sear";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_searchrg);
-RDebugUtils.currentLine=3604490;
- //BA.debugLineNum = 3604490;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3866634;
+ //BA.debugLineNum = 3866634;BA.debugLine="End Sub";
 return "";
 }
 public static String  _jobdone(b4a.DesaWisataSaribu.httpjob _job) throws Exception{
@@ -766,83 +783,83 @@ anywheresoftware.b4a.objects.collections.Map _map = null;
 anywheresoftware.b4a.objects.collections.List _data = null;
 int _i = 0;
 anywheresoftware.b4a.objects.collections.Map _facility = null;
-RDebugUtils.currentLine=3670016;
- //BA.debugLineNum = 3670016;BA.debugLine="Sub JobDone (Job As HttpJob)";
-RDebugUtils.currentLine=3670017;
- //BA.debugLineNum = 3670017;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("63670017","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
-RDebugUtils.currentLine=3670018;
- //BA.debugLineNum = 3670018;BA.debugLine="If Job.Success Then";
+RDebugUtils.currentLine=3932160;
+ //BA.debugLineNum = 3932160;BA.debugLine="Sub JobDone (Job As HttpJob)";
+RDebugUtils.currentLine=3932161;
+ //BA.debugLineNum = 3932161;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
+anywheresoftware.b4a.keywords.Common.LogImpl("83932161","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
+RDebugUtils.currentLine=3932162;
+ //BA.debugLineNum = 3932162;BA.debugLine="If Job.Success Then";
 if (_job._success /*boolean*/ ) { 
-RDebugUtils.currentLine=3670019;
- //BA.debugLineNum = 3670019;BA.debugLine="Dim res As String";
+RDebugUtils.currentLine=3932163;
+ //BA.debugLineNum = 3932163;BA.debugLine="Dim res As String";
 _res = "";
-RDebugUtils.currentLine=3670020;
- //BA.debugLineNum = 3670020;BA.debugLine="res = Job.GetString";
+RDebugUtils.currentLine=3932164;
+ //BA.debugLineNum = 3932164;BA.debugLine="res = Job.GetString";
 _res = _job._getstring /*String*/ (null);
-RDebugUtils.currentLine=3670021;
- //BA.debugLineNum = 3670021;BA.debugLine="Dim parser As JSONParser";
+RDebugUtils.currentLine=3932165;
+ //BA.debugLineNum = 3932165;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=3670022;
- //BA.debugLineNum = 3670022;BA.debugLine="parser.Initialize(res)";
+RDebugUtils.currentLine=3932166;
+ //BA.debugLineNum = 3932166;BA.debugLine="parser.Initialize(res)";
 _parser.Initialize(_res);
-RDebugUtils.currentLine=3670024;
- //BA.debugLineNum = 3670024;BA.debugLine="Select Job.JobName";
+RDebugUtils.currentLine=3932168;
+ //BA.debugLineNum = 3932168;BA.debugLine="Select Job.JobName";
 switch (BA.switchObjectToInt(_job._jobname /*String*/ ,"LoadFacility")) {
 case 0: {
-RDebugUtils.currentLine=3670026;
- //BA.debugLineNum = 3670026;BA.debugLine="Try";
-try {RDebugUtils.currentLine=3670027;
- //BA.debugLineNum = 3670027;BA.debugLine="Dim map As Map";
+RDebugUtils.currentLine=3932170;
+ //BA.debugLineNum = 3932170;BA.debugLine="Try";
+try {RDebugUtils.currentLine=3932171;
+ //BA.debugLineNum = 3932171;BA.debugLine="Dim map As Map";
 _map = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=3670028;
- //BA.debugLineNum = 3670028;BA.debugLine="map = parser.NextObject";
+RDebugUtils.currentLine=3932172;
+ //BA.debugLineNum = 3932172;BA.debugLine="map = parser.NextObject";
 _map = _parser.NextObject();
-RDebugUtils.currentLine=3670029;
- //BA.debugLineNum = 3670029;BA.debugLine="Dim data As List";
+RDebugUtils.currentLine=3932173;
+ //BA.debugLineNum = 3932173;BA.debugLine="Dim data As List";
 _data = new anywheresoftware.b4a.objects.collections.List();
-RDebugUtils.currentLine=3670030;
- //BA.debugLineNum = 3670030;BA.debugLine="data = map.Get(\"data\")";
+RDebugUtils.currentLine=3932174;
+ //BA.debugLineNum = 3932174;BA.debugLine="data = map.Get(\"data\")";
 _data = (anywheresoftware.b4a.objects.collections.List) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.List(), (java.util.List)(_map.Get((Object)("data"))));
-RDebugUtils.currentLine=3670031;
- //BA.debugLineNum = 3670031;BA.debugLine="facilityMap.Initialize";
+RDebugUtils.currentLine=3932175;
+ //BA.debugLineNum = 3932175;BA.debugLine="facilityMap.Initialize";
 _facilitymap.Initialize();
-RDebugUtils.currentLine=3670032;
- //BA.debugLineNum = 3670032;BA.debugLine="spinFacility.Add(\"Facility...\")";
+RDebugUtils.currentLine=3932176;
+ //BA.debugLineNum = 3932176;BA.debugLine="spinFacility.Add(\"Facility...\")";
 mostCurrent._spinfacility.Add("Facility...");
-RDebugUtils.currentLine=3670033;
- //BA.debugLineNum = 3670033;BA.debugLine="For i = 0 To data.Size - 1";
+RDebugUtils.currentLine=3932177;
+ //BA.debugLineNum = 3932177;BA.debugLine="For i = 0 To data.Size - 1";
 {
 final int step16 = 1;
 final int limit16 = (int) (_data.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit16 ;_i = _i + step16 ) {
-RDebugUtils.currentLine=3670034;
- //BA.debugLineNum = 3670034;BA.debugLine="Dim facility As Map";
+RDebugUtils.currentLine=3932178;
+ //BA.debugLineNum = 3932178;BA.debugLine="Dim facility As Map";
 _facility = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=3670035;
- //BA.debugLineNum = 3670035;BA.debugLine="facility = data.Get(i)";
+RDebugUtils.currentLine=3932179;
+ //BA.debugLineNum = 3932179;BA.debugLine="facility = data.Get(i)";
 _facility = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_data.Get(_i)));
-RDebugUtils.currentLine=3670036;
- //BA.debugLineNum = 3670036;BA.debugLine="facilityMap.Put(facility.Get(\"facility\"), fa";
+RDebugUtils.currentLine=3932180;
+ //BA.debugLineNum = 3932180;BA.debugLine="facilityMap.Put(facility.Get(\"facility\"), fa";
 _facilitymap.Put(_facility.Get((Object)("facility")),_facility.Get((Object)("id")));
-RDebugUtils.currentLine=3670037;
- //BA.debugLineNum = 3670037;BA.debugLine="spinFacility.Add(facility.Get(\"facility\"))";
+RDebugUtils.currentLine=3932181;
+ //BA.debugLineNum = 3932181;BA.debugLine="spinFacility.Add(facility.Get(\"facility\"))";
 mostCurrent._spinfacility.Add(BA.ObjectToString(_facility.Get((Object)("facility"))));
  }
 };
  } 
        catch (Exception e23) {
-			processBA.setLastException(e23);RDebugUtils.currentLine=3670040;
- //BA.debugLineNum = 3670040;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63670040",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+			processBA.setLastException(e23);RDebugUtils.currentLine=3932184;
+ //BA.debugLineNum = 3932184;BA.debugLine="Log(LastException)";
+anywheresoftware.b4a.keywords.Common.LogImpl("83932184",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  };
  break; }
 }
 ;
  };
-RDebugUtils.currentLine=3670044;
- //BA.debugLineNum = 3670044;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3932188;
+ //BA.debugLineNum = 3932188;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spincategory_itemclick(int _position,Object _value) throws Exception{
@@ -850,60 +867,60 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "spincategory_itemclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spincategory_itemclick", new Object[] {_position,_value}));}
 String _findbycategoryrg = "";
-RDebugUtils.currentLine=3997696;
- //BA.debugLineNum = 3997696;BA.debugLine="Private Sub spinCategory_ItemClick (Position As In";
-RDebugUtils.currentLine=3997697;
- //BA.debugLineNum = 3997697;BA.debugLine="Dim findByCategoryRG As String";
+RDebugUtils.currentLine=4259840;
+ //BA.debugLineNum = 4259840;BA.debugLine="Private Sub spinCategory_ItemClick (Position As In";
+RDebugUtils.currentLine=4259841;
+ //BA.debugLineNum = 4259841;BA.debugLine="Dim findByCategoryRG As String";
 _findbycategoryrg = "";
-RDebugUtils.currentLine=3997698;
- //BA.debugLineNum = 3997698;BA.debugLine="If Position == 0 Then";
+RDebugUtils.currentLine=4259842;
+ //BA.debugLineNum = 4259842;BA.debugLine="If Position == 0 Then";
 if (_position==0) { 
-RDebugUtils.currentLine=3997699;
- //BA.debugLineNum = 3997699;BA.debugLine="MsgboxAsync(\"Please choose category\", \"Search by";
+RDebugUtils.currentLine=4259843;
+ //BA.debugLineNum = 4259843;BA.debugLine="MsgboxAsync(\"Please choose category\", \"Search by";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Please choose category"),BA.ObjectToCharSequence("Search by Category"),processBA);
-RDebugUtils.currentLine=3997700;
- //BA.debugLineNum = 3997700;BA.debugLine="isFiltered = False";
+RDebugUtils.currentLine=4259844;
+ //BA.debugLineNum = 4259844;BA.debugLine="isFiltered = False";
 _isfiltered = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=3997701;
- //BA.debugLineNum = 3997701;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4259845;
+ //BA.debugLineNum = 4259845;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3997702;
- //BA.debugLineNum = 3997702;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=4259846;
+ //BA.debugLineNum = 4259846;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3997703;
- //BA.debugLineNum = 3997703;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=4259847;
+ //BA.debugLineNum = 4259847;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3997705;
- //BA.debugLineNum = 3997705;BA.debugLine="findByCategoryRG = \"findRG('')\"";
+RDebugUtils.currentLine=4259849;
+ //BA.debugLineNum = 4259849;BA.debugLine="findByCategoryRG = \"findRG('')\"";
 _findbycategoryrg = "findRG('')";
-RDebugUtils.currentLine=3997706;
- //BA.debugLineNum = 3997706;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4259850;
+ //BA.debugLineNum = 4259850;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbycategoryrg);
  }else {
-RDebugUtils.currentLine=3997708;
- //BA.debugLineNum = 3997708;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4259852;
+ //BA.debugLineNum = 4259852;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3997709;
- //BA.debugLineNum = 3997709;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=4259853;
+ //BA.debugLineNum = 4259853;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3997710;
- //BA.debugLineNum = 3997710;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=4259854;
+ //BA.debugLineNum = 4259854;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3997711;
- //BA.debugLineNum = 3997711;BA.debugLine="isFiltered = True";
+RDebugUtils.currentLine=4259855;
+ //BA.debugLineNum = 4259855;BA.debugLine="isFiltered = True";
 _isfiltered = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=3997712;
- //BA.debugLineNum = 3997712;BA.debugLine="Log(\"Searching RG with category: \"&Value)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63997712","Searching RG with category: "+BA.ObjectToString(_value),0);
-RDebugUtils.currentLine=3997713;
- //BA.debugLineNum = 3997713;BA.debugLine="findByCategoryRG = \"findByCategoryRG('\"&Value&\"'";
+RDebugUtils.currentLine=4259856;
+ //BA.debugLineNum = 4259856;BA.debugLine="Log(\"Searching RG with category: \"&Value)";
+anywheresoftware.b4a.keywords.Common.LogImpl("84259856","Searching RG with category: "+BA.ObjectToString(_value),0);
+RDebugUtils.currentLine=4259857;
+ //BA.debugLineNum = 4259857;BA.debugLine="findByCategoryRG = \"findByCategoryRG('\"&Value&\"'";
 _findbycategoryrg = "findByCategoryRG('"+BA.ObjectToString(_value)+"')";
-RDebugUtils.currentLine=3997714;
- //BA.debugLineNum = 3997714;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4259858;
+ //BA.debugLineNum = 4259858;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbycategoryrg);
  };
-RDebugUtils.currentLine=3997716;
- //BA.debugLineNum = 3997716;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4259860;
+ //BA.debugLineNum = 4259860;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spinfacility_itemclick(int _position,Object _value) throws Exception{
@@ -911,60 +928,60 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "spinfacility_itemclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spinfacility_itemclick", new Object[] {_position,_value}));}
 String _findbyfacilityrg = "";
-RDebugUtils.currentLine=3932160;
- //BA.debugLineNum = 3932160;BA.debugLine="Private Sub spinFacility_ItemClick (Position As In";
-RDebugUtils.currentLine=3932161;
- //BA.debugLineNum = 3932161;BA.debugLine="Dim findByFacilityRG As String";
+RDebugUtils.currentLine=4194304;
+ //BA.debugLineNum = 4194304;BA.debugLine="Private Sub spinFacility_ItemClick (Position As In";
+RDebugUtils.currentLine=4194305;
+ //BA.debugLineNum = 4194305;BA.debugLine="Dim findByFacilityRG As String";
 _findbyfacilityrg = "";
-RDebugUtils.currentLine=3932162;
- //BA.debugLineNum = 3932162;BA.debugLine="If Position == 0 Then";
+RDebugUtils.currentLine=4194306;
+ //BA.debugLineNum = 4194306;BA.debugLine="If Position == 0 Then";
 if (_position==0) { 
-RDebugUtils.currentLine=3932163;
- //BA.debugLineNum = 3932163;BA.debugLine="MsgboxAsync(\"Please choose facility\", \"Search by";
+RDebugUtils.currentLine=4194307;
+ //BA.debugLineNum = 4194307;BA.debugLine="MsgboxAsync(\"Please choose facility\", \"Search by";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Please choose facility"),BA.ObjectToCharSequence("Search by Facility"),processBA);
-RDebugUtils.currentLine=3932164;
- //BA.debugLineNum = 3932164;BA.debugLine="isFiltered = False";
+RDebugUtils.currentLine=4194308;
+ //BA.debugLineNum = 4194308;BA.debugLine="isFiltered = False";
 _isfiltered = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=3932165;
- //BA.debugLineNum = 3932165;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4194309;
+ //BA.debugLineNum = 4194309;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3932166;
- //BA.debugLineNum = 3932166;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=4194310;
+ //BA.debugLineNum = 4194310;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3932167;
- //BA.debugLineNum = 3932167;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=4194311;
+ //BA.debugLineNum = 4194311;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3932169;
- //BA.debugLineNum = 3932169;BA.debugLine="findByFacilityRG = \"findRG('')\"";
+RDebugUtils.currentLine=4194313;
+ //BA.debugLineNum = 4194313;BA.debugLine="findByFacilityRG = \"findRG('')\"";
 _findbyfacilityrg = "findRG('')";
-RDebugUtils.currentLine=3932170;
- //BA.debugLineNum = 3932170;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4194314;
+ //BA.debugLineNum = 4194314;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbyfacilityrg);
  }else {
-RDebugUtils.currentLine=3932172;
- //BA.debugLineNum = 3932172;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4194316;
+ //BA.debugLineNum = 4194316;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3932173;
- //BA.debugLineNum = 3932173;BA.debugLine="spinRating.SelectedIndex = 0";
+RDebugUtils.currentLine=4194317;
+ //BA.debugLineNum = 4194317;BA.debugLine="spinRating.SelectedIndex = 0";
 mostCurrent._spinrating.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3932174;
- //BA.debugLineNum = 3932174;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=4194318;
+ //BA.debugLineNum = 4194318;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3932175;
- //BA.debugLineNum = 3932175;BA.debugLine="isFiltered = True";
+RDebugUtils.currentLine=4194319;
+ //BA.debugLineNum = 4194319;BA.debugLine="isFiltered = True";
 _isfiltered = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=3932177;
- //BA.debugLineNum = 3932177;BA.debugLine="Log(\"Searching RG with facility: \"&Value)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63932177","Searching RG with facility: "+BA.ObjectToString(_value),0);
-RDebugUtils.currentLine=3932178;
- //BA.debugLineNum = 3932178;BA.debugLine="findByFacilityRG = \"findByFacilityRG('\"&facility";
+RDebugUtils.currentLine=4194321;
+ //BA.debugLineNum = 4194321;BA.debugLine="Log(\"Searching RG with facility: \"&Value)";
+anywheresoftware.b4a.keywords.Common.LogImpl("84194321","Searching RG with facility: "+BA.ObjectToString(_value),0);
+RDebugUtils.currentLine=4194322;
+ //BA.debugLineNum = 4194322;BA.debugLine="findByFacilityRG = \"findByFacilityRG('\"&facility";
 _findbyfacilityrg = "findByFacilityRG('"+BA.ObjectToString(_facilitymap.Get(_value))+"')";
-RDebugUtils.currentLine=3932179;
- //BA.debugLineNum = 3932179;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4194323;
+ //BA.debugLineNum = 4194323;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbyfacilityrg);
  };
-RDebugUtils.currentLine=3932181;
- //BA.debugLineNum = 3932181;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4194325;
+ //BA.debugLineNum = 4194325;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spinrating_itemclick(int _position,Object _value) throws Exception{
@@ -972,128 +989,128 @@ RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "spinrating_itemclick", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "spinrating_itemclick", new Object[] {_position,_value}));}
 String _findbyratingrg = "";
-RDebugUtils.currentLine=3866624;
- //BA.debugLineNum = 3866624;BA.debugLine="Private Sub spinRating_ItemClick (Position As Int,";
-RDebugUtils.currentLine=3866625;
- //BA.debugLineNum = 3866625;BA.debugLine="Dim findByRatingRG As String";
+RDebugUtils.currentLine=4128768;
+ //BA.debugLineNum = 4128768;BA.debugLine="Private Sub spinRating_ItemClick (Position As Int,";
+RDebugUtils.currentLine=4128769;
+ //BA.debugLineNum = 4128769;BA.debugLine="Dim findByRatingRG As String";
 _findbyratingrg = "";
-RDebugUtils.currentLine=3866626;
- //BA.debugLineNum = 3866626;BA.debugLine="If Position == 0 Then";
+RDebugUtils.currentLine=4128770;
+ //BA.debugLineNum = 4128770;BA.debugLine="If Position == 0 Then";
 if (_position==0) { 
-RDebugUtils.currentLine=3866627;
- //BA.debugLineNum = 3866627;BA.debugLine="MsgboxAsync(\"Please choose rating from 1-5\", \"Se";
+RDebugUtils.currentLine=4128771;
+ //BA.debugLineNum = 4128771;BA.debugLine="MsgboxAsync(\"Please choose rating from 1-5\", \"Se";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Please choose rating from 1-5"),BA.ObjectToCharSequence("Search by Rating"),processBA);
-RDebugUtils.currentLine=3866628;
- //BA.debugLineNum = 3866628;BA.debugLine="isFiltered = False";
+RDebugUtils.currentLine=4128772;
+ //BA.debugLineNum = 4128772;BA.debugLine="isFiltered = False";
 _isfiltered = anywheresoftware.b4a.keywords.Common.False;
-RDebugUtils.currentLine=3866629;
- //BA.debugLineNum = 3866629;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4128773;
+ //BA.debugLineNum = 4128773;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3866630;
- //BA.debugLineNum = 3866630;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=4128774;
+ //BA.debugLineNum = 4128774;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3866631;
- //BA.debugLineNum = 3866631;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=4128775;
+ //BA.debugLineNum = 4128775;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3866633;
- //BA.debugLineNum = 3866633;BA.debugLine="findByRatingRG = \"findRG('')\"";
+RDebugUtils.currentLine=4128777;
+ //BA.debugLineNum = 4128777;BA.debugLine="findByRatingRG = \"findRG('')\"";
 _findbyratingrg = "findRG('')";
-RDebugUtils.currentLine=3866634;
- //BA.debugLineNum = 3866634;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4128778;
+ //BA.debugLineNum = 4128778;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbyratingrg);
  }else {
-RDebugUtils.currentLine=3866636;
- //BA.debugLineNum = 3866636;BA.debugLine="edtSearchRG.Text = \"\"";
+RDebugUtils.currentLine=4128780;
+ //BA.debugLineNum = 4128780;BA.debugLine="edtSearchRG.Text = \"\"";
 mostCurrent._edtsearchrg.setText(BA.ObjectToCharSequence(""));
-RDebugUtils.currentLine=3866637;
- //BA.debugLineNum = 3866637;BA.debugLine="spinFacility.SelectedIndex = 0";
+RDebugUtils.currentLine=4128781;
+ //BA.debugLineNum = 4128781;BA.debugLine="spinFacility.SelectedIndex = 0";
 mostCurrent._spinfacility.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3866638;
- //BA.debugLineNum = 3866638;BA.debugLine="spinCategory.SelectedIndex = 0";
+RDebugUtils.currentLine=4128782;
+ //BA.debugLineNum = 4128782;BA.debugLine="spinCategory.SelectedIndex = 0";
 mostCurrent._spincategory.setSelectedIndex((int) (0));
-RDebugUtils.currentLine=3866639;
- //BA.debugLineNum = 3866639;BA.debugLine="isFiltered = True";
+RDebugUtils.currentLine=4128783;
+ //BA.debugLineNum = 4128783;BA.debugLine="isFiltered = True";
 _isfiltered = anywheresoftware.b4a.keywords.Common.True;
-RDebugUtils.currentLine=3866641;
- //BA.debugLineNum = 3866641;BA.debugLine="Log(\"Searching RG with \"&Value&\" rating\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63866641","Searching RG with "+BA.ObjectToString(_value)+" rating",0);
-RDebugUtils.currentLine=3866642;
- //BA.debugLineNum = 3866642;BA.debugLine="findByRatingRG = \"findByRatingRG('\"&Value&\"')\"";
+RDebugUtils.currentLine=4128785;
+ //BA.debugLineNum = 4128785;BA.debugLine="Log(\"Searching RG with \"&Value&\" rating\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("84128785","Searching RG with "+BA.ObjectToString(_value)+" rating",0);
+RDebugUtils.currentLine=4128786;
+ //BA.debugLineNum = 4128786;BA.debugLine="findByRatingRG = \"findByRatingRG('\"&Value&\"')\"";
 _findbyratingrg = "findByRatingRG('"+BA.ObjectToString(_value)+"')";
-RDebugUtils.currentLine=3866643;
- //BA.debugLineNum = 3866643;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
+RDebugUtils.currentLine=4128787;
+ //BA.debugLineNum = 4128787;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewRG, fin";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewrg.getObject()),_findbyratingrg);
  };
-RDebugUtils.currentLine=3866645;
- //BA.debugLineNum = 3866645;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4128789;
+ //BA.debugLineNum = 4128789;BA.debugLine="End Sub";
 return "";
 }
 public static String  _webviewrg_pagefinished(String _url) throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "webviewrg_pagefinished", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "webviewrg_pagefinished", new Object[] {_url}));}
-RDebugUtils.currentLine=3735552;
- //BA.debugLineNum = 3735552;BA.debugLine="Private Sub WebViewRG_PageFinished (Url As String)";
-RDebugUtils.currentLine=3735554;
- //BA.debugLineNum = 3735554;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3997696;
+ //BA.debugLineNum = 3997696;BA.debugLine="Private Sub WebViewRG_PageFinished (Url As String)";
+RDebugUtils.currentLine=3997698;
+ //BA.debugLineNum = 3997698;BA.debugLine="End Sub";
 return "";
 }
 public static String  _webviewrg_progresschanged(int _loading) throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "webviewrg_progresschanged", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "webviewrg_progresschanged", new Object[] {_loading}));}
-RDebugUtils.currentLine=3342336;
- //BA.debugLineNum = 3342336;BA.debugLine="Sub WebViewRG_ProgressChanged(loading As Int)";
-RDebugUtils.currentLine=3342337;
- //BA.debugLineNum = 3342337;BA.debugLine="If loading == 100 Then";
+RDebugUtils.currentLine=3604480;
+ //BA.debugLineNum = 3604480;BA.debugLine="Sub WebViewRG_ProgressChanged(loading As Int)";
+RDebugUtils.currentLine=3604481;
+ //BA.debugLineNum = 3604481;BA.debugLine="If loading == 100 Then";
 if (_loading==100) { 
-RDebugUtils.currentLine=3342338;
- //BA.debugLineNum = 3342338;BA.debugLine="Log(\"Webview loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63342338","Webview loaded",0);
-RDebugUtils.currentLine=3342339;
- //BA.debugLineNum = 3342339;BA.debugLine="Starter.webviewLoading = loading";
+RDebugUtils.currentLine=3604482;
+ //BA.debugLineNum = 3604482;BA.debugLine="Log(\"Webview loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83604482","Webview loaded",0);
+RDebugUtils.currentLine=3604483;
+ //BA.debugLineNum = 3604483;BA.debugLine="Starter.webviewLoading = loading";
 mostCurrent._starter._webviewloading /*int*/  = _loading;
-RDebugUtils.currentLine=3342340;
- //BA.debugLineNum = 3342340;BA.debugLine="PanelSearch.Visible = True";
+RDebugUtils.currentLine=3604484;
+ //BA.debugLineNum = 3604484;BA.debugLine="PanelSearch.Visible = True";
 mostCurrent._panelsearch.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3342341;
- //BA.debugLineNum = 3342341;BA.debugLine="btnObj.Visible = True";
+RDebugUtils.currentLine=3604485;
+ //BA.debugLineNum = 3604485;BA.debugLine="btnObj.Visible = True";
 mostCurrent._btnobj.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3342342;
- //BA.debugLineNum = 3342342;BA.debugLine="btnUserLoc.Visible = True";
+RDebugUtils.currentLine=3604486;
+ //BA.debugLineNum = 3604486;BA.debugLine="btnUserLoc.Visible = True";
 mostCurrent._btnuserloc.setVisible(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=3342343;
- //BA.debugLineNum = 3342343;BA.debugLine="btnList.Visible = True";
+RDebugUtils.currentLine=3604487;
+ //BA.debugLineNum = 3604487;BA.debugLine="btnList.Visible = True";
 mostCurrent._btnlist.setVisible(anywheresoftware.b4a.keywords.Common.True);
  }else {
-RDebugUtils.currentLine=3342349;
- //BA.debugLineNum = 3342349;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63342349","Webview loading at "+BA.NumberToString(_loading)+"% ....",0);
+RDebugUtils.currentLine=3604493;
+ //BA.debugLineNum = 3604493;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83604493","Webview loading at "+BA.NumberToString(_loading)+"% ....",0);
  };
-RDebugUtils.currentLine=3342351;
- //BA.debugLineNum = 3342351;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3604495;
+ //BA.debugLineNum = 3604495;BA.debugLine="End Sub";
 return "";
 }
 public static String  _webviewrg_receivederror(int _errorcode,String _description,String _failingurl) throws Exception{
 RDebugUtils.currentModule="mapsrg";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "webviewrg_receivederror", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "webviewrg_receivederror", new Object[] {_errorcode,_description,_failingurl}));}
-RDebugUtils.currentLine=3014656;
- //BA.debugLineNum = 3014656;BA.debugLine="Sub WebViewRG_ReceivedError(ErrorCode As Int, Desc";
-RDebugUtils.currentLine=3014657;
- //BA.debugLineNum = 3014657;BA.debugLine="Log(\"WebView Error:\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("63014657","WebView Error:",0);
-RDebugUtils.currentLine=3014658;
- //BA.debugLineNum = 3014658;BA.debugLine="Log(\"Error Code: \" & ErrorCode)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63014658","Error Code: "+BA.NumberToString(_errorcode),0);
-RDebugUtils.currentLine=3014659;
- //BA.debugLineNum = 3014659;BA.debugLine="Log(\"Description: \" & Description)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63014659","Description: "+_description,0);
-RDebugUtils.currentLine=3014660;
- //BA.debugLineNum = 3014660;BA.debugLine="Log(\"Failing URL: \" & FailingUrl)";
-anywheresoftware.b4a.keywords.Common.LogImpl("63014660","Failing URL: "+_failingurl,0);
-RDebugUtils.currentLine=3014661;
- //BA.debugLineNum = 3014661;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3276800;
+ //BA.debugLineNum = 3276800;BA.debugLine="Sub WebViewRG_ReceivedError(ErrorCode As Int, Desc";
+RDebugUtils.currentLine=3276801;
+ //BA.debugLineNum = 3276801;BA.debugLine="Log(\"WebView Error:\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("83276801","WebView Error:",0);
+RDebugUtils.currentLine=3276802;
+ //BA.debugLineNum = 3276802;BA.debugLine="Log(\"Error Code: \" & ErrorCode)";
+anywheresoftware.b4a.keywords.Common.LogImpl("83276802","Error Code: "+BA.NumberToString(_errorcode),0);
+RDebugUtils.currentLine=3276803;
+ //BA.debugLineNum = 3276803;BA.debugLine="Log(\"Description: \" & Description)";
+anywheresoftware.b4a.keywords.Common.LogImpl("83276803","Description: "+_description,0);
+RDebugUtils.currentLine=3276804;
+ //BA.debugLineNum = 3276804;BA.debugLine="Log(\"Failing URL: \" & FailingUrl)";
+anywheresoftware.b4a.keywords.Common.LogImpl("83276804","Failing URL: "+_failingurl,0);
+RDebugUtils.currentLine=3276805;
+ //BA.debugLineNum = 3276805;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -132,7 +132,7 @@ case 0:
 this.state = 1;
  BA.debugLineNum = 79;BA.debugLine="Log(\"MapsRG Loaded\")";
 Debug.ShouldStop(16384);
-parent.mostCurrent.__c.runVoidMethod ("LogImpl","63080193",RemoteObject.createImmutable("MapsRG Loaded"),0);
+parent.mostCurrent.__c.runVoidMethod ("LogImpl","83342337",RemoteObject.createImmutable("MapsRG Loaded"),0);
  BA.debugLineNum = 80;BA.debugLine="If Starter.GPS1.GPSEnabled = False Then";
 Debug.ShouldStop(32768);
 if (true) break;
@@ -240,7 +240,7 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.mapsrg.
 Debug.ShouldStop(4);
  BA.debugLineNum = 100;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(8);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63211265",RemoteObject.createImmutable("Going back to previous activity"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83473409",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 101;BA.debugLine="Starter.mapStatus = \"\"";
 Debug.ShouldStop(16);
 mapsrg.mostCurrent._starter._mapstatus /*RemoteObject*/  = BA.ObjectToString("");
@@ -257,6 +257,28 @@ catch (Exception e) {
 finally {
 			Debug.PopSubsStack();
 		}}
+public static RemoteObject  _btncart_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnCart_Click (mapsrg) ","mapsrg",5,mapsrg.mostCurrent.activityBA,mapsrg.mostCurrent,277);
+if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.mapsrg.remoteMe.runUserSub(false, "mapsrg","btncart_click");}
+ BA.debugLineNum = 277;BA.debugLine="Private Sub btnCart_Click";
+Debug.ShouldStop(1048576);
+ BA.debugLineNum = 278;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+Debug.ShouldStop(2097152);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","841418753",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+ BA.debugLineNum = 279;BA.debugLine="StartActivity(Cart)";
+Debug.ShouldStop(4194304);
+mapsrg.mostCurrent.__c.runVoidMethod ("StartActivity",mapsrg.processBA,(Object)((mapsrg.mostCurrent._cart.getObject())));
+ BA.debugLineNum = 280;BA.debugLine="End Sub";
+Debug.ShouldStop(8388608);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
 public static RemoteObject  _btnlist_click() throws Exception{
 try {
 		Debug.PushSubsStack("btnList_Click (mapsrg) ","mapsrg",5,mapsrg.mostCurrent.activityBA,mapsrg.mostCurrent,204);
@@ -265,7 +287,7 @@ if (RapidSub.canDelegate("btnlist_click")) { return b4a.DesaWisataSaribu.mapsrg.
 Debug.ShouldStop(2048);
  BA.debugLineNum = 205;BA.debugLine="Log(\"Redirect to ListRG activity\")";
 Debug.ShouldStop(4096);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63801089",RemoteObject.createImmutable("Redirect to ListRG activity"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","84063233",RemoteObject.createImmutable("Redirect to ListRG activity"),0);
  BA.debugLineNum = 206;BA.debugLine="StartActivity(ListRG)";
 Debug.ShouldStop(8192);
 mapsrg.mostCurrent.__c.runVoidMethod ("StartActivity",mapsrg.processBA,(Object)((mapsrg.mostCurrent._listrg.getObject())));
@@ -288,7 +310,7 @@ RemoteObject _boundtoobject = RemoteObject.createImmutable("");
 Debug.ShouldStop(256);
  BA.debugLineNum = 138;BA.debugLine="Log(\"Pan to Rumah Gadang\")";
 Debug.ShouldStop(512);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63473409",RemoteObject.createImmutable("Pan to Rumah Gadang"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83735553",RemoteObject.createImmutable("Pan to Rumah Gadang"),0);
  BA.debugLineNum = 139;BA.debugLine="Dim boundToObject As String";
 Debug.ShouldStop(1024);
 _boundtoobject = RemoteObject.createImmutable("");Debug.locals.put("boundToObject", _boundtoobject);
@@ -340,7 +362,7 @@ RemoteObject _pantouser = RemoteObject.createImmutable("");
 Debug.ShouldStop(2);
  BA.debugLineNum = 131;BA.debugLine="Log(\"Panning to user location\")";
 Debug.ShouldStop(4);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63407873",RemoteObject.createImmutable("Panning to user location"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83670017",RemoteObject.createImmutable("Panning to user location"),0);
  BA.debugLineNum = 132;BA.debugLine="UpdateLocation";
 Debug.ShouldStop(8);
 _updatelocation();
@@ -403,7 +425,7 @@ Debug.ShouldStop(2);
 mapsrg._isfiltered = mapsrg.mostCurrent.__c.getField(true,"True");
  BA.debugLineNum = 164;BA.debugLine="Log(\"Searching '\"&nameRG&\"' on maps\")";
 Debug.ShouldStop(8);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63604486",RemoteObject.concat(RemoteObject.createImmutable("Searching '"),mapsrg._namerg,RemoteObject.createImmutable("' on maps")),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83866630",RemoteObject.concat(RemoteObject.createImmutable("Searching '"),mapsrg._namerg,RemoteObject.createImmutable("' on maps")),0);
  BA.debugLineNum = 165;BA.debugLine="Dim searchRG As String";
 Debug.ShouldStop(16);
 _searchrg = RemoteObject.createImmutable("");Debug.locals.put("searchRG", _searchrg);
@@ -479,7 +501,7 @@ Debug.locals.put("Job", _job);
 Debug.ShouldStop(512);
  BA.debugLineNum = 171;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
 Debug.ShouldStop(1024);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63670017",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83932161",RemoteObject.concat(RemoteObject.createImmutable("JobName = "),_job.getField(true,"_jobname" /*RemoteObject*/ ),RemoteObject.createImmutable(", Success = "),_job.getField(true,"_success" /*RemoteObject*/ )),0);
  BA.debugLineNum = 172;BA.debugLine="If Job.Success Then";
 Debug.ShouldStop(2048);
 if (_job.getField(true,"_success" /*RemoteObject*/ ).<Boolean>get().booleanValue()) { 
@@ -547,7 +569,7 @@ mapsrg.mostCurrent._spinfacility.runVoidMethod ("Add",(Object)(BA.ObjectToString
        catch (Exception e23) {
 			BA.rdebugUtils.runVoidMethod("setLastException",mapsrg.processBA, e23.toString()); BA.debugLineNum = 194;BA.debugLine="Log(LastException)";
 Debug.ShouldStop(2);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63670040",BA.ObjectToString(mapsrg.mostCurrent.__c.runMethod(false,"LastException",mapsrg.mostCurrent.activityBA)),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83932184",BA.ObjectToString(mapsrg.mostCurrent.__c.runMethod(false,"LastException",mapsrg.mostCurrent.activityBA)),0);
  };
  break; }
 }
@@ -625,7 +647,7 @@ Debug.ShouldStop(8192);
 mapsrg._isfiltered = mapsrg.mostCurrent.__c.getField(true,"True");
  BA.debugLineNum = 271;BA.debugLine="Log(\"Searching RG with category: \"&Value)";
 Debug.ShouldStop(16384);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63997712",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with category: "),_value),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","84259856",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with category: "),_value),0);
  BA.debugLineNum = 272;BA.debugLine="findByCategoryRG = \"findByCategoryRG('\"&Value&\"'";
 Debug.ShouldStop(32768);
 _findbycategoryrg = RemoteObject.concat(RemoteObject.createImmutable("findByCategoryRG('"),_value,RemoteObject.createImmutable("')"));Debug.locals.put("findByCategoryRG", _findbycategoryrg);
@@ -694,7 +716,7 @@ Debug.ShouldStop(4194304);
 mapsrg._isfiltered = mapsrg.mostCurrent.__c.getField(true,"True");
  BA.debugLineNum = 249;BA.debugLine="Log(\"Searching RG with facility: \"&Value)";
 Debug.ShouldStop(16777216);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63932177",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with facility: "),_value),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","84194321",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with facility: "),_value),0);
  BA.debugLineNum = 250;BA.debugLine="findByFacilityRG = \"findByFacilityRG('\"&facility";
 Debug.ShouldStop(33554432);
 _findbyfacilityrg = RemoteObject.concat(RemoteObject.createImmutable("findByFacilityRG('"),mapsrg._facilitymap.runMethod(false,"Get",(Object)(_value)),RemoteObject.createImmutable("')"));Debug.locals.put("findByFacilityRG", _findbyfacilityrg);
@@ -763,7 +785,7 @@ Debug.ShouldStop(-2147483648);
 mapsrg._isfiltered = mapsrg.mostCurrent.__c.getField(true,"True");
  BA.debugLineNum = 226;BA.debugLine="Log(\"Searching RG with \"&Value&\" rating\")";
 Debug.ShouldStop(2);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63866641",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with "),_value,RemoteObject.createImmutable(" rating")),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","84128785",RemoteObject.concat(RemoteObject.createImmutable("Searching RG with "),_value,RemoteObject.createImmutable(" rating")),0);
  BA.debugLineNum = 227;BA.debugLine="findByRatingRG = \"findByRatingRG('\"&Value&\"')\"";
 Debug.ShouldStop(4);
 _findbyratingrg = RemoteObject.concat(RemoteObject.createImmutable("findByRatingRG('"),_value,RemoteObject.createImmutable("')"));Debug.locals.put("findByRatingRG", _findbyratingrg);
@@ -790,10 +812,10 @@ RemoteObject _userposition = RemoteObject.createImmutable("");
 Debug.ShouldStop(256);
  BA.debugLineNum = 106;BA.debugLine="Log(\"Update user position on Maps Rumah Gadang\")";
 Debug.ShouldStop(512);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63276801",RemoteObject.createImmutable("Update user position on Maps Rumah Gadang"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83538945",RemoteObject.createImmutable("Update user position on Maps Rumah Gadang"),0);
  BA.debugLineNum = 107;BA.debugLine="Log(\"Lat: \"&Starter.lat&\"; Long: \"&Starter.lng)";
 Debug.ShouldStop(1024);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63276802",RemoteObject.concat(RemoteObject.createImmutable("Lat: "),mapsrg.mostCurrent._starter._lat /*RemoteObject*/ ,RemoteObject.createImmutable("; Long: "),mapsrg.mostCurrent._starter._lng /*RemoteObject*/ ),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83538946",RemoteObject.concat(RemoteObject.createImmutable("Lat: "),mapsrg.mostCurrent._starter._lat /*RemoteObject*/ ,RemoteObject.createImmutable("; Long: "),mapsrg.mostCurrent._starter._lng /*RemoteObject*/ ),0);
  BA.debugLineNum = 108;BA.debugLine="Dim userPosition As String";
 Debug.ShouldStop(2048);
 _userposition = RemoteObject.createImmutable("");Debug.locals.put("userPosition", _userposition);
@@ -842,7 +864,7 @@ Debug.ShouldStop(131072);
 if (RemoteObject.solveBoolean("=",_loading,BA.numberCast(double.class, 100))) { 
  BA.debugLineNum = 115;BA.debugLine="Log(\"Webview loaded\")";
 Debug.ShouldStop(262144);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63342338",RemoteObject.createImmutable("Webview loaded"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83604482",RemoteObject.createImmutable("Webview loaded"),0);
  BA.debugLineNum = 116;BA.debugLine="Starter.webviewLoading = loading";
 Debug.ShouldStop(524288);
 mapsrg.mostCurrent._starter._webviewloading /*RemoteObject*/  = _loading;
@@ -861,7 +883,7 @@ mapsrg.mostCurrent._btnlist.runMethod(true,"setVisible",mapsrg.mostCurrent.__c.g
  }else {
  BA.debugLineNum = 126;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
 Debug.ShouldStop(536870912);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63342349",RemoteObject.concat(RemoteObject.createImmutable("Webview loading at "),_loading,RemoteObject.createImmutable("% ....")),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83604493",RemoteObject.concat(RemoteObject.createImmutable("Webview loading at "),_loading,RemoteObject.createImmutable("% ....")),0);
  };
  BA.debugLineNum = 128;BA.debugLine="End Sub";
 Debug.ShouldStop(-2147483648);
@@ -884,16 +906,16 @@ Debug.locals.put("FailingUrl", _failingurl);
 Debug.ShouldStop(128);
  BA.debugLineNum = 73;BA.debugLine="Log(\"WebView Error:\")";
 Debug.ShouldStop(256);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63014657",RemoteObject.createImmutable("WebView Error:"),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83276801",RemoteObject.createImmutable("WebView Error:"),0);
  BA.debugLineNum = 74;BA.debugLine="Log(\"Error Code: \" & ErrorCode)";
 Debug.ShouldStop(512);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63014658",RemoteObject.concat(RemoteObject.createImmutable("Error Code: "),_errorcode),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83276802",RemoteObject.concat(RemoteObject.createImmutable("Error Code: "),_errorcode),0);
  BA.debugLineNum = 75;BA.debugLine="Log(\"Description: \" & Description)";
 Debug.ShouldStop(1024);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63014659",RemoteObject.concat(RemoteObject.createImmutable("Description: "),_description),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83276803",RemoteObject.concat(RemoteObject.createImmutable("Description: "),_description),0);
  BA.debugLineNum = 76;BA.debugLine="Log(\"Failing URL: \" & FailingUrl)";
 Debug.ShouldStop(2048);
-mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","63014660",RemoteObject.concat(RemoteObject.createImmutable("Failing URL: "),_failingurl),0);
+mapsrg.mostCurrent.__c.runVoidMethod ("LogImpl","83276804",RemoteObject.concat(RemoteObject.createImmutable("Failing URL: "),_failingurl),0);
  BA.debugLineNum = 77;BA.debugLine="End Sub";
 Debug.ShouldStop(4096);
 return RemoteObject.createImmutable("");
