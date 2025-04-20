@@ -40,6 +40,6 @@ ModuleClosedNodes6=
 ModuleClosedNodes7=
 ModuleClosedNodes8=
 ModuleClosedNodes9=
-NavigationStack=DetailRG,btnCart_Click,76,0,DetailRG,wvDetail_PageFinished,69,0,Gemma,btnCart_Click,90,0,Gemma,BtnBack_Click,68,0,Cart,BtnBack_Click,76,0,Cart,WebViewGemma_PageFinished,69,0,Visual Designer,mainscrollview.bal,-100,3,Cart,Activity_Create,35,2,Cart,Process_Globals,7,0,Cart,Globals,16,0
+NavigationStack=Gemma,BtnBack_Click,68,0,Cart,BtnBack_Click,76,0,Cart,WebViewGemma_PageFinished,69,0,Visual Designer,mainscrollview.bal,-100,3,Cart,Activity_Create,35,2,Cart,Process_Globals,7,0,Cart,Globals,13,0,Main,Process_Globals,19,0,HomeUser,JobDone,78,0,HomeUser,Activity_Resume,53,1
 SelectedBuild=0
 VisibleModules=13,7,10,3,12,6,5,11,4,8,1

@@ -57,7 +57,7 @@ End Sub
 
 Sub Activity_Resume
 	Log("HomeUser loaded")
-	Core.ExecuteUrl(Main.API&"profile", "id="&Main.manager.GetString("user_id"), "Profile", Me)
+	Core.ExecuteUrl(Main.API&"user", "id="&Main.manager.GetString("user_id"), "Profile", Me)
 End Sub
 
 Sub Activity_Pause (UserClosed As Boolean)
