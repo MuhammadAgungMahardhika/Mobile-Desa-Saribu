@@ -8,7 +8,7 @@ public class cart_subs_0 {
 
 public static RemoteObject  _activity_create(RemoteObject _firsttime) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Create (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,26);
+		Debug.PushSubsStack("Activity_Create (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,26);
 if (RapidSub.canDelegate("activity_create")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","activity_create", _firsttime);}
 Debug.locals.put("FirstTime", _firsttime);
  BA.debugLineNum = 26;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
@@ -61,7 +61,7 @@ finally {
 		}}
 public static RemoteObject  _activity_pause(RemoteObject _userclosed) throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Pause (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,48);
+		Debug.PushSubsStack("Activity_Pause (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,48);
 if (RapidSub.canDelegate("activity_pause")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","activity_pause", _userclosed);}
 Debug.locals.put("UserClosed", _userclosed);
  BA.debugLineNum = 48;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
@@ -78,7 +78,7 @@ finally {
 		}}
 public static RemoteObject  _activity_resume() throws Exception{
 try {
-		Debug.PushSubsStack("Activity_Resume (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,44);
+		Debug.PushSubsStack("Activity_Resume (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,44);
 if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","activity_resume");}
  BA.debugLineNum = 44;BA.debugLine="Sub Activity_Resume";
 Debug.ShouldStop(2048);
@@ -94,13 +94,13 @@ finally {
 		}}
 public static RemoteObject  _btnback_click() throws Exception{
 try {
-		Debug.PushSubsStack("BtnBack_Click (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,73);
+		Debug.PushSubsStack("BtnBack_Click (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,73);
 if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","btnback_click");}
  BA.debugLineNum = 73;BA.debugLine="Private Sub BtnBack_Click";
 Debug.ShouldStop(256);
  BA.debugLineNum = 74;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(512);
-cart.mostCurrent.__c.runVoidMethod ("LogImpl","841680897",RemoteObject.createImmutable("Going back to previous activity"),0);
+cart.mostCurrent.__c.runVoidMethod ("LogImpl","210092545",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 75;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(1024);
 cart.mostCurrent._activity.runVoidMethod ("Finish");
@@ -146,14 +146,14 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _setuserid() throws Exception{
 try {
-		Debug.PushSubsStack("SetUserId (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,53);
+		Debug.PushSubsStack("SetUserId (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,53);
 if (RapidSub.canDelegate("setuserid")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","setuserid");}
 RemoteObject _exectfunction = RemoteObject.createImmutable("");
  BA.debugLineNum = 53;BA.debugLine="Public Sub SetUserId";
 Debug.ShouldStop(1048576);
  BA.debugLineNum = 54;BA.debugLine="Log(\"Set User Id\")";
 Debug.ShouldStop(2097152);
-cart.mostCurrent.__c.runVoidMethod ("LogImpl","841156609",RemoteObject.createImmutable("Set User Id"),0);
+cart.mostCurrent.__c.runVoidMethod ("LogImpl","29961473",RemoteObject.createImmutable("Set User Id"),0);
  BA.debugLineNum = 55;BA.debugLine="Dim exectFunction As String";
 Debug.ShouldStop(4194304);
 _exectfunction = RemoteObject.createImmutable("");Debug.locals.put("exectFunction", _exectfunction);
@@ -162,7 +162,7 @@ Debug.ShouldStop(16777216);
 cart.mostCurrent._userid = cart.mostCurrent._manager.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("user_id")));
  BA.debugLineNum = 58;BA.debugLine="Log(\"User ID: \" & userId)";
 Debug.ShouldStop(33554432);
-cart.mostCurrent.__c.runVoidMethod ("LogImpl","841156613",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),cart.mostCurrent._userid),0);
+cart.mostCurrent.__c.runVoidMethod ("LogImpl","29961477",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),cart.mostCurrent._userid),0);
  BA.debugLineNum = 60;BA.debugLine="If userId <> \"\" And userId <> Null Then";
 Debug.ShouldStop(134217728);
 if (RemoteObject.solveBoolean("!",cart.mostCurrent._userid,BA.ObjectToString("")) && RemoteObject.solveBoolean("N",cart.mostCurrent._userid)) { 
@@ -175,7 +175,7 @@ cart.mostCurrent._mywebviewextras.runVoidMethod ("executeJavascript",(Object)((c
  }else {
  BA.debugLineNum = 64;BA.debugLine="Log(\"User ID is empty or null\")";
 Debug.ShouldStop(-2147483648);
-cart.mostCurrent.__c.runVoidMethod ("LogImpl","841156619",RemoteObject.createImmutable("User ID is empty or null"),0);
+cart.mostCurrent.__c.runVoidMethod ("LogImpl","29961483",RemoteObject.createImmutable("User ID is empty or null"),0);
  };
  BA.debugLineNum = 66;BA.debugLine="End Sub";
 Debug.ShouldStop(2);
@@ -189,14 +189,14 @@ finally {
 		}}
 public static RemoteObject  _webviewgemma_pagefinished(RemoteObject _url) throws Exception{
 try {
-		Debug.PushSubsStack("WebViewGemma_PageFinished (cart) ","cart",13,cart.mostCurrent.activityBA,cart.mostCurrent,68);
+		Debug.PushSubsStack("WebViewGemma_PageFinished (cart) ","cart",14,cart.mostCurrent.activityBA,cart.mostCurrent,68);
 if (RapidSub.canDelegate("webviewgemma_pagefinished")) { return b4a.DesaWisataSaribu.cart.remoteMe.runUserSub(false, "cart","webviewgemma_pagefinished", _url);}
 Debug.locals.put("Url", _url);
  BA.debugLineNum = 68;BA.debugLine="Private Sub WebViewGemma_PageFinished (Url As Stri";
 Debug.ShouldStop(8);
  BA.debugLineNum = 69;BA.debugLine="Log(\"page finished\")";
 Debug.ShouldStop(16);
-cart.mostCurrent.__c.runVoidMethod ("LogImpl","841222145",RemoteObject.createImmutable("page finished"),0);
+cart.mostCurrent.__c.runVoidMethod ("LogImpl","210027009",RemoteObject.createImmutable("page finished"),0);
  BA.debugLineNum = 70;BA.debugLine="SetUserId";
 Debug.ShouldStop(32);
 _setuserid();

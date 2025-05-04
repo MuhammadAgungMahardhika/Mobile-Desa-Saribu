@@ -345,15 +345,6 @@ public static void initializeProcessGlobals() {
             }
 }
 public anywheresoftware.b4a.keywords.Common __c = null;
-public static anywheresoftware.b4a.objects.collections.Map _data = null;
-public static String _id = "";
-public static String _username = "";
-public static String _email = "";
-public static String _first_name = "";
-public static String _last_name = "";
-public static String _avatar = "";
-public static String _address = "";
-public static String _phone = "";
 public static int _status = 0;
 public anywheresoftware.b4a.objects.LabelWrapper _labelheader = null;
 public anywheresoftware.b4a.objects.LabelWrapper _labellogout = null;
@@ -375,6 +366,7 @@ public anywheresoftware.b4a.objects.LabelWrapper _labelrg = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btngemma = null;
 public anywheresoftware.b4a.objects.LabelWrapper _labelgemma = null;
 public anywheresoftware.b4a.objects.ButtonWrapper _btnpackage = null;
+public static boolean _profiledataloaded = false;
 public b4a.example.dateutils _dateutils = null;
 public b4a.DesaWisataSaribu.main _main = null;
 public b4a.DesaWisataSaribu.starter _starter = null;
@@ -386,8 +378,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.core _core = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
@@ -396,132 +389,254 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=4456448;
- //BA.debugLineNum = 4456448;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=4456451;
- //BA.debugLineNum = 4456451;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentLine=4653056;
+ //BA.debugLineNum = 4653056;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=4653058;
+ //BA.debugLineNum = 4653058;BA.debugLine="Activity.LoadLayout(\"MainScrollView\") ' Muat layo";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
-RDebugUtils.currentLine=4456452;
- //BA.debugLineNum = 4456452;BA.debugLine="MainScroll.Panel.LoadLayout(\"HomeUser\")";
+RDebugUtils.currentLine=4653059;
+ //BA.debugLineNum = 4653059;BA.debugLine="MainScroll.Panel.LoadLayout(\"HomeUser\") ' Muat la";
 mostCurrent._mainscroll.getPanel().LoadLayout("HomeUser",mostCurrent.activityBA);
-RDebugUtils.currentLine=4456453;
- //BA.debugLineNum = 4456453;BA.debugLine="PanelHome.Height = MainScroll.Height";
+RDebugUtils.currentLine=4653060;
+ //BA.debugLineNum = 4653060;BA.debugLine="PanelHome.Height = MainScroll.Height ' Sesuaikan";
 mostCurrent._panelhome.setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=4456454;
- //BA.debugLineNum = 4456454;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=4653061;
+ //BA.debugLineNum = 4653061;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height ' Ses";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=4456455;
- //BA.debugLineNum = 4456455;BA.debugLine="TitleNavbar.Text=\"Home User\"";
+RDebugUtils.currentLine=4653062;
+ //BA.debugLineNum = 4653062;BA.debugLine="TitleNavbar.Text=\"Home User\" ' Set judul navbar";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence("Home User"));
-RDebugUtils.currentLine=4456456;
- //BA.debugLineNum = 4456456;BA.debugLine="BtnBack.Visible = False";
+RDebugUtils.currentLine=4653063;
+ //BA.debugLineNum = 4653063;BA.debugLine="BtnBack.Visible = False ' Sembunyikan tombol kemb";
 mostCurrent._btnback.setVisible(anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=4456458;
- //BA.debugLineNum = 4456458;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4653066;
+ //BA.debugLineNum = 4653066;BA.debugLine="If FirstTime Then";
+if (_firsttime) { 
+RDebugUtils.currentLine=4653067;
+ //BA.debugLineNum = 4653067;BA.debugLine="profileDataLoaded = False";
+_profiledataloaded = anywheresoftware.b4a.keywords.Common.False;
+ };
+RDebugUtils.currentLine=4653069;
+ //BA.debugLineNum = 4653069;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="homeuser";
-RDebugUtils.currentLine=4587520;
- //BA.debugLineNum = 4587520;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=4587522;
- //BA.debugLineNum = 4587522;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4784128;
+ //BA.debugLineNum = 4784128;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=4784130;
+ //BA.debugLineNum = 4784130;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=4521984;
- //BA.debugLineNum = 4521984;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=4521985;
- //BA.debugLineNum = 4521985;BA.debugLine="Log(\"HomeUser loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84521985","HomeUser loaded",0);
-RDebugUtils.currentLine=4521986;
- //BA.debugLineNum = 4521986;BA.debugLine="Core.ExecuteUrl(Main.API&\"profile\", \"id=\"&Main.ma";
-mostCurrent._core._executeurl /*String*/ (mostCurrent.activityBA,mostCurrent._main._api /*String*/ +"profile","id="+mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .GetString("user_id"),"Profile",homeuser.getObject());
-RDebugUtils.currentLine=4521987;
- //BA.debugLineNum = 4521987;BA.debugLine="End Sub";
+String _userid = "";
+RDebugUtils.currentLine=4718592;
+ //BA.debugLineNum = 4718592;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=4718593;
+ //BA.debugLineNum = 4718593;BA.debugLine="Log(\"HomeUser loaded (Resume)\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24718593","HomeUser loaded (Resume)",0);
+RDebugUtils.currentLine=4718595;
+ //BA.debugLineNum = 4718595;BA.debugLine="Dim userId As String = Main.manager.GetString(\"us";
+_userid = mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .GetString("user_id");
+RDebugUtils.currentLine=4718599;
+ //BA.debugLineNum = 4718599;BA.debugLine="If userId <> \"\" And Not(profileDataLoaded) Then";
+if ((_userid).equals("") == false && anywheresoftware.b4a.keywords.Common.Not(_profiledataloaded)) { 
+RDebugUtils.currentLine=4718600;
+ //BA.debugLineNum = 4718600;BA.debugLine="Log(\"User ID found: \" & userId & \". Profile data";
+anywheresoftware.b4a.keywords.Common.LogImpl("24718600","User ID found: "+_userid+". Profile data not loaded yet. Fetching profile...",0);
+RDebugUtils.currentLine=4718601;
+ //BA.debugLineNum = 4718601;BA.debugLine="Core.ExecuteUrlGet(Main.API & \"user/\" & userId,";
+mostCurrent._core._executeurlget /*String*/ (mostCurrent.activityBA,mostCurrent._main._api /*String*/ +"user/"+_userid,"Profile",homeuser.getObject());
+ }else 
+{RDebugUtils.currentLine=4718602;
+ //BA.debugLineNum = 4718602;BA.debugLine="Else If userId = \"\" Then";
+if ((_userid).equals("")) { 
+RDebugUtils.currentLine=4718603;
+ //BA.debugLineNum = 4718603;BA.debugLine="Log(\"User ID not found in manager. Cannot fetch";
+anywheresoftware.b4a.keywords.Common.LogImpl("24718603","User ID not found in manager. Cannot fetch profile.",0);
+RDebugUtils.currentLine=4718605;
+ //BA.debugLineNum = 4718605;BA.debugLine="ToastMessageShow(\"Sesi tidak valid, silakan logi";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Sesi tidak valid, silakan login kembali."),anywheresoftware.b4a.keywords.Common.True);
+RDebugUtils.currentLine=4718606;
+ //BA.debugLineNum = 4718606;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=4718607;
+ //BA.debugLineNum = 4718607;BA.debugLine="StartActivity(Main) ' Kembali ke activity Main/L";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._main.getObject()));
+ }else {
+RDebugUtils.currentLine=4718609;
+ //BA.debugLineNum = 4718609;BA.debugLine="Log(\"Profile data already loaded. Skipping API c";
+anywheresoftware.b4a.keywords.Common.LogImpl("24718609","Profile data already loaded. Skipping API call.",0);
+ }}
+;
+RDebugUtils.currentLine=4718613;
+ //BA.debugLineNum = 4718613;BA.debugLine="End Sub";
+return "";
+}
+public static String  _btnback_click() throws Exception{
+RDebugUtils.currentModule="homeuser";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
+RDebugUtils.currentLine=5177344;
+ //BA.debugLineNum = 5177344;BA.debugLine="Private Sub BtnBack_Click";
+RDebugUtils.currentLine=5177345;
+ //BA.debugLineNum = 5177345;BA.debugLine="Activity.Finish ' Kembali ke activity sebelumnya";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=5177346;
+ //BA.debugLineNum = 5177346;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btncart_click() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btncart_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btncart_click", null));}
-RDebugUtils.currentLine=41353216;
- //BA.debugLineNum = 41353216;BA.debugLine="Private Sub btnCart_Click";
-RDebugUtils.currentLine=41353217;
- //BA.debugLineNum = 41353217;BA.debugLine="Log(\"Redirect to Cart Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("841353217","Redirect to Cart Activity",0);
-RDebugUtils.currentLine=41353218;
- //BA.debugLineNum = 41353218;BA.debugLine="StartActivity(Cart)";
+RDebugUtils.currentLine=42270720;
+ //BA.debugLineNum = 42270720;BA.debugLine="Private Sub btnCart_Click";
+RDebugUtils.currentLine=42270721;
+ //BA.debugLineNum = 42270721;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("242270721","Redirect to Cart Activity",0);
+RDebugUtils.currentLine=42270722;
+ //BA.debugLineNum = 42270722;BA.debugLine="StartActivity(Cart)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._cart.getObject()));
-RDebugUtils.currentLine=41353219;
- //BA.debugLineNum = 41353219;BA.debugLine="End Sub";
+RDebugUtils.currentLine=42270723;
+ //BA.debugLineNum = 42270723;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btngemma_click() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btngemma_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btngemma_click", null));}
-RDebugUtils.currentLine=4915200;
- //BA.debugLineNum = 4915200;BA.debugLine="Private Sub BtnGemma_Click";
-RDebugUtils.currentLine=4915201;
- //BA.debugLineNum = 4915201;BA.debugLine="Log(\"Redirect to Gemma Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84915201","Redirect to Gemma Activity",0);
-RDebugUtils.currentLine=4915202;
- //BA.debugLineNum = 4915202;BA.debugLine="StartActivity(Gemma)";
+RDebugUtils.currentLine=5111808;
+ //BA.debugLineNum = 5111808;BA.debugLine="Private Sub BtnGemma_Click";
+RDebugUtils.currentLine=5111809;
+ //BA.debugLineNum = 5111809;BA.debugLine="Log(\"Redirect to Gemma Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25111809","Redirect to Gemma Activity",0);
+RDebugUtils.currentLine=5111810;
+ //BA.debugLineNum = 5111810;BA.debugLine="StartActivity(Gemma)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._gemma.getObject()));
-RDebugUtils.currentLine=4915203;
- //BA.debugLineNum = 4915203;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5111811;
+ //BA.debugLineNum = 5111811;BA.debugLine="End Sub";
 return "";
 }
-public static String  _btnlogout_click() throws Exception{
+public static void  _btnlogout_click() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnlogout_click", false))
-	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnlogout_click", null));}
-RDebugUtils.currentLine=4784128;
- //BA.debugLineNum = 4784128;BA.debugLine="Private Sub BtnLogout_Click";
-RDebugUtils.currentLine=4784129;
- //BA.debugLineNum = 4784129;BA.debugLine="Log(\"Redirect to Main Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84784129","Redirect to Main Activity",0);
-RDebugUtils.currentLine=4784130;
- //BA.debugLineNum = 4784130;BA.debugLine="Core.ExecuteUrlGet(Main.API&\"logout\", \"Logout\", M";
-mostCurrent._core._executeurlget /*String*/ (mostCurrent.activityBA,mostCurrent._main._api /*String*/ +"logout","Logout",homeuser.getObject());
-RDebugUtils.currentLine=4784131;
- //BA.debugLineNum = 4784131;BA.debugLine="End Sub";
-return "";
+	 {Debug.delegate(mostCurrent.activityBA, "btnlogout_click", null); return;}
+ResumableSub_BtnLogout_Click rsub = new ResumableSub_BtnLogout_Click(null);
+rsub.resume(processBA, null);
+}
+public static class ResumableSub_BtnLogout_Click extends BA.ResumableSub {
+public ResumableSub_BtnLogout_Click(b4a.DesaWisataSaribu.homeuser parent) {
+this.parent = parent;
+}
+b4a.DesaWisataSaribu.homeuser parent;
+int _result = 0;
+
+@Override
+public void resume(BA ba, Object[] result) throws Exception{
+RDebugUtils.currentModule="homeuser";
+
+    while (true) {
+        switch (state) {
+            case -1:
+return;
+
+case 0:
+//C
+this.state = 1;
+RDebugUtils.currentLine=4980737;
+ //BA.debugLineNum = 4980737;BA.debugLine="Log(\"Attempting to logout...\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24980737","Attempting to logout...",0);
+RDebugUtils.currentLine=4980739;
+ //BA.debugLineNum = 4980739;BA.debugLine="Msgbox2Async(\"Are you sure you want to log out?\"";
+anywheresoftware.b4a.keywords.Common.Msgbox2Async(BA.ObjectToCharSequence("Are you sure you want to log out?"),BA.ObjectToCharSequence("Confirm Logout"),"Yes","","No",(anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper(), (android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.Null)),processBA,anywheresoftware.b4a.keywords.Common.False);
+RDebugUtils.currentLine=4980740;
+ //BA.debugLineNum = 4980740;BA.debugLine="Wait For Msgbox_Result(Result As Int)";
+anywheresoftware.b4a.keywords.Common.WaitFor("msgbox_result", processBA, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "homeuser", "btnlogout_click"), null);
+this.state = 7;
+return;
+case 7:
+//C
+this.state = 1;
+_result = (Integer) result[0];
+;
+RDebugUtils.currentLine=4980741;
+ //BA.debugLineNum = 4980741;BA.debugLine="If Result = DialogResponse.POSITIVE Then";
+if (true) break;
+
+case 1:
+//if
+this.state = 6;
+if (_result==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
+this.state = 3;
+}else {
+this.state = 5;
+}if (true) break;
+
+case 3:
+//C
+this.state = 6;
+RDebugUtils.currentLine=4980742;
+ //BA.debugLineNum = 4980742;BA.debugLine="Log(\"Logout confirmed. Calling API...\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24980742","Logout confirmed. Calling API...",0);
+RDebugUtils.currentLine=4980743;
+ //BA.debugLineNum = 4980743;BA.debugLine="Core.ExecuteUrlGet(Main.API & \"logout\", \"Logout\"";
+parent.mostCurrent._core._executeurlget /*String*/ (mostCurrent.activityBA,parent.mostCurrent._main._api /*String*/ +"logout","Logout",homeuser.getObject());
+ if (true) break;
+
+case 5:
+//C
+this.state = 6;
+RDebugUtils.currentLine=4980745;
+ //BA.debugLineNum = 4980745;BA.debugLine="Log(\"Logout cancelled.\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24980745","Logout cancelled.",0);
+ if (true) break;
+
+case 6:
+//C
+this.state = -1;
+;
+RDebugUtils.currentLine=4980747;
+ //BA.debugLineNum = 4980747;BA.debugLine="End Sub";
+if (true) break;
+
+            }
+        }
+    }
 }
 public static String  _btnpackage_click() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnpackage_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnpackage_click", null));}
-RDebugUtils.currentLine=4849664;
- //BA.debugLineNum = 4849664;BA.debugLine="Private Sub BtnPackage_Click";
-RDebugUtils.currentLine=4849665;
- //BA.debugLineNum = 4849665;BA.debugLine="Log(\"Redirect to List Package\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84849665","Redirect to List Package",0);
-RDebugUtils.currentLine=4849666;
- //BA.debugLineNum = 4849666;BA.debugLine="StartActivity(ListPackage)";
+RDebugUtils.currentLine=5046272;
+ //BA.debugLineNum = 5046272;BA.debugLine="Private Sub BtnPackage_Click";
+RDebugUtils.currentLine=5046273;
+ //BA.debugLineNum = 5046273;BA.debugLine="Log(\"Redirect to List Package\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25046273","Redirect to List Package",0);
+RDebugUtils.currentLine=5046274;
+ //BA.debugLineNum = 5046274;BA.debugLine="StartActivity(ListPackage)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._listpackage.getObject()));
-RDebugUtils.currentLine=4849667;
- //BA.debugLineNum = 4849667;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5046275;
+ //BA.debugLineNum = 5046275;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnrg_click() throws Exception{
 RDebugUtils.currentModule="homeuser";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnrg_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnrg_click", null));}
-RDebugUtils.currentLine=4718592;
- //BA.debugLineNum = 4718592;BA.debugLine="Private Sub BtnRG_Click";
-RDebugUtils.currentLine=4718593;
- //BA.debugLineNum = 4718593;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84718593","Redirect to MapsRG Activity",0);
-RDebugUtils.currentLine=4718594;
- //BA.debugLineNum = 4718594;BA.debugLine="StartActivity(MapsRG)";
+RDebugUtils.currentLine=4915200;
+ //BA.debugLineNum = 4915200;BA.debugLine="Private Sub BtnRG_Click";
+RDebugUtils.currentLine=4915201;
+ //BA.debugLineNum = 4915201;BA.debugLine="Log(\"Redirect to MapsRG Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24915201","Redirect to MapsRG Activity",0);
+RDebugUtils.currentLine=4915202;
+ //BA.debugLineNum = 4915202;BA.debugLine="StartActivity(MapsRG)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._mapsrg.getObject()));
-RDebugUtils.currentLine=4718595;
- //BA.debugLineNum = 4718595;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4915203;
+ //BA.debugLineNum = 4915203;BA.debugLine="End Sub";
 return "";
 }
 public static String  _jobdone(b4a.DesaWisataSaribu.httpjob _job) throws Exception{
@@ -531,193 +646,322 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "jobdone", false))
 String _res = "";
 anywheresoftware.b4a.objects.collections.JSONParser _parser = null;
 anywheresoftware.b4a.objects.collections.Map _map = null;
+anywheresoftware.b4a.objects.collections.Map _profiledata = null;
+String _tempusername = "";
+String _tempfirstname = "";
+String _templastname = "";
+String _tempavatar = "";
+String _validfirstname = "";
+String _validlastname = "";
+String _trimmedfirstname = "";
+String _trimmedlastname = "";
 String _fullname = "";
+boolean _isavatarvalid = false;
+String _trimmedavatar = "";
 anywheresoftware.b4a.objects.collections.Map _avatarmap = null;
 String _avatarpath = "";
 anywheresoftware.b4a.objects.collections.JSONParser _errorparser = null;
 anywheresoftware.b4a.objects.collections.Map _errormap = null;
-String _error = "";
-RDebugUtils.currentLine=4653056;
- //BA.debugLineNum = 4653056;BA.debugLine="Sub JobDone (Job As HttpJob)";
-RDebugUtils.currentLine=4653057;
- //BA.debugLineNum = 4653057;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653057","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
-RDebugUtils.currentLine=4653058;
- //BA.debugLineNum = 4653058;BA.debugLine="If Job.Success Then";
+String _errormsg = "";
+RDebugUtils.currentLine=4849664;
+ //BA.debugLineNum = 4849664;BA.debugLine="Sub JobDone (Job As HttpJob)";
+RDebugUtils.currentLine=4849665;
+ //BA.debugLineNum = 4849665;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849665","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
+RDebugUtils.currentLine=4849666;
+ //BA.debugLineNum = 4849666;BA.debugLine="If Job.Success Then";
 if (_job._success /*boolean*/ ) { 
-RDebugUtils.currentLine=4653059;
- //BA.debugLineNum = 4653059;BA.debugLine="Dim res As String";
+RDebugUtils.currentLine=4849667;
+ //BA.debugLineNum = 4849667;BA.debugLine="Dim res As String";
 _res = "";
-RDebugUtils.currentLine=4653060;
- //BA.debugLineNum = 4653060;BA.debugLine="res = Job.GetString";
+RDebugUtils.currentLine=4849668;
+ //BA.debugLineNum = 4849668;BA.debugLine="res = Job.GetString";
 _res = _job._getstring /*String*/ (null);
-RDebugUtils.currentLine=4653061;
- //BA.debugLineNum = 4653061;BA.debugLine="Dim parser As JSONParser";
+RDebugUtils.currentLine=4849669;
+ //BA.debugLineNum = 4849669;BA.debugLine="Dim parser As JSONParser";
 _parser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=4653062;
- //BA.debugLineNum = 4653062;BA.debugLine="parser.Initialize(res)";
+RDebugUtils.currentLine=4849670;
+ //BA.debugLineNum = 4849670;BA.debugLine="parser.Initialize(res)";
 _parser.Initialize(_res);
-RDebugUtils.currentLine=4653063;
- //BA.debugLineNum = 4653063;BA.debugLine="Log(\"Response from server :\"&res)";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653063","Response from server :"+_res,0);
-RDebugUtils.currentLine=4653064;
- //BA.debugLineNum = 4653064;BA.debugLine="Select Job.JobName";
+RDebugUtils.currentLine=4849671;
+ //BA.debugLineNum = 4849671;BA.debugLine="Log(\"Response from server :\"&res)";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849671","Response from server :"+_res,0);
+RDebugUtils.currentLine=4849672;
+ //BA.debugLineNum = 4849672;BA.debugLine="Select Job.JobName";
 switch (BA.switchObjectToInt(_job._jobname /*String*/ ,"Profile","Logout")) {
 case 0: {
-RDebugUtils.currentLine=4653066;
- //BA.debugLineNum = 4653066;BA.debugLine="Try";
-try {RDebugUtils.currentLine=4653068;
- //BA.debugLineNum = 4653068;BA.debugLine="Dim map As Map";
+RDebugUtils.currentLine=4849674;
+ //BA.debugLineNum = 4849674;BA.debugLine="Try";
+try {RDebugUtils.currentLine=4849675;
+ //BA.debugLineNum = 4849675;BA.debugLine="Dim map As Map";
 _map = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=4653069;
- //BA.debugLineNum = 4653069;BA.debugLine="map = parser.NextObject";
+RDebugUtils.currentLine=4849676;
+ //BA.debugLineNum = 4849676;BA.debugLine="map = parser.NextObject";
 _map = _parser.NextObject();
-RDebugUtils.currentLine=4653070;
- //BA.debugLineNum = 4653070;BA.debugLine="data = map.Get(\"data\")";
-_data = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_map.Get((Object)("data"))));
-RDebugUtils.currentLine=4653071;
- //BA.debugLineNum = 4653071;BA.debugLine="id = data.Get(\"id\")";
-_id = BA.ObjectToString(_data.Get((Object)("id")));
-RDebugUtils.currentLine=4653072;
- //BA.debugLineNum = 4653072;BA.debugLine="email = data.Get(\"email\")";
-_email = BA.ObjectToString(_data.Get((Object)("email")));
-RDebugUtils.currentLine=4653073;
- //BA.debugLineNum = 4653073;BA.debugLine="username = data.Get(\"username\")";
-_username = BA.ObjectToString(_data.Get((Object)("username")));
-RDebugUtils.currentLine=4653074;
- //BA.debugLineNum = 4653074;BA.debugLine="first_name = data.Get(\"first_name\")";
-_first_name = BA.ObjectToString(_data.Get((Object)("first_name")));
-RDebugUtils.currentLine=4653075;
- //BA.debugLineNum = 4653075;BA.debugLine="last_name = data.Get(\"last_name\")";
-_last_name = BA.ObjectToString(_data.Get((Object)("last_name")));
-RDebugUtils.currentLine=4653076;
- //BA.debugLineNum = 4653076;BA.debugLine="avatar = data.Get(\"avatar\")";
-_avatar = BA.ObjectToString(_data.Get((Object)("avatar")));
-RDebugUtils.currentLine=4653077;
- //BA.debugLineNum = 4653077;BA.debugLine="address = data.Get(\"address\")";
-_address = BA.ObjectToString(_data.Get((Object)("address")));
-RDebugUtils.currentLine=4653078;
- //BA.debugLineNum = 4653078;BA.debugLine="phone = data.Get(\"phone\")";
-_phone = BA.ObjectToString(_data.Get((Object)("phone")));
-RDebugUtils.currentLine=4653081;
- //BA.debugLineNum = 4653081;BA.debugLine="Dim fullName As String";
+RDebugUtils.currentLine=4849677;
+ //BA.debugLineNum = 4849677;BA.debugLine="Dim profileData As Map ' Gunakan variabel lok";
+_profiledata = new anywheresoftware.b4a.objects.collections.Map();
+RDebugUtils.currentLine=4849678;
+ //BA.debugLineNum = 4849678;BA.debugLine="profileData = map.Get(\"data\")";
+_profiledata = (anywheresoftware.b4a.objects.collections.Map) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.collections.Map(), (java.util.Map)(_map.Get((Object)("data"))));
+RDebugUtils.currentLine=4849679;
+ //BA.debugLineNum = 4849679;BA.debugLine="If profileData = Null Then";
+if (_profiledata== null) { 
+RDebugUtils.currentLine=4849680;
+ //BA.debugLineNum = 4849680;BA.debugLine="Log(\"Error: 'data' field is null in profile";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849680","Error: 'data' field is null in profile response.",0);
+RDebugUtils.currentLine=4849681;
+ //BA.debugLineNum = 4849681;BA.debugLine="profileDataLoaded = False ' Gagal memuat";
+_profiledataloaded = anywheresoftware.b4a.keywords.Common.False;
+RDebugUtils.currentLine=4849682;
+ //BA.debugLineNum = 4849682;BA.debugLine="Return ' Keluar jika data null";
+if (true) return "";
+ };
+RDebugUtils.currentLine=4849687;
+ //BA.debugLineNum = 4849687;BA.debugLine="Dim tempUsername As String = profileData.Get(";
+_tempusername = BA.ObjectToString(_profiledata.Get((Object)("username")));
+RDebugUtils.currentLine=4849688;
+ //BA.debugLineNum = 4849688;BA.debugLine="Dim tempFirstName As String = profileData.Get";
+_tempfirstname = BA.ObjectToString(_profiledata.Get((Object)("first_name")));
+RDebugUtils.currentLine=4849689;
+ //BA.debugLineNum = 4849689;BA.debugLine="Dim tempLastName As String = profileData.Get(";
+_templastname = BA.ObjectToString(_profiledata.Get((Object)("last_name")));
+RDebugUtils.currentLine=4849690;
+ //BA.debugLineNum = 4849690;BA.debugLine="Dim tempAvatar As String = profileData.Get(\"a";
+_tempavatar = BA.ObjectToString(_profiledata.Get((Object)("avatar")));
+RDebugUtils.currentLine=4849694;
+ //BA.debugLineNum = 4849694;BA.debugLine="Dim validFirstName As String = \"\"";
+_validfirstname = "";
+RDebugUtils.currentLine=4849695;
+ //BA.debugLineNum = 4849695;BA.debugLine="Dim validLastName As String = \"\"";
+_validlastname = "";
+RDebugUtils.currentLine=4849697;
+ //BA.debugLineNum = 4849697;BA.debugLine="If tempFirstName <> Null Then";
+if (_tempfirstname!= null) { 
+RDebugUtils.currentLine=4849698;
+ //BA.debugLineNum = 4849698;BA.debugLine="Dim trimmedFirstName As String = tempFirstNa";
+_trimmedfirstname = _tempfirstname.trim();
+RDebugUtils.currentLine=4849699;
+ //BA.debugLineNum = 4849699;BA.debugLine="If trimmedFirstName <> \"\" And trimmedFirstNa";
+if ((_trimmedfirstname).equals("") == false && (_trimmedfirstname.toLowerCase()).equals("null") == false) { 
+RDebugUtils.currentLine=4849700;
+ //BA.debugLineNum = 4849700;BA.debugLine="validFirstName = tempFirstName";
+_validfirstname = _tempfirstname;
+ };
+ };
+RDebugUtils.currentLine=4849704;
+ //BA.debugLineNum = 4849704;BA.debugLine="If tempLastName <> Null Then";
+if (_templastname!= null) { 
+RDebugUtils.currentLine=4849705;
+ //BA.debugLineNum = 4849705;BA.debugLine="Dim trimmedLastName As String = tempLastName";
+_trimmedlastname = _templastname.trim();
+RDebugUtils.currentLine=4849706;
+ //BA.debugLineNum = 4849706;BA.debugLine="If trimmedLastName <> \"\" And trimmedLastName";
+if ((_trimmedlastname).equals("") == false && (_trimmedlastname.toLowerCase()).equals("null") == false) { 
+RDebugUtils.currentLine=4849707;
+ //BA.debugLineNum = 4849707;BA.debugLine="validLastName = tempLastName";
+_validlastname = _templastname;
+ };
+ };
+RDebugUtils.currentLine=4849711;
+ //BA.debugLineNum = 4849711;BA.debugLine="Dim fullName As String = \"\"";
 _fullname = "";
-RDebugUtils.currentLine=4653082;
- //BA.debugLineNum = 4653082;BA.debugLine="If first_name <> Null And first_name <> \"\" Th";
-if (_first_name!= null && (_first_name).equals("") == false) { 
-_fullname = _first_name;};
-RDebugUtils.currentLine=4653083;
- //BA.debugLineNum = 4653083;BA.debugLine="If last_name <> Null And last_name <> \"\" Then";
-if (_last_name!= null && (_last_name).equals("") == false) { 
-_fullname = _fullname+" "+_last_name;};
-RDebugUtils.currentLine=4653084;
- //BA.debugLineNum = 4653084;BA.debugLine="LabelName.Text = fullName.Trim  ' Hapus spasi";
-mostCurrent._labelname.setText(BA.ObjectToCharSequence(_fullname.trim()));
-RDebugUtils.currentLine=4653085;
- //BA.debugLineNum = 4653085;BA.debugLine="LabelUsername.Text = \"@\"&username";
-mostCurrent._labelusername.setText(BA.ObjectToCharSequence("@"+_username));
-RDebugUtils.currentLine=4653087;
- //BA.debugLineNum = 4653087;BA.debugLine="Dim avatarMap As Map";
+RDebugUtils.currentLine=4849712;
+ //BA.debugLineNum = 4849712;BA.debugLine="If validFirstName <> \"\" Then fullName = valid";
+if ((_validfirstname).equals("") == false) { 
+_fullname = _validfirstname;};
+RDebugUtils.currentLine=4849713;
+ //BA.debugLineNum = 4849713;BA.debugLine="If validLastName <> \"\" Then";
+if ((_validlastname).equals("") == false) { 
+RDebugUtils.currentLine=4849714;
+ //BA.debugLineNum = 4849714;BA.debugLine="If fullName <> \"\" Then fullName = fullName &";
+if ((_fullname).equals("") == false) { 
+_fullname = _fullname+" "+_validlastname;};
+ }else {
+RDebugUtils.currentLine=4849716;
+ //BA.debugLineNum = 4849716;BA.debugLine="fullName = validLastName";
+_fullname = _validlastname;
+ };
+RDebugUtils.currentLine=4849719;
+ //BA.debugLineNum = 4849719;BA.debugLine="LabelName.Text = fullName";
+mostCurrent._labelname.setText(BA.ObjectToCharSequence(_fullname));
+RDebugUtils.currentLine=4849720;
+ //BA.debugLineNum = 4849720;BA.debugLine="LabelUsername.Text = \"@\" & tempUsername ' Gun";
+mostCurrent._labelusername.setText(BA.ObjectToCharSequence("@"+_tempusername));
+RDebugUtils.currentLine=4849724;
+ //BA.debugLineNum = 4849724;BA.debugLine="Dim isAvatarValid As Boolean = False";
+_isavatarvalid = anywheresoftware.b4a.keywords.Common.False;
+RDebugUtils.currentLine=4849725;
+ //BA.debugLineNum = 4849725;BA.debugLine="If tempAvatar <> Null Then";
+if (_tempavatar!= null) { 
+RDebugUtils.currentLine=4849726;
+ //BA.debugLineNum = 4849726;BA.debugLine="Dim trimmedAvatar As String = tempAvatar.Tri";
+_trimmedavatar = _tempavatar.trim();
+RDebugUtils.currentLine=4849727;
+ //BA.debugLineNum = 4849727;BA.debugLine="If trimmedAvatar <> \"\" And trimmedAvatar.ToL";
+if ((_trimmedavatar).equals("") == false && (_trimmedavatar.toLowerCase()).equals("null") == false) { 
+RDebugUtils.currentLine=4849728;
+ //BA.debugLineNum = 4849728;BA.debugLine="isAvatarValid = True";
+_isavatarvalid = anywheresoftware.b4a.keywords.Common.True;
+ };
+ };
+RDebugUtils.currentLine=4849733;
+ //BA.debugLineNum = 4849733;BA.debugLine="If isAvatarValid Then";
+if (_isavatarvalid) { 
+RDebugUtils.currentLine=4849734;
+ //BA.debugLineNum = 4849734;BA.debugLine="Log(\"Avatar check passed. Avatar value: \"\"\"";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849734","Avatar check passed. Avatar value: \""+_tempavatar+"\". Attempting download.",0);
+RDebugUtils.currentLine=4849735;
+ //BA.debugLineNum = 4849735;BA.debugLine="Dim avatarMap As Map";
 _avatarmap = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=4653088;
- //BA.debugLineNum = 4653088;BA.debugLine="Dim avatarPath As String";
+RDebugUtils.currentLine=4849736;
+ //BA.debugLineNum = 4849736;BA.debugLine="Dim avatarPath As String";
 _avatarpath = "";
-RDebugUtils.currentLine=4653089;
- //BA.debugLineNum = 4653089;BA.debugLine="avatarPath = Main.server & \"media/photos/\" &a";
-_avatarpath = mostCurrent._main._server /*String*/ +"media/photos/"+_avatar;
-RDebugUtils.currentLine=4653090;
- //BA.debugLineNum = 4653090;BA.debugLine="avatarMap.Initialize";
+RDebugUtils.currentLine=4849737;
+ //BA.debugLineNum = 4849737;BA.debugLine="avatarPath = Main.server & \"media/photos/\" &";
+_avatarpath = mostCurrent._main._server /*String*/ +"media/photos/"+_tempavatar;
+RDebugUtils.currentLine=4849738;
+ //BA.debugLineNum = 4849738;BA.debugLine="Log(\"Attempting to download avatar from: \" &";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849738","Attempting to download avatar from: "+_avatarpath,0);
+RDebugUtils.currentLine=4849739;
+ //BA.debugLineNum = 4849739;BA.debugLine="avatarMap.Initialize";
 _avatarmap.Initialize();
-RDebugUtils.currentLine=4653091;
- //BA.debugLineNum = 4653091;BA.debugLine="avatarMap.Put(ProfileAvatar, avatarPath)";
+RDebugUtils.currentLine=4849740;
+ //BA.debugLineNum = 4849740;BA.debugLine="avatarMap.Put(ProfileAvatar, avatarPath)";
 _avatarmap.Put((Object)(mostCurrent._profileavatar.getObject()),(Object)(_avatarpath));
-RDebugUtils.currentLine=4653092;
- //BA.debugLineNum = 4653092;BA.debugLine="CallSubDelayed2(Starter, \"Download\", avatarMa";
+RDebugUtils.currentLine=4849741;
+ //BA.debugLineNum = 4849741;BA.debugLine="CallSubDelayed2(Starter, \"Download\", avatarM";
 anywheresoftware.b4a.keywords.Common.CallSubDelayed2(processBA,(Object)(mostCurrent._starter.getObject()),"Download",(Object)(_avatarmap));
+ }else {
+RDebugUtils.currentLine=4849743;
+ //BA.debugLineNum = 4849743;BA.debugLine="Log(\"Avatar check failed. Avatar is Null, em";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849743","Avatar check failed. Avatar is Null, empty string, or the string \"null\". Skipping download.",0);
+ };
+RDebugUtils.currentLine=4849748;
+ //BA.debugLineNum = 4849748;BA.debugLine="profileDataLoaded = True  ' Tandai bahwa data";
+_profiledataloaded = anywheresoftware.b4a.keywords.Common.True;
+RDebugUtils.currentLine=4849749;
+ //BA.debugLineNum = 4849749;BA.debugLine="Log(\"Profile data successfully processed and";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849749","Profile data successfully processed and loaded.",0);
  } 
-       catch (Exception e34) {
-			processBA.setLastException(e34);RDebugUtils.currentLine=4653094;
- //BA.debugLineNum = 4653094;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653094",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+       catch (Exception e69) {
+			processBA.setLastException(e69);RDebugUtils.currentLine=4849753;
+ //BA.debugLineNum = 4849753;BA.debugLine="Log(\"Error processing profile data: \" & LastE";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849753","Error processing profile data: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+RDebugUtils.currentLine=4849754;
+ //BA.debugLineNum = 4849754;BA.debugLine="profileDataLoaded = False ' Set false jika ad";
+_profiledataloaded = anywheresoftware.b4a.keywords.Common.False;
  };
  break; }
 case 1: {
-RDebugUtils.currentLine=4653098;
- //BA.debugLineNum = 4653098;BA.debugLine="Try";
-try {RDebugUtils.currentLine=4653099;
- //BA.debugLineNum = 4653099;BA.debugLine="Dim map As Map";
+RDebugUtils.currentLine=4849758;
+ //BA.debugLineNum = 4849758;BA.debugLine="Try";
+try {RDebugUtils.currentLine=4849759;
+ //BA.debugLineNum = 4849759;BA.debugLine="Dim map As Map";
 _map = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=4653100;
- //BA.debugLineNum = 4653100;BA.debugLine="map = parser.NextObject";
+RDebugUtils.currentLine=4849760;
+ //BA.debugLineNum = 4849760;BA.debugLine="map = parser.NextObject";
 _map = _parser.NextObject();
-RDebugUtils.currentLine=4653101;
- //BA.debugLineNum = 4653101;BA.debugLine="status = map.Get(\"status\")";
+RDebugUtils.currentLine=4849761;
+ //BA.debugLineNum = 4849761;BA.debugLine="status = map.Get(\"status\")";
 _status = (int)(BA.ObjectToNumber(_map.Get((Object)("status"))));
-RDebugUtils.currentLine=4653102;
- //BA.debugLineNum = 4653102;BA.debugLine="If status == 200 Then";
+RDebugUtils.currentLine=4849762;
+ //BA.debugLineNum = 4849762;BA.debugLine="If status == 200 Then";
 if (_status==200) { 
-RDebugUtils.currentLine=4653103;
- //BA.debugLineNum = 4653103;BA.debugLine="MsgboxAsync(\"Successfully logged out\", \"Log";
+RDebugUtils.currentLine=4849763;
+ //BA.debugLineNum = 4849763;BA.debugLine="MsgboxAsync(\"Successfully logged out\", \"Log";
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Successfully logged out"),BA.ObjectToCharSequence("Log Out"),processBA);
-RDebugUtils.currentLine=4653104;
- //BA.debugLineNum = 4653104;BA.debugLine="Main.manager.SetBoolean(\"is_login\", False)";
+RDebugUtils.currentLine=4849764;
+ //BA.debugLineNum = 4849764;BA.debugLine="Main.manager.SetBoolean(\"is_login\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("is_login",anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=4653105;
- //BA.debugLineNum = 4653105;BA.debugLine="Main.manager.SetBoolean(\"visitor\", False)";
+RDebugUtils.currentLine=4849765;
+ //BA.debugLineNum = 4849765;BA.debugLine="Main.manager.SetBoolean(\"visitor\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("visitor",anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=4653106;
- //BA.debugLineNum = 4653106;BA.debugLine="Main.manager.SetBoolean(\"user\", False)";
+RDebugUtils.currentLine=4849766;
+ //BA.debugLineNum = 4849766;BA.debugLine="Main.manager.SetBoolean(\"user\", False)";
 mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetBoolean("user",anywheresoftware.b4a.keywords.Common.False);
-RDebugUtils.currentLine=4653107;
- //BA.debugLineNum = 4653107;BA.debugLine="Log(\"Successfully logged out\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653107","Successfully logged out",0);
-RDebugUtils.currentLine=4653108;
- //BA.debugLineNum = 4653108;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=4849767;
+ //BA.debugLineNum = 4849767;BA.debugLine="Main.manager.SetString(\"user_id\", \"\") ' Koso";
+mostCurrent._main._manager /*de.amberhome.objects.preferenceactivity.PreferenceManager*/ .SetString("user_id","");
+RDebugUtils.currentLine=4849768;
+ //BA.debugLineNum = 4849768;BA.debugLine="Log(\"Successfully logged out\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849768","Successfully logged out",0);
+RDebugUtils.currentLine=4849769;
+ //BA.debugLineNum = 4849769;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=4653109;
- //BA.debugLineNum = 4653109;BA.debugLine="StartActivity(Main)";
+RDebugUtils.currentLine=4849770;
+ //BA.debugLineNum = 4849770;BA.debugLine="StartActivity(Main) ' Kembali ke activity Ma";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._main.getObject()));
+ }else {
+RDebugUtils.currentLine=4849772;
+ //BA.debugLineNum = 4849772;BA.debugLine="MsgboxAsync(\"Logout failed. Status: \" & stat";
+anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Logout failed. Status: "+BA.NumberToString(_status)),BA.ObjectToCharSequence("Log Out Error"),processBA);
  };
  } 
-       catch (Exception e51) {
-			processBA.setLastException(e51);RDebugUtils.currentLine=4653112;
- //BA.debugLineNum = 4653112;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653112",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+       catch (Exception e90) {
+			processBA.setLastException(e90);RDebugUtils.currentLine=4849775;
+ //BA.debugLineNum = 4849775;BA.debugLine="Log(\"Error processing logout response: \" & La";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849775","Error processing logout response: "+BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+RDebugUtils.currentLine=4849776;
+ //BA.debugLineNum = 4849776;BA.debugLine="MsgboxAsync(\"Error during logout process.\", \"";
+anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Error during logout process."),BA.ObjectToCharSequence("Log Out Error"),processBA);
  };
  break; }
 }
 ;
  }else {
-RDebugUtils.currentLine=4653117;
- //BA.debugLineNum = 4653117;BA.debugLine="Dim errorParser As JSONParser";
+RDebugUtils.currentLine=4849781;
+ //BA.debugLineNum = 4849781;BA.debugLine="Dim errorParser As JSONParser";
 _errorparser = new anywheresoftware.b4a.objects.collections.JSONParser();
-RDebugUtils.currentLine=4653118;
- //BA.debugLineNum = 4653118;BA.debugLine="errorParser.Initialize(Job.ErrorMessage)";
+RDebugUtils.currentLine=4849782;
+ //BA.debugLineNum = 4849782;BA.debugLine="errorParser.Initialize(Job.ErrorMessage)";
 _errorparser.Initialize(_job._errormessage /*String*/ );
-RDebugUtils.currentLine=4653120;
- //BA.debugLineNum = 4653120;BA.debugLine="Dim errorMap As Map";
+RDebugUtils.currentLine=4849783;
+ //BA.debugLineNum = 4849783;BA.debugLine="Dim errorMap As Map";
 _errormap = new anywheresoftware.b4a.objects.collections.Map();
-RDebugUtils.currentLine=4653121;
- //BA.debugLineNum = 4653121;BA.debugLine="errorMap = errorParser.NextObject";
+RDebugUtils.currentLine=4849784;
+ //BA.debugLineNum = 4849784;BA.debugLine="errorMap = errorParser.NextObject";
 _errormap = _errorparser.NextObject();
-RDebugUtils.currentLine=4653122;
- //BA.debugLineNum = 4653122;BA.debugLine="Log(\"Error: \" & Job.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("84653122","Error: "+_job._errormessage /*String*/ ,0);
-RDebugUtils.currentLine=4653124;
- //BA.debugLineNum = 4653124;BA.debugLine="Dim error As String";
-_error = "";
-RDebugUtils.currentLine=4653125;
- //BA.debugLineNum = 4653125;BA.debugLine="error = errorMap.Get(\"message\")";
-_error = BA.ObjectToString(_errormap.Get((Object)("message")));
-RDebugUtils.currentLine=4653126;
- //BA.debugLineNum = 4653126;BA.debugLine="ToastMessageShow(\"Error: \" & error, True)";
-anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Error: "+_error),anywheresoftware.b4a.keywords.Common.True);
+RDebugUtils.currentLine=4849785;
+ //BA.debugLineNum = 4849785;BA.debugLine="Log(\"Error: \" & Job.ErrorMessage)";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849785","Error: "+_job._errormessage /*String*/ ,0);
+RDebugUtils.currentLine=4849787;
+ //BA.debugLineNum = 4849787;BA.debugLine="Dim errorMsg As String = \"Unknown error\"";
+_errormsg = "Unknown error";
+RDebugUtils.currentLine=4849788;
+ //BA.debugLineNum = 4849788;BA.debugLine="If errorMap <> Null And errorMap.ContainsKey(\"me";
+if (_errormap!= null && _errormap.ContainsKey((Object)("message"))) { 
+RDebugUtils.currentLine=4849789;
+ //BA.debugLineNum = 4849789;BA.debugLine="errorMsg = errorMap.Get(\"message\")";
+_errormsg = BA.ObjectToString(_errormap.Get((Object)("message")));
+ }else 
+{RDebugUtils.currentLine=4849790;
+ //BA.debugLineNum = 4849790;BA.debugLine="Else if Job.ErrorMessage.Contains(\"java.net.\") T";
+if (_job._errormessage /*String*/ .contains("java.net.")) { 
+RDebugUtils.currentLine=4849791;
+ //BA.debugLineNum = 4849791;BA.debugLine="errorMsg = \"Network error. Please check your co";
+_errormsg = "Network error. Please check your connection.";
+ }}
+;
+RDebugUtils.currentLine=4849794;
+ //BA.debugLineNum = 4849794;BA.debugLine="ToastMessageShow(\"Error: \" & errorMsg, True)";
+anywheresoftware.b4a.keywords.Common.ToastMessageShow(BA.ObjectToCharSequence("Error: "+_errormsg),anywheresoftware.b4a.keywords.Common.True);
+RDebugUtils.currentLine=4849797;
+ //BA.debugLineNum = 4849797;BA.debugLine="If Job.JobName = \"Profile\" Then";
+if ((_job._jobname /*String*/ ).equals("Profile")) { 
+RDebugUtils.currentLine=4849798;
+ //BA.debugLineNum = 4849798;BA.debugLine="profileDataLoaded = False ' Set false agar bisa";
+_profiledataloaded = anywheresoftware.b4a.keywords.Common.False;
+RDebugUtils.currentLine=4849799;
+ //BA.debugLineNum = 4849799;BA.debugLine="Log(\"API call for Profile failed. Flag reset to";
+anywheresoftware.b4a.keywords.Common.LogImpl("24849799","API call for Profile failed. Flag reset to false.",0);
  };
-RDebugUtils.currentLine=4653128;
- //BA.debugLineNum = 4653128;BA.debugLine="Job.Release";
+ };
+RDebugUtils.currentLine=4849803;
+ //BA.debugLineNum = 4849803;BA.debugLine="Job.Release";
 _job._release /*String*/ (null);
-RDebugUtils.currentLine=4653129;
- //BA.debugLineNum = 4653129;BA.debugLine="End Sub";
+RDebugUtils.currentLine=4849804;
+ //BA.debugLineNum = 4849804;BA.debugLine="End Sub";
 return "";
 }
 }

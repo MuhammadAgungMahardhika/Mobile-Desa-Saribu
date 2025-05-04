@@ -76,35 +76,39 @@ roundslider
 scrollinglabel
 swiftbutton
 xuiviewsutils
-main,activity_create,1,0,43,58
-,mainscroll,,navbar,,btnlogin,,btnvisitor,,editlogin,,editpassword,,imagelogin,,panellogin,,manager
-,mainscroll,,navbar,,btnlogin,,btnvisitor,,editlogin,,editpassword,,imagelogin,,panellogin
+main,activity_create,1,0,44,59
+,mainscroll,,navbar,,btnlogin,,btnregister,,btnvisitor,,editlogin,,editpassword,,imagelogin,,panellogin,,manager
+,mainscroll,,navbar,,btnlogin,,btnregister,,btnvisitor,,editlogin,,editpassword,,imagelogin,,panellogin
 ,checklogin
-main,checklogin,0,0,83,94
+main,checklogin,0,0,84,95
 ,manager
 
 
-main,activity_pause,0,0,65,67
+main,activity_pause,0,0,66,68
 
 
 
-main,activity_resume,0,0,60,63
+main,activity_resume,0,0,61,64
 ,manager
 
 
-main,btnlogin_click,0,0,79,81
+main,btnlogin_click,0,0,80,82
 ,api,,editlogin,,editpassword
 
 core,executeurl,httpjob,initialize,httpjob,poststring,httpjob,postbytes,httpjob,addscheme
-main,btnvisitor_click,0,0,70,77
+main,btnregister_click,0,0,161,164
+
+
+
+main,btnvisitor_click,0,0,71,78
 ,manager
 
 
-main,globals,0,1,30,41
+main,globals,0,1,30,42
 
 
 
-main,jobdone,0,0,96,157
+main,jobdone,0,1,97,159
 ,data,,sessionid,,csrftoken,,in_group,,user,,id,,email,,username,,first_name,,last_name,,avatar,,address,,phone,,manager,httputils2service,tempfolder
 ,data,,sessionid,,csrftoken,,in_group,,user,,id,,email,,username,,first_name,,last_name,,avatar,,address,,phone
 httpjob,getstring,httpjob,release,httpjob,getstring2
@@ -688,47 +692,51 @@ detailev,process_globals,0,1,6,10
 
 
 
-homeuser,activity_create,1,0,40,50
-,btnback,,mainscroll,,navbar,,titlenavbar,,btngemma,,btnlogout,,btnpackage,,btnrg,,labelgemma,,labelheader,,labellogout,,labelname,,labelpackage,,labelrg,,labelusername,,panelbanner,,panelhome,,panelmenu,,panelprofile,,profileavatar
-,btnback,,mainscroll,,navbar,,titlenavbar,,btngemma,,btnlogout,,btnpackage,,btnrg,,labelgemma,,labelheader,,labellogout,,labelname,,labelpackage,,labelrg,,labelusername,,panelbanner,,panelhome,,panelmenu,,panelprofile,,profileavatar
+homeuser,activity_create,1,0,49,62
+,btnback,,mainscroll,,navbar,,titlenavbar,,btngemma,,btnlogout,,btnpackage,,btnrg,,labelgemma,,labelheader,,labellogout,,labelname,,labelpackage,,labelrg,,labelusername,,panelbanner,,panelhome,,panelmenu,,panelprofile,,profileavatar,,profiledataloaded
+,btnback,,mainscroll,,navbar,,titlenavbar,,btngemma,,btnlogout,,btnpackage,,btnrg,,labelgemma,,labelheader,,labellogout,,labelname,,labelpackage,,labelrg,,labelusername,,panelbanner,,panelhome,,panelmenu,,panelprofile,,profileavatar,,profiledataloaded
 
-homeuser,activity_pause,0,0,57,59
-
-
-
-homeuser,activity_resume,0,0,52,55
-main,api,main,manager
-
-core,executeurl,httpjob,initialize,httpjob,poststring,httpjob,postbytes,httpjob,addscheme
-homeuser,btncart_click,0,0,157,160
+homeuser,activity_pause,0,0,87,89
 
 
 
-homeuser,btngemma_click,0,0,152,155
+homeuser,activity_resume,0,0,64,85
+main,manager,,profiledataloaded,main,api
+
+core,executeurlget,httpjob,initialize,httpjob,download,httpjob,addscheme
+homeuser,btnback_click,0,0,271,273
 
 
 
-homeuser,btnlogout_click,0,0,141,144
+homeuser,btncart_click,0,1,265,268
+
+
+
+homeuser,btngemma_click,0,0,259,262
+
+
+
+homeuser,btnlogout_click,0,1,240,252
 main,api
 
 core,executeurlget,httpjob,initialize,httpjob,download,httpjob,addscheme
-homeuser,btnpackage_click,0,0,147,150
+homeuser,btnpackage_click,0,0,254,257
 
 
 
-homeuser,btnrg_click,0,0,136,139
+homeuser,btnrg_click,0,0,235,238
 
 
 
-homeuser,globals,0,1,14,38
+homeuser,globals,0,1,19,47
+,profiledataloaded
+,profiledataloaded
 
-
-
-homeuser,jobdone,0,0,61,134
-,data,,id,,email,,username,,first_name,,last_name,,avatar,,address,,phone,,labelname,,labelusername,main,server,,profileavatar,,status,main,manager,httputils2service,tempfolder
-,data,,id,,email,,username,,first_name,,last_name,,avatar,,address,,phone,,status
+homeuser,jobdone,0,0,91,231
+,profiledataloaded,,labelname,,labelusername,main,server,,profileavatar,,status,main,manager,httputils2service,tempfolder
+,profiledataloaded,,status
 httpjob,getstring,httpjob,release,httpjob,getstring2
-homeuser,process_globals,0,1,6,12
+homeuser,process_globals,0,1,10,17
 
 
 
@@ -1000,6 +1008,34 @@ listev,process_globals,0,1,6,11
 ,isdownloadready
 ,isdownloadready
 
+register,activity_create,1,0,30,44
+,mainscroll,,navbar,,btnregister,,editconfirmpassword,,editemail,,editfirstname,,editlastname,,editpassword,,editusername,,panellogin
+,mainscroll,,navbar,,btnregister,,editconfirmpassword,,editemail,,editfirstname,,editlastname,,editpassword,,editusername,,panellogin
+
+register,activity_pause,0,0,50,52
+
+
+
+register,activity_resume,0,0,46,48
+
+
+
+register,btnregister_click,0,0,55,57
+main,api,,editusername,,editfirstname,,editlastname,,editemail,,editpassword,,editconfirmpassword
+
+core,executeurl,httpjob,initialize,httpjob,poststring,httpjob,postbytes,httpjob,addscheme
+register,globals,0,1,12,28
+
+
+
+register,jobdone,0,0,59,187
+,sessionid,,manager,,csrftoken,httputils2service,tempfolder
+,sessionid,,csrftoken
+httpjob,getstring,httpjob,release,httpjob,getstring2
+register,process_globals,0,1,6,10
+
+
+
 listpackage,activity_create,1,0,26,39
 ,mainscroll,,navbar,,titlenavbar,,webviewpackage,,mywebviewextras,main,mobileuri,,mywebviewsettings
 ,mainscroll,,navbar,,titlenavbar,,webviewpackage
@@ -1016,6 +1052,10 @@ listpackage,btnback_click,0,0,49,52
 
 
 
+listpackage,btncart_click,0,1,70,73
+
+
+
 listpackage,globals,0,1,12,24
 
 
@@ -1028,7 +1068,7 @@ listpackage,setuserid,0,0,54,68
 ,manager,,mywebviewextras,,webviewpackage
 
 
-listpackage,webviewpackage_pagefinished,0,0,72,75
+listpackage,webviewpackage_pagefinished,0,0,75,78
 ,manager,,mywebviewextras,,webviewpackage
 
 ,setuserid

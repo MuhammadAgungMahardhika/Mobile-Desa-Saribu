@@ -24,6 +24,7 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
@@ -34,19 +35,19 @@ RDebugUtils.currentModule="core";
 if (Debug.shouldDelegate(null, "executeurl", false))
 	 {return ((String) Debug.delegate(null, "executeurl", new Object[] {_ba,_url,_parameters,_jobname,_obj}));}
 b4a.DesaWisataSaribu.httpjob _job = null;
-RDebugUtils.currentLine=8126464;
- //BA.debugLineNum = 8126464;BA.debugLine="Sub ExecuteUrl(Url As String, Parameters As String";
-RDebugUtils.currentLine=8126465;
- //BA.debugLineNum = 8126465;BA.debugLine="Dim job As HttpJob";
+RDebugUtils.currentLine=9502720;
+ //BA.debugLineNum = 9502720;BA.debugLine="Sub ExecuteUrl(Url As String, Parameters As String";
+RDebugUtils.currentLine=9502721;
+ //BA.debugLineNum = 9502721;BA.debugLine="Dim job As HttpJob";
 _job = new b4a.DesaWisataSaribu.httpjob();
-RDebugUtils.currentLine=8126466;
- //BA.debugLineNum = 8126466;BA.debugLine="job.Initialize(JobName, Obj)";
+RDebugUtils.currentLine=9502722;
+ //BA.debugLineNum = 9502722;BA.debugLine="job.Initialize(JobName, Obj)";
 _job._initialize /*String*/ (null,(_ba.processBA == null ? _ba : _ba.processBA),_jobname,_obj);
-RDebugUtils.currentLine=8126467;
- //BA.debugLineNum = 8126467;BA.debugLine="job.PostString(Url, Parameters)";
+RDebugUtils.currentLine=9502723;
+ //BA.debugLineNum = 9502723;BA.debugLine="job.PostString(Url, Parameters)";
 _job._poststring /*String*/ (null,_url,_parameters);
-RDebugUtils.currentLine=8126468;
- //BA.debugLineNum = 8126468;BA.debugLine="End Sub";
+RDebugUtils.currentLine=9502724;
+ //BA.debugLineNum = 9502724;BA.debugLine="End Sub";
 return "";
 }
 public static String  _executeurlget(anywheresoftware.b4a.BA _ba,String _url,String _jobname,Object _obj) throws Exception{
@@ -54,19 +55,19 @@ RDebugUtils.currentModule="core";
 if (Debug.shouldDelegate(null, "executeurlget", false))
 	 {return ((String) Debug.delegate(null, "executeurlget", new Object[] {_ba,_url,_jobname,_obj}));}
 b4a.DesaWisataSaribu.httpjob _job = null;
-RDebugUtils.currentLine=8192000;
- //BA.debugLineNum = 8192000;BA.debugLine="Sub ExecuteUrlGet(Url As String, JobName As String";
-RDebugUtils.currentLine=8192001;
- //BA.debugLineNum = 8192001;BA.debugLine="Dim job As HttpJob";
+RDebugUtils.currentLine=9568256;
+ //BA.debugLineNum = 9568256;BA.debugLine="Sub ExecuteUrlGet(Url As String, JobName As String";
+RDebugUtils.currentLine=9568257;
+ //BA.debugLineNum = 9568257;BA.debugLine="Dim job As HttpJob";
 _job = new b4a.DesaWisataSaribu.httpjob();
-RDebugUtils.currentLine=8192002;
- //BA.debugLineNum = 8192002;BA.debugLine="job.Initialize(JobName, Obj)";
+RDebugUtils.currentLine=9568258;
+ //BA.debugLineNum = 9568258;BA.debugLine="job.Initialize(JobName, Obj)";
 _job._initialize /*String*/ (null,(_ba.processBA == null ? _ba : _ba.processBA),_jobname,_obj);
-RDebugUtils.currentLine=8192003;
- //BA.debugLineNum = 8192003;BA.debugLine="job.Download(Url)";
+RDebugUtils.currentLine=9568259;
+ //BA.debugLineNum = 9568259;BA.debugLine="job.Download(Url)";
 _job._download /*String*/ (null,_url);
-RDebugUtils.currentLine=8192004;
- //BA.debugLineNum = 8192004;BA.debugLine="End Sub";
+RDebugUtils.currentLine=9568260;
+ //BA.debugLineNum = 9568260;BA.debugLine="End Sub";
 return "";
 }
 }

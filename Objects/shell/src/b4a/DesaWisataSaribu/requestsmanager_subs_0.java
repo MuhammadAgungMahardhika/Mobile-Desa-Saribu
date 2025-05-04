@@ -8,7 +8,7 @@ public class requestsmanager_subs_0 {
 
 public static RemoteObject  _cancelrequest(RemoteObject __ref,RemoteObject _url,RemoteObject _job) throws Exception{
 try {
-		Debug.PushSubsStack("CancelRequest (requestsmanager) ","requestsmanager",18,__ref.getField(false, "ba"),__ref,9);
+		Debug.PushSubsStack("CancelRequest (requestsmanager) ","requestsmanager",19,__ref.getField(false, "ba"),__ref,9);
 if (RapidSub.canDelegate("cancelrequest")) { return __ref.runUserSub(false, "requestsmanager","cancelrequest", __ref, _url, _job);}
 Debug.locals.put("URL", _url);
 Debug.locals.put("Job", _job);
@@ -16,7 +16,7 @@ Debug.locals.put("Job", _job);
 Debug.JustUpdateDeviceLine();
  BA.debugLineNum = 43;BA.debugLine="Log(\"HU2_PUBLIC is missing from the build configu";
 Debug.JustUpdateDeviceLine();
-requestsmanager.__c.runVoidMethod ("LogImpl","914549026",RemoteObject.createImmutable("HU2_PUBLIC is missing from the build configuration. Can't cancel request."),0);
+requestsmanager.__c.runVoidMethod ("LogImpl","915925282",RemoteObject.createImmutable("HU2_PUBLIC is missing from the build configuration. Can't cancel request."),0);
  BA.debugLineNum = 46;BA.debugLine="End Sub";
 Debug.JustUpdateDeviceLine();
 return RemoteObject.createImmutable("");
@@ -34,7 +34,7 @@ return RemoteObject.createImmutable("");
 }
 public static RemoteObject  _initialize(RemoteObject __ref,RemoteObject _ba) throws Exception{
 try {
-		Debug.PushSubsStack("Initialize (requestsmanager) ","requestsmanager",18,__ref.getField(false, "ba"),__ref,5);
+		Debug.PushSubsStack("Initialize (requestsmanager) ","requestsmanager",19,__ref.getField(false, "ba"),__ref,5);
 if (RapidSub.canDelegate("initialize")) { return __ref.runUserSub(false, "requestsmanager","initialize", __ref, _ba);}
 __ref.runVoidMethodAndSync("innerInitializeHelper", _ba);
 Debug.locals.put("ba", _ba);

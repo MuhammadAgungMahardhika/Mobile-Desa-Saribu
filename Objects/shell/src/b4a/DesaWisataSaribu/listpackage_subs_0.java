@@ -91,12 +91,34 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.listpac
 Debug.ShouldStop(65536);
  BA.debugLineNum = 50;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(131072);
-listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","88585217",RemoteObject.createImmutable("Going back to previous activity"),0);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","29240577",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 51;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(262144);
 listpackage.mostCurrent._activity.runVoidMethod ("Finish");
  BA.debugLineNum = 52;BA.debugLine="End Sub";
 Debug.ShouldStop(524288);
+return RemoteObject.createImmutable("");
+}
+catch (Exception e) {
+			throw Debug.ErrorCaught(e);
+		} 
+finally {
+			Debug.PopSubsStack();
+		}}
+public static RemoteObject  _btncart_click() throws Exception{
+try {
+		Debug.PushSubsStack("btnCart_Click (listpackage) ","listpackage",12,listpackage.mostCurrent.activityBA,listpackage.mostCurrent,70);
+if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.listpackage.remoteMe.runUserSub(false, "listpackage","btncart_click");}
+ BA.debugLineNum = 70;BA.debugLine="Private Sub btnCart_Click";
+Debug.ShouldStop(32);
+ BA.debugLineNum = 71;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+Debug.ShouldStop(64);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","242336257",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+ BA.debugLineNum = 72;BA.debugLine="StartActivity(Cart)";
+Debug.ShouldStop(128);
+listpackage.mostCurrent.__c.runVoidMethod ("StartActivity",listpackage.processBA,(Object)((listpackage.mostCurrent._cart.getObject())));
+ BA.debugLineNum = 73;BA.debugLine="End Sub";
+Debug.ShouldStop(256);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {
@@ -139,7 +161,7 @@ RemoteObject _exectfunction = RemoteObject.createImmutable("");
 Debug.ShouldStop(2097152);
  BA.debugLineNum = 55;BA.debugLine="Log(\"Set User Id\")";
 Debug.ShouldStop(4194304);
-listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","88650753",RemoteObject.createImmutable("Set User Id"),0);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","29306113",RemoteObject.createImmutable("Set User Id"),0);
  BA.debugLineNum = 56;BA.debugLine="Dim userId As String";
 Debug.ShouldStop(8388608);
 _userid = RemoteObject.createImmutable("");Debug.locals.put("userId", _userid);
@@ -151,7 +173,7 @@ Debug.ShouldStop(67108864);
 _userid = listpackage.mostCurrent._manager.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("user_id")));Debug.locals.put("userId", _userid);
  BA.debugLineNum = 60;BA.debugLine="Log(\"User ID: \" & userId)";
 Debug.ShouldStop(134217728);
-listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","88650758",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","29306118",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
  BA.debugLineNum = 62;BA.debugLine="If userId <> \"\" And userId <> Null Then";
 Debug.ShouldStop(536870912);
 if (RemoteObject.solveBoolean("!",_userid,BA.ObjectToString("")) && RemoteObject.solveBoolean("N",_userid)) { 
@@ -164,7 +186,7 @@ listpackage.mostCurrent._mywebviewextras.runVoidMethod ("executeJavascript",(Obj
  }else {
  BA.debugLineNum = 66;BA.debugLine="Log(\"User ID is empty or null\")";
 Debug.ShouldStop(2);
-listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","88650764",RemoteObject.createImmutable("User ID is empty or null"),0);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","29306124",RemoteObject.createImmutable("User ID is empty or null"),0);
  };
  BA.debugLineNum = 68;BA.debugLine="End Sub";
 Debug.ShouldStop(8);
@@ -178,19 +200,19 @@ finally {
 		}}
 public static RemoteObject  _webviewpackage_pagefinished(RemoteObject _url) throws Exception{
 try {
-		Debug.PushSubsStack("WebViewPackage_PageFinished (listpackage) ","listpackage",12,listpackage.mostCurrent.activityBA,listpackage.mostCurrent,72);
+		Debug.PushSubsStack("WebViewPackage_PageFinished (listpackage) ","listpackage",12,listpackage.mostCurrent.activityBA,listpackage.mostCurrent,75);
 if (RapidSub.canDelegate("webviewpackage_pagefinished")) { return b4a.DesaWisataSaribu.listpackage.remoteMe.runUserSub(false, "listpackage","webviewpackage_pagefinished", _url);}
 Debug.locals.put("Url", _url);
- BA.debugLineNum = 72;BA.debugLine="Private Sub WebViewPackage_PageFinished (Url As St";
-Debug.ShouldStop(128);
- BA.debugLineNum = 73;BA.debugLine="Log(\"page finished\")";
-Debug.ShouldStop(256);
-listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","88716289",RemoteObject.createImmutable("page finished"),0);
- BA.debugLineNum = 74;BA.debugLine="SetUserId";
-Debug.ShouldStop(512);
-_setuserid();
- BA.debugLineNum = 75;BA.debugLine="End Sub";
+ BA.debugLineNum = 75;BA.debugLine="Private Sub WebViewPackage_PageFinished (Url As St";
 Debug.ShouldStop(1024);
+ BA.debugLineNum = 76;BA.debugLine="Log(\"page finished\")";
+Debug.ShouldStop(2048);
+listpackage.mostCurrent.__c.runVoidMethod ("LogImpl","29371649",RemoteObject.createImmutable("page finished"),0);
+ BA.debugLineNum = 77;BA.debugLine="SetUserId";
+Debug.ShouldStop(4096);
+_setuserid();
+ BA.debugLineNum = 78;BA.debugLine="End Sub";
+Debug.ShouldStop(8192);
 return RemoteObject.createImmutable("");
 }
 catch (Exception e) {

@@ -53,8 +53,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.core _core = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
@@ -65,13 +66,13 @@ innerInitialize(_ba);
 RDebugUtils.currentModule="bitmapsasync";
 if (Debug.shouldDelegate(ba, "initialize", true))
 	 {return ((String) Debug.delegate(ba, "initialize", new Object[] {_ba}));}
-RDebugUtils.currentLine=14680064;
- //BA.debugLineNum = 14680064;BA.debugLine="Public Sub Initialize";
-RDebugUtils.currentLine=14680066;
- //BA.debugLineNum = 14680066;BA.debugLine="jme = Me";
+RDebugUtils.currentLine=16056320;
+ //BA.debugLineNum = 16056320;BA.debugLine="Public Sub Initialize";
+RDebugUtils.currentLine=16056322;
+ //BA.debugLineNum = 16056322;BA.debugLine="jme = Me";
 __ref._jme /*anywheresoftware.b4j.object.JavaObject*/  = (anywheresoftware.b4j.object.JavaObject) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4j.object.JavaObject(), (java.lang.Object)(this));
-RDebugUtils.currentLine=14680070;
- //BA.debugLineNum = 14680070;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16056326;
+ //BA.debugLineNum = 16056326;BA.debugLine="End Sub";
 return "";
 }
 public anywheresoftware.b4a.keywords.Common.ResumableSubWrapper  _loadfromfile(b4a.DesaWisataSaribu.bitmapsasync __ref,String _dir,String _filename,int _maxwidth,int _maxheight) throws Exception{
@@ -115,11 +116,11 @@ parent.__c.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=14811137;
- //BA.debugLineNum = 14811137;BA.debugLine="Dim res As B4XBitmap";
+RDebugUtils.currentLine=16187393;
+ //BA.debugLineNum = 16187393;BA.debugLine="Dim res As B4XBitmap";
 _res = new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper();
-RDebugUtils.currentLine=14811138;
- //BA.debugLineNum = 14811138;BA.debugLine="If Dir <> File.DirAssets Then";
+RDebugUtils.currentLine=16187394;
+ //BA.debugLineNum = 16187394;BA.debugLine="If Dir <> File.DirAssets Then";
 if (true) break;
 
 case 1:
@@ -132,8 +133,8 @@ this.state = 3;
 case 3:
 //C
 this.state = 4;
-RDebugUtils.currentLine=14811139;
- //BA.debugLineNum = 14811139;BA.debugLine="If File.Size(Dir, Filename) > MaxFileSize Then";
+RDebugUtils.currentLine=16187395;
+ //BA.debugLineNum = 16187395;BA.debugLine="If File.Size(Dir, Filename) > MaxFileSize Then";
 if (true) break;
 
 case 4:
@@ -146,11 +147,11 @@ this.state = 6;
 case 6:
 //C
 this.state = 7;
-RDebugUtils.currentLine=14811140;
- //BA.debugLineNum = 14811140;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{File.Si";
-parent.__c.LogImpl("914811140",("File larger than MaxFileSize "+parent.__c.SmartStringFormatter("1.0",(Object)(parent.__c.File.Size(_dir,_filename)))+""),0);
-RDebugUtils.currentLine=14811141;
- //BA.debugLineNum = 14811141;BA.debugLine="Return res";
+RDebugUtils.currentLine=16187396;
+ //BA.debugLineNum = 16187396;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{File.Si";
+parent.__c.LogImpl("916187396",("File larger than MaxFileSize "+parent.__c.SmartStringFormatter("1.0",(Object)(parent.__c.File.Size(_dir,_filename)))+""),0);
+RDebugUtils.currentLine=16187397;
+ //BA.debugLineNum = 16187397;BA.debugLine="Return res";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_res));return;};
  if (true) break;
@@ -165,11 +166,11 @@ case 8:
 //C
 this.state = 9;
 ;
-RDebugUtils.currentLine=14811152;
- //BA.debugLineNum = 14811152;BA.debugLine="Dim sf As Object = jme.RunMethod(\"loadBitmap\", Ar";
+RDebugUtils.currentLine=16187408;
+ //BA.debugLineNum = 16187408;BA.debugLine="Dim sf As Object = jme.RunMethod(\"loadBitmap\", Ar";
 _sf = __ref._jme /*anywheresoftware.b4j.object.JavaObject*/ .RunMethod("loadBitmap",new Object[]{(Object)(parent.__c.File.OpenInput(_dir,_filename).getObject()),(Object)(parent.__c.File.OpenInput(_dir,_filename).getObject()),(Object)(_maxwidth),(Object)(_maxheight)});
-RDebugUtils.currentLine=14811153;
- //BA.debugLineNum = 14811153;BA.debugLine="Wait For (sf) Bitmap_Loaded (Success As Boolean,";
+RDebugUtils.currentLine=16187409;
+ //BA.debugLineNum = 16187409;BA.debugLine="Wait For (sf) Bitmap_Loaded (Success As Boolean,";
 parent.__c.WaitFor("bitmap_loaded", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "bitmapsasync", "loadfromfile"), _sf);
 this.state = 13;
 return;
@@ -179,8 +180,8 @@ this.state = 9;
 _success = (Boolean) result[1];
 _bmp = (Object) result[2];
 ;
-RDebugUtils.currentLine=14811158;
- //BA.debugLineNum = 14811158;BA.debugLine="If Success Then";
+RDebugUtils.currentLine=16187414;
+ //BA.debugLineNum = 16187414;BA.debugLine="If Success Then";
 if (true) break;
 
 case 9:
@@ -193,8 +194,8 @@ this.state = 11;
 case 11:
 //C
 this.state = 12;
-RDebugUtils.currentLine=14811159;
- //BA.debugLineNum = 14811159;BA.debugLine="res = Bmp";
+RDebugUtils.currentLine=16187415;
+ //BA.debugLineNum = 16187415;BA.debugLine="res = Bmp";
 _res = (anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(_bmp));
  if (true) break;
 
@@ -202,12 +203,12 @@ case 12:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=14811161;
- //BA.debugLineNum = 14811161;BA.debugLine="Return res";
+RDebugUtils.currentLine=16187417;
+ //BA.debugLineNum = 16187417;BA.debugLine="Return res";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_res));return;};
-RDebugUtils.currentLine=14811163;
- //BA.debugLineNum = 14811163;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16187419;
+ //BA.debugLineNum = 16187419;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -253,11 +254,11 @@ parent.__c.ReturnFromResumableSub(this,null);return;}
 case 0:
 //C
 this.state = 1;
-RDebugUtils.currentLine=14745601;
- //BA.debugLineNum = 14745601;BA.debugLine="Dim res As B4XBitmap";
+RDebugUtils.currentLine=16121857;
+ //BA.debugLineNum = 16121857;BA.debugLine="Dim res As B4XBitmap";
 _res = new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper();
-RDebugUtils.currentLine=14745602;
- //BA.debugLineNum = 14745602;BA.debugLine="If Job.Success = False Then Return res";
+RDebugUtils.currentLine=16121858;
+ //BA.debugLineNum = 16121858;BA.debugLine="If Job.Success = False Then Return res";
 if (true) break;
 
 case 1:
@@ -278,8 +279,8 @@ case 6:
 //C
 this.state = 7;
 ;
-RDebugUtils.currentLine=14745603;
- //BA.debugLineNum = 14745603;BA.debugLine="If Job.Response.ContentLength >= MaxFileSize Then";
+RDebugUtils.currentLine=16121859;
+ //BA.debugLineNum = 16121859;BA.debugLine="If Job.Response.ContentLength >= MaxFileSize Then";
 if (true) break;
 
 case 7:
@@ -292,11 +293,11 @@ this.state = 9;
 case 9:
 //C
 this.state = 10;
-RDebugUtils.currentLine=14745604;
- //BA.debugLineNum = 14745604;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{Job.Resp";
-parent.__c.LogImpl("914745604",("File larger than MaxFileSize "+parent.__c.SmartStringFormatter("1.0",(Object)(_job._response /*anywheresoftware.b4h.okhttp.OkHttpClientWrapper.OkHttpResponse*/ .getContentLength()))+""),0);
-RDebugUtils.currentLine=14745605;
- //BA.debugLineNum = 14745605;BA.debugLine="Return res";
+RDebugUtils.currentLine=16121860;
+ //BA.debugLineNum = 16121860;BA.debugLine="Log($\"File larger than MaxFileSize $1.0{Job.Resp";
+parent.__c.LogImpl("916121860",("File larger than MaxFileSize "+parent.__c.SmartStringFormatter("1.0",(Object)(_job._response /*anywheresoftware.b4h.okhttp.OkHttpClientWrapper.OkHttpResponse*/ .getContentLength()))+""),0);
+RDebugUtils.currentLine=16121861;
+ //BA.debugLineNum = 16121861;BA.debugLine="Return res";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_res));return;};
  if (true) break;
@@ -305,11 +306,11 @@ case 10:
 //C
 this.state = 11;
 ;
-RDebugUtils.currentLine=14745615;
- //BA.debugLineNum = 14745615;BA.debugLine="Dim sf As Object = jme.RunMethod(\"loadBitmap\", Ar";
+RDebugUtils.currentLine=16121871;
+ //BA.debugLineNum = 16121871;BA.debugLine="Dim sf As Object = jme.RunMethod(\"loadBitmap\", Ar";
 _sf = __ref._jme /*anywheresoftware.b4j.object.JavaObject*/ .RunMethod("loadBitmap",new Object[]{(Object)(_job._getinputstream /*anywheresoftware.b4a.objects.streams.File.InputStreamWrapper*/ (null).getObject()),(Object)(_job._getinputstream /*anywheresoftware.b4a.objects.streams.File.InputStreamWrapper*/ (null).getObject()),(Object)(_maxwidth),(Object)(_maxheight)});
-RDebugUtils.currentLine=14745616;
- //BA.debugLineNum = 14745616;BA.debugLine="Wait For (sf) Bitmap_Loaded (Success As Boolean,";
+RDebugUtils.currentLine=16121872;
+ //BA.debugLineNum = 16121872;BA.debugLine="Wait For (sf) Bitmap_Loaded (Success As Boolean,";
 parent.__c.WaitFor("bitmap_loaded", ba, new anywheresoftware.b4a.shell.DebugResumableSub.DelegatableResumableSub(this, "bitmapsasync", "loadfromhttpjob"), _sf);
 this.state = 15;
 return;
@@ -319,8 +320,8 @@ this.state = 11;
 _success = (Boolean) result[1];
 _bmp = (Object) result[2];
 ;
-RDebugUtils.currentLine=14745621;
- //BA.debugLineNum = 14745621;BA.debugLine="If Success Then";
+RDebugUtils.currentLine=16121877;
+ //BA.debugLineNum = 16121877;BA.debugLine="If Success Then";
 if (true) break;
 
 case 11:
@@ -333,8 +334,8 @@ this.state = 13;
 case 13:
 //C
 this.state = 14;
-RDebugUtils.currentLine=14745622;
- //BA.debugLineNum = 14745622;BA.debugLine="res = Bmp";
+RDebugUtils.currentLine=16121878;
+ //BA.debugLineNum = 16121878;BA.debugLine="res = Bmp";
 _res = (anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper.B4XBitmapWrapper(), (android.graphics.Bitmap)(_bmp));
  if (true) break;
 
@@ -342,12 +343,12 @@ case 14:
 //C
 this.state = -1;
 ;
-RDebugUtils.currentLine=14745624;
- //BA.debugLineNum = 14745624;BA.debugLine="Return res";
+RDebugUtils.currentLine=16121880;
+ //BA.debugLineNum = 16121880;BA.debugLine="Return res";
 if (true) {
 parent.__c.ReturnFromResumableSub(this,(Object)(_res));return;};
-RDebugUtils.currentLine=14745626;
- //BA.debugLineNum = 14745626;BA.debugLine="End Sub";
+RDebugUtils.currentLine=16121882;
+ //BA.debugLineNum = 16121882;BA.debugLine="End Sub";
 if (true) break;
 
             }
@@ -357,19 +358,19 @@ if (true) break;
 public String  _class_globals(b4a.DesaWisataSaribu.bitmapsasync __ref) throws Exception{
 __ref = this;
 RDebugUtils.currentModule="bitmapsasync";
-RDebugUtils.currentLine=14614528;
- //BA.debugLineNum = 14614528;BA.debugLine="Sub Class_Globals";
-RDebugUtils.currentLine=14614530;
- //BA.debugLineNum = 14614530;BA.debugLine="Private jme As JavaObject";
+RDebugUtils.currentLine=15990784;
+ //BA.debugLineNum = 15990784;BA.debugLine="Sub Class_Globals";
+RDebugUtils.currentLine=15990786;
+ //BA.debugLineNum = 15990786;BA.debugLine="Private jme As JavaObject";
 _jme = new anywheresoftware.b4j.object.JavaObject();
-RDebugUtils.currentLine=14614534;
- //BA.debugLineNum = 14614534;BA.debugLine="Public MaxFileSize As Long = 3 * 1024 * 1024";
+RDebugUtils.currentLine=15990790;
+ //BA.debugLineNum = 15990790;BA.debugLine="Public MaxFileSize As Long = 3 * 1024 * 1024";
 _maxfilesize = (long) (3*1024*1024);
-RDebugUtils.currentLine=14614535;
- //BA.debugLineNum = 14614535;BA.debugLine="Private xui As XUI 'ignore";
+RDebugUtils.currentLine=15990791;
+ //BA.debugLineNum = 15990791;BA.debugLine="Private xui As XUI 'ignore";
 _xui = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
-RDebugUtils.currentLine=14614536;
- //BA.debugLineNum = 14614536;BA.debugLine="End Sub";
+RDebugUtils.currentLine=15990792;
+ //BA.debugLineNum = 15990792;BA.debugLine="End Sub";
 return "";
 }
 public Object loadBitmap(final InputStream in1, final InputStream in2, final int MaxWidth, final int MaxHeight) {

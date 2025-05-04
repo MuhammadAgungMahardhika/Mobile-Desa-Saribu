@@ -73,7 +73,10 @@ Public Sub SetUserId
 	End If
 End Sub
 
-
+Private Sub btnCart_Click
+	Log("Redirect to Cart Activity")
+	StartActivity(Cart)
+End Sub
 
 Private Sub WebViewPackage_PageFinished (Url As String)
 	Log("page finished")

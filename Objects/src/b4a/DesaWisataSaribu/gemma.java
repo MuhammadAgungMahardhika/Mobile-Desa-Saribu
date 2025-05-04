@@ -364,8 +364,9 @@ public b4a.DesaWisataSaribu.homeuser _homeuser = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.core _core = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
@@ -374,93 +375,93 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=5111808;
- //BA.debugLineNum = 5111808;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=5111810;
- //BA.debugLineNum = 5111810;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentLine=5373952;
+ //BA.debugLineNum = 5373952;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=5373954;
+ //BA.debugLineNum = 5373954;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
-RDebugUtils.currentLine=5111811;
- //BA.debugLineNum = 5111811;BA.debugLine="MainScroll.Panel.LoadLayout(\"Gemma\")";
+RDebugUtils.currentLine=5373955;
+ //BA.debugLineNum = 5373955;BA.debugLine="MainScroll.Panel.LoadLayout(\"Gemma\")";
 mostCurrent._mainscroll.getPanel().LoadLayout("Gemma",mostCurrent.activityBA);
-RDebugUtils.currentLine=5111812;
- //BA.debugLineNum = 5111812;BA.debugLine="WebViewGemma.Height = MainScroll.Height";
+RDebugUtils.currentLine=5373956;
+ //BA.debugLineNum = 5373956;BA.debugLine="WebViewGemma.Height = MainScroll.Height";
 mostCurrent._webviewgemma.setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=5111814;
- //BA.debugLineNum = 5111814;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=5373958;
+ //BA.debugLineNum = 5373958;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=5111815;
- //BA.debugLineNum = 5111815;BA.debugLine="TitleNavbar.Text = \"Desa Saribu with Gemini AI\"";
+RDebugUtils.currentLine=5373959;
+ //BA.debugLineNum = 5373959;BA.debugLine="TitleNavbar.Text = \"Desa Saribu with Gemini AI\"";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence("Desa Saribu with Gemini AI"));
-RDebugUtils.currentLine=5111817;
- //BA.debugLineNum = 5111817;BA.debugLine="MyWebViewExtras.addWebChromeClient(WebViewGemma,";
+RDebugUtils.currentLine=5373961;
+ //BA.debugLineNum = 5373961;BA.debugLine="MyWebViewExtras.addWebChromeClient(WebViewGemma,";
 mostCurrent._mywebviewextras.addWebChromeClient(mostCurrent.activityBA,(android.webkit.WebView)(mostCurrent._webviewgemma.getObject()),"WebViewGemma");
-RDebugUtils.currentLine=5111818;
- //BA.debugLineNum = 5111818;BA.debugLine="MyWebViewExtras.clearCache(WebViewGemma,True)";
+RDebugUtils.currentLine=5373962;
+ //BA.debugLineNum = 5373962;BA.debugLine="MyWebViewExtras.clearCache(WebViewGemma,True)";
 mostCurrent._mywebviewextras.clearCache((android.webkit.WebView)(mostCurrent._webviewgemma.getObject()),anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=5111819;
- //BA.debugLineNum = 5111819;BA.debugLine="WebViewGemma.JavaScriptEnabled = True";
+RDebugUtils.currentLine=5373963;
+ //BA.debugLineNum = 5373963;BA.debugLine="WebViewGemma.JavaScriptEnabled = True";
 mostCurrent._webviewgemma.setJavaScriptEnabled(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=5111820;
- //BA.debugLineNum = 5111820;BA.debugLine="WebViewGemma.AllowFileAccess = True";
+RDebugUtils.currentLine=5373964;
+ //BA.debugLineNum = 5373964;BA.debugLine="WebViewGemma.AllowFileAccess = True";
 mostCurrent._webviewgemma.setAllowFileAccess(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=5111822;
- //BA.debugLineNum = 5111822;BA.debugLine="WebViewGemma.LoadUrl(Main.server&\"mobile/gemma\")";
+RDebugUtils.currentLine=5373966;
+ //BA.debugLineNum = 5373966;BA.debugLine="WebViewGemma.LoadUrl(Main.server&\"mobile/gemma\")";
 mostCurrent._webviewgemma.LoadUrl(mostCurrent._main._server /*String*/ +"mobile/gemma");
-RDebugUtils.currentLine=5111824;
- //BA.debugLineNum = 5111824;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5373968;
+ //BA.debugLineNum = 5373968;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="gemma";
-RDebugUtils.currentLine=5439488;
- //BA.debugLineNum = 5439488;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=5439490;
- //BA.debugLineNum = 5439490;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5701632;
+ //BA.debugLineNum = 5701632;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=5701634;
+ //BA.debugLineNum = 5701634;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=5373952;
- //BA.debugLineNum = 5373952;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=5373953;
- //BA.debugLineNum = 5373953;BA.debugLine="Log(\"Gemma Loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85373953","Gemma Loaded",0);
-RDebugUtils.currentLine=5373954;
- //BA.debugLineNum = 5373954;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5636096;
+ //BA.debugLineNum = 5636096;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=5636097;
+ //BA.debugLineNum = 5636097;BA.debugLine="Log(\"Gemma Loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25636097","Gemma Loaded",0);
+RDebugUtils.currentLine=5636098;
+ //BA.debugLineNum = 5636098;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnback_click() throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
-RDebugUtils.currentLine=5308416;
- //BA.debugLineNum = 5308416;BA.debugLine="Private Sub BtnBack_Click";
-RDebugUtils.currentLine=5308417;
- //BA.debugLineNum = 5308417;BA.debugLine="Log(\"Going back to previous activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85308417","Going back to previous activity",0);
-RDebugUtils.currentLine=5308418;
- //BA.debugLineNum = 5308418;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=5570560;
+ //BA.debugLineNum = 5570560;BA.debugLine="Private Sub BtnBack_Click";
+RDebugUtils.currentLine=5570561;
+ //BA.debugLineNum = 5570561;BA.debugLine="Log(\"Going back to previous activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25570561","Going back to previous activity",0);
+RDebugUtils.currentLine=5570562;
+ //BA.debugLineNum = 5570562;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=5308419;
- //BA.debugLineNum = 5308419;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5570563;
+ //BA.debugLineNum = 5570563;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btncart_click() throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btncart_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btncart_click", null));}
-RDebugUtils.currentLine=41549824;
- //BA.debugLineNum = 41549824;BA.debugLine="Private Sub btnCart_Click";
-RDebugUtils.currentLine=41549825;
- //BA.debugLineNum = 41549825;BA.debugLine="Log(\"Redirect to Cart Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("841549825","Redirect to Cart Activity",0);
-RDebugUtils.currentLine=41549826;
- //BA.debugLineNum = 41549826;BA.debugLine="StartActivity(Cart)";
+RDebugUtils.currentLine=5832704;
+ //BA.debugLineNum = 5832704;BA.debugLine="Private Sub btnCart_Click";
+RDebugUtils.currentLine=5832705;
+ //BA.debugLineNum = 5832705;BA.debugLine="Log(\"Redirect to Cart Activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25832705","Redirect to Cart Activity",0);
+RDebugUtils.currentLine=5832706;
+ //BA.debugLineNum = 5832706;BA.debugLine="StartActivity(Cart)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._cart.getObject()));
-RDebugUtils.currentLine=41549827;
- //BA.debugLineNum = 41549827;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5832707;
+ //BA.debugLineNum = 5832707;BA.debugLine="End Sub";
 return "";
 }
 public static String  _setuserid() throws Exception{
@@ -469,79 +470,79 @@ if (Debug.shouldDelegate(mostCurrent.activityBA, "setuserid", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "setuserid", null));}
 String _userid = "";
 String _exectfunction = "";
-RDebugUtils.currentLine=5177344;
- //BA.debugLineNum = 5177344;BA.debugLine="Public Sub SetUserId";
-RDebugUtils.currentLine=5177345;
- //BA.debugLineNum = 5177345;BA.debugLine="Log(\"Set User Id\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85177345","Set User Id",0);
-RDebugUtils.currentLine=5177346;
- //BA.debugLineNum = 5177346;BA.debugLine="Dim userId As String";
+RDebugUtils.currentLine=5439488;
+ //BA.debugLineNum = 5439488;BA.debugLine="Public Sub SetUserId";
+RDebugUtils.currentLine=5439489;
+ //BA.debugLineNum = 5439489;BA.debugLine="Log(\"Set User Id\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25439489","Set User Id",0);
+RDebugUtils.currentLine=5439490;
+ //BA.debugLineNum = 5439490;BA.debugLine="Dim userId As String";
 _userid = "";
-RDebugUtils.currentLine=5177347;
- //BA.debugLineNum = 5177347;BA.debugLine="Dim exectFunction As String";
+RDebugUtils.currentLine=5439491;
+ //BA.debugLineNum = 5439491;BA.debugLine="Dim exectFunction As String";
 _exectfunction = "";
-RDebugUtils.currentLine=5177349;
- //BA.debugLineNum = 5177349;BA.debugLine="userId = manager.GetString(\"user_id\")";
+RDebugUtils.currentLine=5439493;
+ //BA.debugLineNum = 5439493;BA.debugLine="userId = manager.GetString(\"user_id\")";
 _userid = mostCurrent._manager.GetString("user_id");
-RDebugUtils.currentLine=5177350;
- //BA.debugLineNum = 5177350;BA.debugLine="Log(\"User ID: \" & userId)";
-anywheresoftware.b4a.keywords.Common.LogImpl("85177350","User ID: "+_userid,0);
-RDebugUtils.currentLine=5177352;
- //BA.debugLineNum = 5177352;BA.debugLine="If userId <> \"\" And userId <> Null Then";
+RDebugUtils.currentLine=5439494;
+ //BA.debugLineNum = 5439494;BA.debugLine="Log(\"User ID: \" & userId)";
+anywheresoftware.b4a.keywords.Common.LogImpl("25439494","User ID: "+_userid,0);
+RDebugUtils.currentLine=5439496;
+ //BA.debugLineNum = 5439496;BA.debugLine="If userId <> \"\" And userId <> Null Then";
 if ((_userid).equals("") == false && _userid!= null) { 
-RDebugUtils.currentLine=5177353;
- //BA.debugLineNum = 5177353;BA.debugLine="exectFunction = \"receiveUserIdFromB4A('\" & userI";
+RDebugUtils.currentLine=5439497;
+ //BA.debugLineNum = 5439497;BA.debugLine="exectFunction = \"receiveUserIdFromB4A('\" & userI";
 _exectfunction = "receiveUserIdFromB4A('"+_userid+"')";
-RDebugUtils.currentLine=5177354;
- //BA.debugLineNum = 5177354;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewGemma,";
+RDebugUtils.currentLine=5439498;
+ //BA.debugLineNum = 5439498;BA.debugLine="MyWebViewExtras.executeJavascript(WebViewGemma,";
 mostCurrent._mywebviewextras.executeJavascript((android.webkit.WebView)(mostCurrent._webviewgemma.getObject()),_exectfunction);
  }else {
-RDebugUtils.currentLine=5177356;
- //BA.debugLineNum = 5177356;BA.debugLine="Log(\"User ID is empty or null\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85177356","User ID is empty or null",0);
+RDebugUtils.currentLine=5439500;
+ //BA.debugLineNum = 5439500;BA.debugLine="Log(\"User ID is empty or null\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25439500","User ID is empty or null",0);
  };
-RDebugUtils.currentLine=5177358;
- //BA.debugLineNum = 5177358;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5439502;
+ //BA.debugLineNum = 5439502;BA.debugLine="End Sub";
 return "";
 }
 public static String  _webviewgemma_pagefinished(String _url) throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "webviewgemma_pagefinished", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "webviewgemma_pagefinished", new Object[] {_url}));}
-RDebugUtils.currentLine=5505024;
- //BA.debugLineNum = 5505024;BA.debugLine="Private Sub WebViewGemma_PageFinished (Url As Stri";
-RDebugUtils.currentLine=5505025;
- //BA.debugLineNum = 5505025;BA.debugLine="Log(\"page finished\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85505025","page finished",0);
-RDebugUtils.currentLine=5505026;
- //BA.debugLineNum = 5505026;BA.debugLine="SetUserId";
+RDebugUtils.currentLine=5767168;
+ //BA.debugLineNum = 5767168;BA.debugLine="Private Sub WebViewGemma_PageFinished (Url As Stri";
+RDebugUtils.currentLine=5767169;
+ //BA.debugLineNum = 5767169;BA.debugLine="Log(\"page finished\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25767169","page finished",0);
+RDebugUtils.currentLine=5767170;
+ //BA.debugLineNum = 5767170;BA.debugLine="SetUserId";
 _setuserid();
-RDebugUtils.currentLine=5505027;
- //BA.debugLineNum = 5505027;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5767171;
+ //BA.debugLineNum = 5767171;BA.debugLine="End Sub";
 return "";
 }
 public static String  _webviewgemma_progresschanged(int _loading) throws Exception{
 RDebugUtils.currentModule="gemma";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "webviewgemma_progresschanged", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "webviewgemma_progresschanged", new Object[] {_loading}));}
-RDebugUtils.currentLine=5242880;
- //BA.debugLineNum = 5242880;BA.debugLine="Sub WebViewGemma_ProgressChanged(loading As Int)";
-RDebugUtils.currentLine=5242881;
- //BA.debugLineNum = 5242881;BA.debugLine="If loading == 100 Then";
+RDebugUtils.currentLine=5505024;
+ //BA.debugLineNum = 5505024;BA.debugLine="Sub WebViewGemma_ProgressChanged(loading As Int)";
+RDebugUtils.currentLine=5505025;
+ //BA.debugLineNum = 5505025;BA.debugLine="If loading == 100 Then";
 if (_loading==100) { 
-RDebugUtils.currentLine=5242882;
- //BA.debugLineNum = 5242882;BA.debugLine="Log(\"Webview loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85242882","Webview loaded",0);
-RDebugUtils.currentLine=5242883;
- //BA.debugLineNum = 5242883;BA.debugLine="Starter.webviewLoading = loading";
+RDebugUtils.currentLine=5505026;
+ //BA.debugLineNum = 5505026;BA.debugLine="Log(\"Webview loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25505026","Webview loaded",0);
+RDebugUtils.currentLine=5505027;
+ //BA.debugLineNum = 5505027;BA.debugLine="Starter.webviewLoading = loading";
 mostCurrent._starter._webviewloading /*int*/  = _loading;
  }else {
-RDebugUtils.currentLine=5242885;
- //BA.debugLineNum = 5242885;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("85242885","Webview loading at "+BA.NumberToString(_loading)+"% ....",0);
+RDebugUtils.currentLine=5505029;
+ //BA.debugLineNum = 5505029;BA.debugLine="Log(\"Webview loading at \"&loading&\"% ....\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("25505029","Webview loading at "+BA.NumberToString(_loading)+"% ....",0);
  };
-RDebugUtils.currentLine=5242887;
- //BA.debugLineNum = 5242887;BA.debugLine="End Sub";
+RDebugUtils.currentLine=5505031;
+ //BA.debugLineNum = 5505031;BA.debugLine="End Sub";
 return "";
 }
 }

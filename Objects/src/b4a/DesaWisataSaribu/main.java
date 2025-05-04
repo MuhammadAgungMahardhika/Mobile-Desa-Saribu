@@ -361,6 +361,7 @@ vis = vis | (gemma.mostCurrent != null);
 vis = vis | (mapsev.mostCurrent != null);
 vis = vis | (detailrg.mostCurrent != null);
 vis = vis | (listev.mostCurrent != null);
+vis = vis | (register.mostCurrent != null);
 vis = vis | (listpackage.mostCurrent != null);
 vis = vis | (cart.mostCurrent != null);
 return vis;}
@@ -497,6 +498,18 @@ BA.applicationContext.stopService(new android.content.Intent(BA.applicationConte
 
  {
             Activity __a = null;
+            if (register.previousOne != null) {
+				__a = register.previousOne.get();
+			}
+            else {
+                BA ba = killProgramHelper(register.mostCurrent == null ? null : register.mostCurrent.processBA);
+                if (ba != null) __a = ba.activity;
+            }
+            if (__a != null)
+				__a.finish();}
+
+ {
+            Activity __a = null;
             if (listpackage.previousOne != null) {
 				__a = listpackage.previousOne.get();
 			}
@@ -547,6 +560,7 @@ public anywheresoftware.b4a.objects.EditTextWrapper _editlogin = null;
 public anywheresoftware.b4a.objects.EditTextWrapper _editpassword = null;
 public anywheresoftware.b4a.objects.ImageViewWrapper _imagelogin = null;
 public anywheresoftware.b4a.objects.PanelWrapper _panellogin = null;
+public anywheresoftware.b4a.objects.ButtonWrapper _btnregister = null;
 public b4a.example.dateutils _dateutils = null;
 public b4a.DesaWisataSaribu.starter _starter = null;
 public b4a.DesaWisataSaribu.homevisitor _homevisitor = null;
@@ -558,8 +572,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.core _core = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
@@ -611,7 +626,7 @@ RDebugUtils.currentLine=458752;
  //BA.debugLineNum = 458752;BA.debugLine="Sub CheckLogin";
 RDebugUtils.currentLine=458753;
  //BA.debugLineNum = 458753;BA.debugLine="Log(\"Checking login status...\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("8458753","Checking login status...",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458753","Checking login status...",0);
 RDebugUtils.currentLine=458754;
  //BA.debugLineNum = 458754;BA.debugLine="Dim isLogin As Boolean";
 _islogin = false;
@@ -626,7 +641,7 @@ RDebugUtils.currentLine=458757;
 if (_manager.GetBoolean("user")) { 
 RDebugUtils.currentLine=458758;
  //BA.debugLineNum = 458758;BA.debugLine="Log(\"Redirecting to HomeUser activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("8458758","Redirecting to HomeUser activity",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2458758","Redirecting to HomeUser activity",0);
 RDebugUtils.currentLine=458759;
  //BA.debugLineNum = 458759;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
@@ -655,10 +670,10 @@ RDebugUtils.currentLine=196608;
  //BA.debugLineNum = 196608;BA.debugLine="Sub Activity_Resume";
 RDebugUtils.currentLine=196609;
  //BA.debugLineNum = 196609;BA.debugLine="Log(\"Login loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("8196609","Login loaded",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2196609","Login loaded",0);
 RDebugUtils.currentLine=196610;
- //BA.debugLineNum = 196610;BA.debugLine="Log(\"Resume: \"&manager.GetBoolean(\"Hanafi\"))";
-anywheresoftware.b4a.keywords.Common.LogImpl("8196610","Resume: "+BA.ObjectToString(_manager.GetBoolean("Hanafi")),0);
+ //BA.debugLineNum = 196610;BA.debugLine="Log(\"Resume: \"&manager.GetBoolean(\"Ranggi\"))";
+anywheresoftware.b4a.keywords.Common.LogImpl("2196610","Resume: "+BA.ObjectToString(_manager.GetBoolean("Ranggi")),0);
 RDebugUtils.currentLine=196611;
  //BA.debugLineNum = 196611;BA.debugLine="End Sub";
 return "";
@@ -676,6 +691,22 @@ RDebugUtils.currentLine=393218;
  //BA.debugLineNum = 393218;BA.debugLine="End Sub";
 return "";
 }
+public static String  _btnregister_click() throws Exception{
+RDebugUtils.currentModule="main";
+if (Debug.shouldDelegate(mostCurrent.activityBA, "btnregister_click", false))
+	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnregister_click", null));}
+RDebugUtils.currentLine=589824;
+ //BA.debugLineNum = 589824;BA.debugLine="Private Sub BtnRegister_Click";
+RDebugUtils.currentLine=589825;
+ //BA.debugLineNum = 589825;BA.debugLine="Activity.Finish";
+mostCurrent._activity.Finish();
+RDebugUtils.currentLine=589826;
+ //BA.debugLineNum = 589826;BA.debugLine="StartActivity(Register)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._register.getObject()));
+RDebugUtils.currentLine=589827;
+ //BA.debugLineNum = 589827;BA.debugLine="End Sub";
+return "";
+}
 public static String  _btnvisitor_click() throws Exception{
 RDebugUtils.currentModule="main";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnvisitor_click", false))
@@ -684,7 +715,7 @@ RDebugUtils.currentLine=327680;
  //BA.debugLineNum = 327680;BA.debugLine="Private Sub BtnVisitor_Click";
 RDebugUtils.currentLine=327681;
  //BA.debugLineNum = 327681;BA.debugLine="Log(\"Redirecting to HomeVisitor Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("8327681","Redirecting to HomeVisitor Activity",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2327681","Redirecting to HomeVisitor Activity",0);
 RDebugUtils.currentLine=327682;
  //BA.debugLineNum = 327682;BA.debugLine="manager.SetBoolean(\"is_login\", False)";
 _manager.SetBoolean("is_login",anywheresoftware.b4a.keywords.Common.False);
@@ -718,7 +749,7 @@ RDebugUtils.currentLine=524288;
  //BA.debugLineNum = 524288;BA.debugLine="Sub JobDone (Job As HttpJob)";
 RDebugUtils.currentLine=524289;
  //BA.debugLineNum = 524289;BA.debugLine="Log(\"JobName = \" & Job.JobName & \", Success = \" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("8524289","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524289","JobName = "+_job._jobname /*String*/ +", Success = "+BA.ObjectToString(_job._success /*boolean*/ ),0);
 RDebugUtils.currentLine=524290;
  //BA.debugLineNum = 524290;BA.debugLine="If Job.Success Then";
 if (_job._success /*boolean*/ ) { 
@@ -738,7 +769,7 @@ RDebugUtils.currentLine=524295;
 _parser.Initialize(_res);
 RDebugUtils.currentLine=524296;
  //BA.debugLineNum = 524296;BA.debugLine="Log(\"Response from server :\"&res)";
-anywheresoftware.b4a.keywords.Common.LogImpl("8524296","Response from server :"+_res,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524296","Response from server :"+_res,0);
 RDebugUtils.currentLine=524298;
  //BA.debugLineNum = 524298;BA.debugLine="Dim map As Map";
 _map = new anywheresoftware.b4a.objects.collections.Map();
@@ -795,7 +826,7 @@ RDebugUtils.currentLine=524317;
 anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Hi, "+_first_name+" "+_last_name),BA.ObjectToCharSequence("Logged In"),processBA);
 RDebugUtils.currentLine=524318;
  //BA.debugLineNum = 524318;BA.debugLine="Log(\"Redirect to HomeUser Activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("8524318","Redirect to HomeUser Activity",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524318","Redirect to HomeUser Activity",0);
 RDebugUtils.currentLine=524320;
  //BA.debugLineNum = 524320;BA.debugLine="manager.SetBoolean(\"is_login\", True)";
 _manager.SetBoolean("is_login",anywheresoftware.b4a.keywords.Common.True);
@@ -829,7 +860,7 @@ anywheresoftware.b4a.keywords.Common.MsgboxAsync(BA.ObjectToCharSequence("Please
        catch (Exception e40) {
 			processBA.setLastException(e40);RDebugUtils.currentLine=524334;
  //BA.debugLineNum = 524334;BA.debugLine="Log(LastException)";
-anywheresoftware.b4a.keywords.Common.LogImpl("8524334",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524334",BA.ObjectToString(anywheresoftware.b4a.keywords.Common.LastException(mostCurrent.activityBA)),0);
  };
  }else {
 RDebugUtils.currentLine=524337;
@@ -846,7 +877,7 @@ RDebugUtils.currentLine=524341;
 _errormap = _errorparser.NextObject();
 RDebugUtils.currentLine=524342;
  //BA.debugLineNum = 524342;BA.debugLine="Log(\"Error: \" & Job.ErrorMessage)";
-anywheresoftware.b4a.keywords.Common.LogImpl("8524342","Error: "+_job._errormessage /*String*/ ,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524342","Error: "+_job._errormessage /*String*/ ,0);
 RDebugUtils.currentLine=524344;
  //BA.debugLineNum = 524344;BA.debugLine="Dim error As String";
 _error = "";

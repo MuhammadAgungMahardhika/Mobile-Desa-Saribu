@@ -362,8 +362,9 @@ public b4a.DesaWisataSaribu.gemma _gemma = null;
 public b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public b4a.DesaWisataSaribu.listev _listev = null;
-public b4a.DesaWisataSaribu.core _core = null;
+public b4a.DesaWisataSaribu.register _register = null;
 public b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public b4a.DesaWisataSaribu.core _core = null;
 public b4a.DesaWisataSaribu.cart _cart = null;
 public b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
@@ -372,71 +373,71 @@ public static String  _activity_create(boolean _firsttime) throws Exception{
 RDebugUtils.currentModule="detailev";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_create", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_create", new Object[] {_firsttime}));}
-RDebugUtils.currentLine=2818048;
- //BA.debugLineNum = 2818048;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
-RDebugUtils.currentLine=2818051;
- //BA.debugLineNum = 2818051;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
+RDebugUtils.currentLine=2949120;
+ //BA.debugLineNum = 2949120;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+RDebugUtils.currentLine=2949123;
+ //BA.debugLineNum = 2949123;BA.debugLine="Activity.LoadLayout(\"MainScrollView\")";
 mostCurrent._activity.LoadLayout("MainScrollView",mostCurrent.activityBA);
-RDebugUtils.currentLine=2818052;
- //BA.debugLineNum = 2818052;BA.debugLine="MainScroll.Panel.LoadLayout(\"Detail\")";
+RDebugUtils.currentLine=2949124;
+ //BA.debugLineNum = 2949124;BA.debugLine="MainScroll.Panel.LoadLayout(\"Detail\")";
 mostCurrent._mainscroll.getPanel().LoadLayout("Detail",mostCurrent.activityBA);
-RDebugUtils.currentLine=2818053;
- //BA.debugLineNum = 2818053;BA.debugLine="wvDetail.Height = MainScroll.Height";
+RDebugUtils.currentLine=2949125;
+ //BA.debugLineNum = 2949125;BA.debugLine="wvDetail.Height = MainScroll.Height";
 mostCurrent._wvdetail.setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=2818054;
- //BA.debugLineNum = 2818054;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
+RDebugUtils.currentLine=2949126;
+ //BA.debugLineNum = 2949126;BA.debugLine="MainScroll.Panel.Height = MainScroll.Height";
 mostCurrent._mainscroll.getPanel().setHeight(mostCurrent._mainscroll.getHeight());
-RDebugUtils.currentLine=2818055;
- //BA.debugLineNum = 2818055;BA.debugLine="TitleNavbar.Text = Starter.selectedObj.Get(\"name\"";
+RDebugUtils.currentLine=2949127;
+ //BA.debugLineNum = 2949127;BA.debugLine="TitleNavbar.Text = Starter.selectedObj.Get(\"name\"";
 mostCurrent._titlenavbar.setText(BA.ObjectToCharSequence(mostCurrent._starter._selectedobj /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)("name"))));
-RDebugUtils.currentLine=2818057;
- //BA.debugLineNum = 2818057;BA.debugLine="MyWebViewExtras.addWebChromeClient(wvDetail, \"wvD";
+RDebugUtils.currentLine=2949129;
+ //BA.debugLineNum = 2949129;BA.debugLine="MyWebViewExtras.addWebChromeClient(wvDetail, \"wvD";
 mostCurrent._mywebviewextras.addWebChromeClient(mostCurrent.activityBA,(android.webkit.WebView)(mostCurrent._wvdetail.getObject()),"wvDetail");
-RDebugUtils.currentLine=2818058;
- //BA.debugLineNum = 2818058;BA.debugLine="wvDetail.JavaScriptEnabled = True";
+RDebugUtils.currentLine=2949130;
+ //BA.debugLineNum = 2949130;BA.debugLine="wvDetail.JavaScriptEnabled = True";
 mostCurrent._wvdetail.setJavaScriptEnabled(anywheresoftware.b4a.keywords.Common.True);
-RDebugUtils.currentLine=2818059;
- //BA.debugLineNum = 2818059;BA.debugLine="wvDetail.LoadUrl(Main.server&\"web/event/detail/\"&";
+RDebugUtils.currentLine=2949131;
+ //BA.debugLineNum = 2949131;BA.debugLine="wvDetail.LoadUrl(Main.server&\"web/event/detail/\"&";
 mostCurrent._wvdetail.LoadUrl(mostCurrent._main._server /*String*/ +"web/event/detail/"+BA.ObjectToString(mostCurrent._starter._selectedobj /*anywheresoftware.b4a.objects.collections.Map*/ .Get((Object)("id"))));
-RDebugUtils.currentLine=2818060;
- //BA.debugLineNum = 2818060;BA.debugLine="End Sub";
+RDebugUtils.currentLine=2949132;
+ //BA.debugLineNum = 2949132;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
 RDebugUtils.currentModule="detailev";
-RDebugUtils.currentLine=2949120;
- //BA.debugLineNum = 2949120;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
-RDebugUtils.currentLine=2949122;
- //BA.debugLineNum = 2949122;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3080192;
+ //BA.debugLineNum = 3080192;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+RDebugUtils.currentLine=3080194;
+ //BA.debugLineNum = 3080194;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 RDebugUtils.currentModule="detailev";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "activity_resume", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "activity_resume", null));}
-RDebugUtils.currentLine=2883584;
- //BA.debugLineNum = 2883584;BA.debugLine="Sub Activity_Resume";
-RDebugUtils.currentLine=2883585;
- //BA.debugLineNum = 2883585;BA.debugLine="Log(\"DetailEV loaded\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("82883585","DetailEV loaded",0);
-RDebugUtils.currentLine=2883586;
- //BA.debugLineNum = 2883586;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3014656;
+ //BA.debugLineNum = 3014656;BA.debugLine="Sub Activity_Resume";
+RDebugUtils.currentLine=3014657;
+ //BA.debugLineNum = 3014657;BA.debugLine="Log(\"DetailEV loaded\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("23014657","DetailEV loaded",0);
+RDebugUtils.currentLine=3014658;
+ //BA.debugLineNum = 3014658;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btnback_click() throws Exception{
 RDebugUtils.currentModule="detailev";
 if (Debug.shouldDelegate(mostCurrent.activityBA, "btnback_click", false))
 	 {return ((String) Debug.delegate(mostCurrent.activityBA, "btnback_click", null));}
-RDebugUtils.currentLine=3014656;
- //BA.debugLineNum = 3014656;BA.debugLine="Private Sub BtnBack_Click";
-RDebugUtils.currentLine=3014657;
- //BA.debugLineNum = 3014657;BA.debugLine="Log(\"Going back to previous activity\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("83014657","Going back to previous activity",0);
-RDebugUtils.currentLine=3014658;
- //BA.debugLineNum = 3014658;BA.debugLine="Activity.Finish";
+RDebugUtils.currentLine=3145728;
+ //BA.debugLineNum = 3145728;BA.debugLine="Private Sub BtnBack_Click";
+RDebugUtils.currentLine=3145729;
+ //BA.debugLineNum = 3145729;BA.debugLine="Log(\"Going back to previous activity\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("23145729","Going back to previous activity",0);
+RDebugUtils.currentLine=3145730;
+ //BA.debugLineNum = 3145730;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
-RDebugUtils.currentLine=3014659;
- //BA.debugLineNum = 3014659;BA.debugLine="End Sub";
+RDebugUtils.currentLine=3145731;
+ //BA.debugLineNum = 3145731;BA.debugLine="End Sub";
 return "";
 }
 }

@@ -6,17 +6,19 @@ File12=ItemRG.bal
 File13=List.bal
 File14=ListDesign.bal
 File15=ListPackage.bal
-File16=Login.bal
-File17=logo.png
-File18=MainScrollView.bal
-File19=maps.png
+File16=login - Copy.bal
+File17=Login.bal
+File18=logo.png
+File19=MainScrollView.bal
 File2=bg-header.jpg
-File20=MapsEV.bal
-File21=MapsRG.bal
-File22=pesona_saribu.png
-File23=pesona_sumpu.png
-File24=sign-in.png
-File25=sign-out.png
+File20=maps.png
+File21=MapsEV.bal
+File22=MapsRG.bal
+File23=pesona_saribu.png
+File24=pesona_sumpu.png
+File25=register.bal
+File26=sign-in.png
+File27=sign-out.png
 File3=bullhorn.png
 File4=campground-solid.png
 File5=Detail.bal
@@ -32,16 +34,18 @@ FileGroup13=Default Group
 FileGroup14=Default Group
 FileGroup15=Default Group
 FileGroup16=Default Group
-FileGroup17=Images
-FileGroup18=Default Group
-FileGroup19=Images
+FileGroup17=Default Group
+FileGroup18=Images
+FileGroup19=Default Group
 FileGroup2=Images
-FileGroup20=Default Group
+FileGroup20=Images
 FileGroup21=Default Group
-FileGroup22=Images
+FileGroup22=Default Group
 FileGroup23=Images
 FileGroup24=Images
-FileGroup25=Images
+FileGroup25=Default Group
+FileGroup26=Images
+FileGroup27=Images
 FileGroup3=Images
 FileGroup4=Images
 FileGroup5=Default Group
@@ -68,7 +72,8 @@ Module1=Cart
 Module10=ListRG
 Module11=MapsEV
 Module12=MapsRG
-Module13=Starter
+Module13=Register
+Module14=Starter
 Module2=Core
 Module3=DetailEV
 Module4=DetailRG
@@ -77,9 +82,9 @@ Module6=HomeUser
 Module7=HomeVisitor
 Module8=ListEv
 Module9=ListPackage
-NumberOfFiles=25
+NumberOfFiles=27
 NumberOfLibraries=13
-NumberOfModules=13
+NumberOfModules=14
 Version=13.1
 @EndOfDesignText@
 #Region  Project Attributes 
@@ -99,7 +104,7 @@ Version=13.1
 Sub Process_Globals
 	'These global variables will be declared once when the application starts.
 	'These variables can be accessed from all modules.
-	Public server As String = "http://desasaribu.agling.com/"
+	Public server As String = "https://desasaribu.agling.com/"
 	Public API As String = server&"api/"
 	Public MobileUri As String  = server&"mobile/"
 	Public data, user As Map
@@ -122,6 +127,7 @@ Sub Globals
 	Private ImageLogin As ImageView
 	Private PanelLogin As Panel
 
+	Private BtnRegister As Button
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -143,7 +149,7 @@ End Sub
 
 Sub Activity_Resume
 	Log("Login loaded")
-	Log("Resume: "&manager.GetBoolean("Hanafi"))
+	Log("Resume: "&manager.GetBoolean("Ranggi"))
 End Sub
 
 Sub Activity_Pause (UserClosed As Boolean)
@@ -217,8 +223,9 @@ Sub JobDone (Job As HttpJob)
 				' Simpan session dan CSRF token
 				manager.SetString("session_id", sessionID)
 				manager.SetString("csrf_token", csrfToken)
-				Activity.Finish
+				
 				StartActivity(HomeUser)
+				Activity.Finish
 			Else
 				MsgboxAsync("Please input correct credentials", "Login Failed")
 			End If
@@ -238,4 +245,9 @@ Sub JobDone (Job As HttpJob)
 		ToastMessageShow("Error: " & error, True)
 	End If
 	Job.Release
+End Sub
+
+Private Sub BtnRegister_Click
+	Activity.Finish
+	StartActivity(Register)
 End Sub

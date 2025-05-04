@@ -55,15 +55,6 @@ public boolean isSingleton() {
 		return pcBA;
 	}
 public static RemoteObject __c = RemoteObject.declareNull("anywheresoftware.b4a.keywords.Common");
-public static RemoteObject _data = RemoteObject.declareNull("anywheresoftware.b4a.objects.collections.Map");
-public static RemoteObject _id = RemoteObject.createImmutable("");
-public static RemoteObject _username = RemoteObject.createImmutable("");
-public static RemoteObject _email = RemoteObject.createImmutable("");
-public static RemoteObject _first_name = RemoteObject.createImmutable("");
-public static RemoteObject _last_name = RemoteObject.createImmutable("");
-public static RemoteObject _avatar = RemoteObject.createImmutable("");
-public static RemoteObject _address = RemoteObject.createImmutable("");
-public static RemoteObject _phone = RemoteObject.createImmutable("");
 public static RemoteObject _status = RemoteObject.createImmutable(0);
 public static RemoteObject _labelheader = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 public static RemoteObject _labellogout = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
@@ -85,6 +76,7 @@ public static RemoteObject _labelrg = RemoteObject.declareNull("anywheresoftware
 public static RemoteObject _btngemma = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
 public static RemoteObject _labelgemma = RemoteObject.declareNull("anywheresoftware.b4a.objects.LabelWrapper");
 public static RemoteObject _btnpackage = RemoteObject.declareNull("anywheresoftware.b4a.objects.ButtonWrapper");
+public static RemoteObject _profiledataloaded = RemoteObject.createImmutable(false);
 public static RemoteObject _dateutils = RemoteObject.declareNull("b4a.example.dateutils");
 public static b4a.DesaWisataSaribu.main _main = null;
 public static b4a.DesaWisataSaribu.starter _starter = null;
@@ -96,13 +88,14 @@ public static b4a.DesaWisataSaribu.gemma _gemma = null;
 public static b4a.DesaWisataSaribu.mapsev _mapsev = null;
 public static b4a.DesaWisataSaribu.detailrg _detailrg = null;
 public static b4a.DesaWisataSaribu.listev _listev = null;
-public static b4a.DesaWisataSaribu.core _core = null;
+public static b4a.DesaWisataSaribu.register _register = null;
 public static b4a.DesaWisataSaribu.listpackage _listpackage = null;
+public static b4a.DesaWisataSaribu.core _core = null;
 public static b4a.DesaWisataSaribu.cart _cart = null;
 public static b4a.DesaWisataSaribu.httputils2service _httputils2service = null;
 public static b4a.DesaWisataSaribu.b4xcollections _b4xcollections = null;
 public static b4a.DesaWisataSaribu.xuiviewsutils _xuiviewsutils = null;
   public Object[] GetGlobals() {
-		return new Object[] {"Activity",homeuser.mostCurrent._activity,"address",homeuser._address,"avatar",homeuser._avatar,"B4XCollections",Debug.moduleToString(b4a.DesaWisataSaribu.b4xcollections.class),"BtnBack",homeuser.mostCurrent._btnback,"BtnGemma",homeuser.mostCurrent._btngemma,"BtnLogout",homeuser.mostCurrent._btnlogout,"BtnPackage",homeuser.mostCurrent._btnpackage,"BtnRG",homeuser.mostCurrent._btnrg,"Cart",Debug.moduleToString(b4a.DesaWisataSaribu.cart.class),"Core",Debug.moduleToString(b4a.DesaWisataSaribu.core.class),"data",homeuser._data,"DateUtils",homeuser.mostCurrent._dateutils,"DetailEV",Debug.moduleToString(b4a.DesaWisataSaribu.detailev.class),"DetailRG",Debug.moduleToString(b4a.DesaWisataSaribu.detailrg.class),"email",homeuser._email,"first_name",homeuser._first_name,"Gemma",Debug.moduleToString(b4a.DesaWisataSaribu.gemma.class),"HomeVisitor",Debug.moduleToString(b4a.DesaWisataSaribu.homevisitor.class),"HttpUtils2Service",Debug.moduleToString(b4a.DesaWisataSaribu.httputils2service.class),"id",homeuser._id,"LabelGemma",homeuser.mostCurrent._labelgemma,"LabelHeader",homeuser.mostCurrent._labelheader,"LabelLogout",homeuser.mostCurrent._labellogout,"LabelName",homeuser.mostCurrent._labelname,"LabelPackage",homeuser.mostCurrent._labelpackage,"LabelRG",homeuser.mostCurrent._labelrg,"LabelUsername",homeuser.mostCurrent._labelusername,"last_name",homeuser._last_name,"ListEv",Debug.moduleToString(b4a.DesaWisataSaribu.listev.class),"ListPackage",Debug.moduleToString(b4a.DesaWisataSaribu.listpackage.class),"ListRG",Debug.moduleToString(b4a.DesaWisataSaribu.listrg.class),"Main",Debug.moduleToString(b4a.DesaWisataSaribu.main.class),"MainScroll",homeuser.mostCurrent._mainscroll,"MapsEV",Debug.moduleToString(b4a.DesaWisataSaribu.mapsev.class),"MapsRG",Debug.moduleToString(b4a.DesaWisataSaribu.mapsrg.class),"Navbar",homeuser.mostCurrent._navbar,"PanelBanner",homeuser.mostCurrent._panelbanner,"PanelHome",homeuser.mostCurrent._panelhome,"PanelMenu",homeuser.mostCurrent._panelmenu,"PanelProfile",homeuser.mostCurrent._panelprofile,"phone",homeuser._phone,"ProfileAvatar",homeuser.mostCurrent._profileavatar,"Starter",Debug.moduleToString(b4a.DesaWisataSaribu.starter.class),"status",homeuser._status,"TitleNavbar",homeuser.mostCurrent._titlenavbar,"username",homeuser._username,"XUIViewsUtils",Debug.moduleToString(b4a.DesaWisataSaribu.xuiviewsutils.class)};
+		return new Object[] {"Activity",homeuser.mostCurrent._activity,"B4XCollections",Debug.moduleToString(b4a.DesaWisataSaribu.b4xcollections.class),"BtnBack",homeuser.mostCurrent._btnback,"BtnGemma",homeuser.mostCurrent._btngemma,"BtnLogout",homeuser.mostCurrent._btnlogout,"BtnPackage",homeuser.mostCurrent._btnpackage,"BtnRG",homeuser.mostCurrent._btnrg,"Cart",Debug.moduleToString(b4a.DesaWisataSaribu.cart.class),"Core",Debug.moduleToString(b4a.DesaWisataSaribu.core.class),"DateUtils",homeuser.mostCurrent._dateutils,"DetailEV",Debug.moduleToString(b4a.DesaWisataSaribu.detailev.class),"DetailRG",Debug.moduleToString(b4a.DesaWisataSaribu.detailrg.class),"Gemma",Debug.moduleToString(b4a.DesaWisataSaribu.gemma.class),"HomeVisitor",Debug.moduleToString(b4a.DesaWisataSaribu.homevisitor.class),"HttpUtils2Service",Debug.moduleToString(b4a.DesaWisataSaribu.httputils2service.class),"LabelGemma",homeuser.mostCurrent._labelgemma,"LabelHeader",homeuser.mostCurrent._labelheader,"LabelLogout",homeuser.mostCurrent._labellogout,"LabelName",homeuser.mostCurrent._labelname,"LabelPackage",homeuser.mostCurrent._labelpackage,"LabelRG",homeuser.mostCurrent._labelrg,"LabelUsername",homeuser.mostCurrent._labelusername,"ListEv",Debug.moduleToString(b4a.DesaWisataSaribu.listev.class),"ListPackage",Debug.moduleToString(b4a.DesaWisataSaribu.listpackage.class),"ListRG",Debug.moduleToString(b4a.DesaWisataSaribu.listrg.class),"Main",Debug.moduleToString(b4a.DesaWisataSaribu.main.class),"MainScroll",homeuser.mostCurrent._mainscroll,"MapsEV",Debug.moduleToString(b4a.DesaWisataSaribu.mapsev.class),"MapsRG",Debug.moduleToString(b4a.DesaWisataSaribu.mapsrg.class),"Navbar",homeuser.mostCurrent._navbar,"PanelBanner",homeuser.mostCurrent._panelbanner,"PanelHome",homeuser.mostCurrent._panelhome,"PanelMenu",homeuser.mostCurrent._panelmenu,"PanelProfile",homeuser.mostCurrent._panelprofile,"ProfileAvatar",homeuser.mostCurrent._profileavatar,"profileDataLoaded",homeuser._profiledataloaded,"Register",Debug.moduleToString(b4a.DesaWisataSaribu.register.class),"Starter",Debug.moduleToString(b4a.DesaWisataSaribu.starter.class),"status",homeuser._status,"TitleNavbar",homeuser.mostCurrent._titlenavbar,"XUIViewsUtils",Debug.moduleToString(b4a.DesaWisataSaribu.xuiviewsutils.class)};
 }
 }

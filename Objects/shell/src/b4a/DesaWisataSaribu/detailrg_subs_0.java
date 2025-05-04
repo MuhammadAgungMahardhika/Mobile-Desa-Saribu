@@ -72,7 +72,7 @@ if (RapidSub.canDelegate("activity_resume")) { return b4a.DesaWisataSaribu.detai
 Debug.ShouldStop(128);
  BA.debugLineNum = 41;BA.debugLine="Log(\"DetailRG loaded\")";
 Debug.ShouldStop(256);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","86946817",RemoteObject.createImmutable("DetailRG loaded"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27274497",RemoteObject.createImmutable("DetailRG loaded"),0);
  BA.debugLineNum = 42;BA.debugLine="End Sub";
 Debug.ShouldStop(512);
 return RemoteObject.createImmutable("");
@@ -91,7 +91,7 @@ if (RapidSub.canDelegate("btnback_click")) { return b4a.DesaWisataSaribu.detailr
 Debug.ShouldStop(65536);
  BA.debugLineNum = 50;BA.debugLine="Log(\"Going back to previous activity\")";
 Debug.ShouldStop(131072);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","87077889",RemoteObject.createImmutable("Going back to previous activity"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27405569",RemoteObject.createImmutable("Going back to previous activity"),0);
  BA.debugLineNum = 51;BA.debugLine="Activity.Finish";
 Debug.ShouldStop(262144);
 detailrg.mostCurrent._activity.runVoidMethod ("Finish");
@@ -113,7 +113,7 @@ if (RapidSub.canDelegate("btncart_click")) { return b4a.DesaWisataSaribu.detailr
 Debug.ShouldStop(1024);
  BA.debugLineNum = 76;BA.debugLine="Log(\"Redirect to Cart Activity\")";
 Debug.ShouldStop(2048);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","841615361",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27602177",RemoteObject.createImmutable("Redirect to Cart Activity"),0);
  BA.debugLineNum = 77;BA.debugLine="StartActivity(Cart)";
 Debug.ShouldStop(4096);
 detailrg.mostCurrent.__c.runVoidMethod ("StartActivity",detailrg.processBA,(Object)((detailrg.mostCurrent._cart.getObject())));
@@ -163,7 +163,7 @@ RemoteObject _exectfunction = RemoteObject.createImmutable("");
 Debug.ShouldStop(2097152);
  BA.debugLineNum = 55;BA.debugLine="Log(\"Set User Id\")";
 Debug.ShouldStop(4194304);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","87143425",RemoteObject.createImmutable("Set User Id"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27471105",RemoteObject.createImmutable("Set User Id"),0);
  BA.debugLineNum = 56;BA.debugLine="Dim userId As String";
 Debug.ShouldStop(8388608);
 _userid = RemoteObject.createImmutable("");Debug.locals.put("userId", _userid);
@@ -175,7 +175,7 @@ Debug.ShouldStop(67108864);
 _userid = detailrg.mostCurrent._manager.runMethod(true,"GetString",(Object)(RemoteObject.createImmutable("user_id")));Debug.locals.put("userId", _userid);
  BA.debugLineNum = 60;BA.debugLine="Log(\"User ID: \" & userId)";
 Debug.ShouldStop(134217728);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","87143430",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27471110",RemoteObject.concat(RemoteObject.createImmutable("User ID: "),_userid),0);
  BA.debugLineNum = 62;BA.debugLine="If userId <> \"\" And userId <> Null Then";
 Debug.ShouldStop(536870912);
 if (RemoteObject.solveBoolean("!",_userid,BA.ObjectToString("")) && RemoteObject.solveBoolean("N",_userid)) { 
@@ -188,7 +188,7 @@ detailrg.mostCurrent._mywebviewextras.runVoidMethod ("executeJavascript",(Object
  }else {
  BA.debugLineNum = 66;BA.debugLine="Log(\"User ID is empty or null\")";
 Debug.ShouldStop(2);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","87143436",RemoteObject.createImmutable("User ID is empty or null"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27471116",RemoteObject.createImmutable("User ID is empty or null"),0);
  };
  BA.debugLineNum = 68;BA.debugLine="End Sub";
 Debug.ShouldStop(8);
@@ -209,7 +209,7 @@ Debug.locals.put("Url", _url);
 Debug.ShouldStop(32);
  BA.debugLineNum = 71;BA.debugLine="Log(\"page finished\")";
 Debug.ShouldStop(64);
-detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","87208961",RemoteObject.createImmutable("page finished"),0);
+detailrg.mostCurrent.__c.runVoidMethod ("LogImpl","27536641",RemoteObject.createImmutable("page finished"),0);
  BA.debugLineNum = 72;BA.debugLine="SetUserId";
 Debug.ShouldStop(128);
 _setuserid();

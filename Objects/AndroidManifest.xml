@@ -118,6 +118,14 @@
 		<activity
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
+			android:name=".register"
+			android:label="Desa Saribu Rumah Gadang"
+			android:screenOrientation="unspecified"
+			android:exported="true">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
 			android:name=".listpackage"
 			android:label="Desa Saribu Rumah Gadang"
 			android:screenOrientation="unspecified"
